@@ -72,7 +72,7 @@ This is a curated list for computational cryo-EM method mainly target for single
 1. `Patch-Based CTF Estimation` - [**Real-time cryo-electron microscopy data preprocessing with Warp**](https://www.nature.com/articles/s41592-019-0580-y) ( Use in [`CryoSparc`](https://cryosparc.com/docs/tutorials/patch-motion-ctf), `Warp`)
 2. [`goCTF`](https://www.lsi.umich.edu/science/centers-technologies/cryo-electron-microscopy/research/goctf) - [**goCTF: Geometrically optimized CTF determination for single-particle cryo-EM**](https://www.lsi.umich.edu/science/centers-technologies/cryo-electron-microscopy/research/goctf)
 
-
+### Denoising Micrograph
 
 ## Particle-pickeing
 ### Semi-superviesd
@@ -85,6 +85,7 @@ This is a curated list for computational cryo-EM method mainly target for single
 2. [`APPLE`](https://github.com/PrincetonUniversity/APPLEpicker) - [**APPLE picker: Automatic particle picking, a low-effort cryo-EM framework**](https://www.sciencedirect.com/science/article/pii/S1047847718302326)
 
 ## 2D classification
+### Denoising Patricle
 ### MRA-based
 1. `ISAC` - [**Iterative Stable Alignment and Clustering of 2D Transmission Electron Microscope Images**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3426367/)
 2. `CL2D` - [**A clustering approach to multireference alignment of single-particle projections in electron microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2893300/)
@@ -122,6 +123,8 @@ This is a curated list for computational cryo-EM method mainly target for single
 1. `CTF refinement` - ([Relion3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250425/)/CisTEM, 3D Reference required)
 2. [`Bayesian Polishing`](https://journals.iucr.org/m/issues/2019/01/00/fq5003/) - (Relion, 3D Reference required)
 3. [`M`](https://www.biorxiv.org/content/10.1101/2020.06.05.136341v1) - (For both movie data and tilted data)
+
+### Denoising 3D Volume
 
 # Conventions
 ## Contrast
