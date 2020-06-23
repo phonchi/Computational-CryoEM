@@ -84,13 +84,13 @@ This is a curated list for computational cryo-EM method mainly target for single
 ### Mixed
 1. [ROME](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182130)
 
-## Ab-initial 
+## Ab-initial Model 
 ### Using class-averages
 1. [Simple](https://pubmed.ncbi.nlm.nih.gov/28795512/)
 ### Using particles
 1. CryoSparc
 
-## 3D Refinemnet
+## 3D Homogeneous Refinemnet
 1. [Relion](https://www.sciencedirect.com/science/article/pii/S1047847712002481)
 2. [CryoSparc](https://www.nature.com/articles/nmeth.4169)
 
@@ -109,7 +109,7 @@ This is a curated list for computational cryo-EM method mainly target for single
 ## Postprocessing
 1. CTF refinement ([Relion3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250425/)/CisTEM, 3D Reference required)
 2. [Bayesian Polishing](https://journals.iucr.org/m/issues/2019/01/00/fq5003/) (Relion, 3D Reference required)
-3. [M](https://www.biorxiv.org/content/10.1101/2020.06.05.136341v1) (For bot movie data and tilted data)
+3. [M](https://www.biorxiv.org/content/10.1101/2020.06.05.136341v1) (For both movie data and tilted data)
 
 # Conventions
 ## Contrast
