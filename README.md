@@ -26,6 +26,17 @@ This is a curated list for computational cryo-EM method mainly target for single
 * [3DEM Events](http://www.emdatabank.org/3dem_events.html)
 * [NRAMM Events](http://nramm.nysbc.org/workshops-and-courses/?lcp_page0=1#lcp_instance_0)
 
+## Software
+* [Scipion](http://scipion.i2pc.es/)
+* [Relion](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page)
+* [CryoSparc 2](https://cryosparc.com/)
+* [Sphire](http://sphire.mpg.de/)
+* [CisTEM](https://cistem.org/)
+* [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2)
+* [SPIDER](https://spider.wadsworth.org/spider_doc/spider/docs/spider.html)
+
+
+
 # Workflow
 ## Import Data
 1. From EMPIAR (https://www.ebi.ac.uk/pdbe/emdb/empiar/)
@@ -40,76 +51,77 @@ This is a curated list for computational cryo-EM method mainly target for single
  [CisTEM](https://cistem.org/documentation#tab-1-1) ([ApoFerritin](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10146/))    | 5.6GB     | 20(50)     |  1240x1200 (1.5)    |      | 3.0 (O)
 
 3. Simulate Data
-    *[Continuous](https://github.com/evanseitz/cryoEM_synthetic_continua)
+    * [Continuous](https://github.com/evanseitz/cryoEM_synthetic_continua)
 
 
 ## Motion Correction
 ### Whole Frame Alignment
-1. [MotionCorr](https://www.nature.com/articles/nmeth.4193?proof=t) ([MotionCorr2](https://emcore.ucsf.edu/ucsf-motioncor2), [Relion](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page), [Warp](http://www.warpem.com/warp/))
-2. [Unblur](https://elifesciences.org/articles/06980) ([CisTEM](https://cistem.org/documentation#tab-1-6))
-3. Full-frame motion correction ([CryoSparc](https://cryosparc.com/))
-4. [Optical Flow](https://www.sciencedirect.com/science/article/pii/S1047847715000313) ([Xmipp](http://xmipp.i2pc.es/))
+1. [`MotionCorr2`](https://emcore.ucsf.edu/ucsf-motioncor2) - [**MotionCor2: anisotropic correction of beam-induced motion for improved cryo-electron microscopy**](https://www.nature.com/articles/nmeth.4193?proof=t) (Use in `Relion`, `CryoSparc` and [`Warp`](http://www.warpem.com/warp/))
+2. [`Unblur`](https://grigoriefflab.umassmed.edu/unblur_summovie) - [**Measuring the optimal exposure for single particle cryo-EM using a 2.6 Å reconstruction of rotavirus VP6**](https://elifesciences.org/articles/06980) ( Use in [`CisTEM`](https://cistem.org/documentation#tab-1-6))
+3. `Full-frame motion correction` - (Use in `CryoSparc`)
+4. `Optical Flow` - [**Alignment of direct detection device micrographs using a robust Optical Flow approach**](https://www.sciencedirect.com/science/article/pii/S1047847715000313) (Use in [`Xmipp`](http://xmipp.i2pc.es/))
 ### Per-particle based alignment
-1. [alignparts](https://sites.google.com/site/rubinsteingroup/direct-detector-align_lmbfgs) ([CryoSparc(local, patch)](https://cryosparc.com/docs/tutorials/patch-motion-ctf), alignparts-lmbfgs)
+1. [`Alignparts`](https://sites.google.com/site/rubinsteingroup/direct-detector-align_lmbfgs) - [**Alignment of cryo-EM Movies of Individual Particles by Optimization of Image Translations**](https://pubmed.ncbi.nlm.nih.gov/26296328/) (Use in [`CryoSparc`(local, patch)](https://cryosparc.com/docs/tutorials/patch-motion-ctf))
 
 
 ## CTF Estimation
 ### Whole Frame
-1. [CTFFIND](https://www.sciencedirect.com/science/article/pii/S1047847715300460) ([CisTEM](http://grigoriefflab.janelia.org/ctffind4))
-2. [gCTF](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4711343/)
+1. [`CTFFIND4`](https://grigoriefflab.umassmed.edu/ctffind4) - [**CTFFIND4: Fast and accurate defocus estimation from electron micrographs**](https://www.sciencedirect.com/science/article/pii/S1047847715300460) ( Use in [`CisTEM`](http://grigoriefflab.janelia.org/ctffind4))
+2. [`gCTF`](https://www2.mrc-lmb.cam.ac.uk/research/locally-developed-software/zhang-software/#gctf) - [**Gctf: Real-time CTF determination and correction**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4711343/)
 ### Patch-based/tilt data
-1. Patch-Based CTF Estimation ([CryoSparc](https://cryosparc.com/docs/tutorials/patch-motion-ctf), Warp)
-2. [goCTF](https://www.lsi.umich.edu/science/centers-technologies/cryo-electron-microscopy/research/goctf)
+1. `Patch-Based CTF Estimation` - [**Real-time cryo-electron microscopy data preprocessing with Warp**](https://www.nature.com/articles/s41592-019-0580-y) ( Use in [`CryoSparc`](https://cryosparc.com/docs/tutorials/patch-motion-ctf), `Warp`)
+2. [`goCTF`](https://www.lsi.umich.edu/science/centers-technologies/cryo-electron-microscopy/research/goctf) - [**goCTF: Geometrically optimized CTF determination for single-particle cryo-EM**](https://www.lsi.umich.edu/science/centers-technologies/cryo-electron-microscopy/research/goctf)
 
 
 
 ## Particle-pickeing
 ### Semi-superviesd
-1. [Topaz](https://github.com/tbepler/topaz)
-2. [Cryolo](https://sphire.mpg.de/wiki/doku.php?id=pipeline:window:cryolo)
+1. [`Topaz`](https://github.com/tbepler/topaz) - [**Positive-unlabeled convolutional neural networks for particle picking in cryo-electron micrographs**](https://www.nature.com/articles/s41592-019-0575-8)
+2. [`Cryolo`](https://sphire.mpg.de/wiki/doku.php?id=pipeline:window:cryolo) - [**SPHIRE-crYOLO is a fast and accurate fully automated particle picker for cryo-EM**](https://www.nature.com/articles/s42003-019-0437-z)
 ### Template-based
-1. Relion, CryoSparc
+1. `Relion`, `CryoSparc`
 ### Automatic
-1. [DoG](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2768396/), LoG, [APPLE](https://www.sciencedirect.com/science/article/pii/S1047847718302326)
+1. [`DoG`](https://emg.nysbc.org/redmine/projects/software/wiki/DoGpicker) - [**DoG Picker and TiltPicker: software tools to facilitate particle selection in single particle electron microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2768396/)
+2. [`APPLE`](https://github.com/PrincetonUniversity/APPLEpicker) - [**APPLE picker: Automatic particle picking, a low-effort cryo-EM framework**](https://www.sciencedirect.com/science/article/pii/S1047847718302326)
 
 ## 2D classification
 ### MRA-based
-1. [ISAC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3426367/)
-2. [CL2D](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2893300/)
-3. EMAN2
-4. SPIDER
+1. `ISAC` - [**Iterative Stable Alignment and Clustering of 2D Transmission Electron Microscope Images**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3426367/)
+2. `CL2D` - [**A clustering approach to multireference alignment of single-particle projections in electron microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2893300/)
+
 ### Maximum-likelihood
-1. Relion
-2. CryoSparc
+1. `Relion` - Bayesian
+2. `CryoSparc` - Bayesian with Branch and bound
+3. `CisTEM` - Maximum likelihood
 ### Mixed
-1. [ROME](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182130)
+1. [`ROME`](http://ipccsb.dfci.harvard.edu/rome/) - [**Massively parallel unsupervised single-particle cryo-EM data clustering via statistical manifold learning**](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182130)
 
 ## Ab-initial Model 
 ### Using class-averages
-1. [Simple](https://pubmed.ncbi.nlm.nih.gov/28795512/)
+1. [`Simple`](https://pubmed.ncbi.nlm.nih.gov/28795512/)
 ### Using particles
-1. CryoSparc
+1. `CryoSparc`
 
 ## 3D Homogeneous Refinemnet
-1. [Relion](https://www.sciencedirect.com/science/article/pii/S1047847712002481)
-2. [CryoSparc](https://www.nature.com/articles/nmeth.4169)
+1. [`Relion`](https://www.sciencedirect.com/science/article/pii/S1047847712002481)
+2. [`CryoSparc`](https://www.nature.com/articles/nmeth.4169)
 
 ## 3D Non-uniform Refinemnet
-1. [CryoSparc](https://www.biorxiv.org/content/10.1101/2019.12.15.877092v1)
-2. [SideSplitter](https://www.biorxiv.org/content/10.1101/2019.12.12.874081v2)
+1. [`CryoSparc`](https://www.biorxiv.org/content/10.1101/2019.12.15.877092v1)
+2. [`SideSplitter`](https://www.biorxiv.org/content/10.1101/2019.12.12.874081v2)
 
 
 ## 3D classification
-1. [Relion](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf)
+1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf)
 
 ## 3D Variability
-1. [3DVA](https://www.biorxiv.org/content/10.1101/2020.04.08.032466v1) (CryoSparc)
-2. [CryoDRGN](https://www.biorxiv.org/content/10.1101/2020.03.27.003871v1)
+1. [`3DVA`](https://www.biorxiv.org/content/10.1101/2020.04.08.032466v1)- (CryoSparc)
+2. [`CryoDRGN`](https://www.biorxiv.org/content/10.1101/2020.03.27.003871v1)
 
 ## Postprocessing
-1. CTF refinement ([Relion3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250425/)/CisTEM, 3D Reference required)
-2. [Bayesian Polishing](https://journals.iucr.org/m/issues/2019/01/00/fq5003/) (Relion, 3D Reference required)
-3. [M](https://www.biorxiv.org/content/10.1101/2020.06.05.136341v1) (For both movie data and tilted data)
+1. `CTF refinement` - ([Relion3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250425/)/CisTEM, 3D Reference required)
+2. [`Bayesian Polishing`](https://journals.iucr.org/m/issues/2019/01/00/fq5003/) - (Relion, 3D Reference required)
+3. [`M`](https://www.biorxiv.org/content/10.1101/2020.06.05.136341v1) - (For both movie data and tilted data)
 
 # Conventions
 ## Contrast
