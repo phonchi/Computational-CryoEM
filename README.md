@@ -51,6 +51,7 @@ This is a curated list for computational cryo-EM method mainly target for single
  [CisTEM](https://cistem.org/documentation#tab-1-1) ([ApoFerritin](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10146/))    | 5.6GB     | 20(50)     |  1240x1200 (1.5)    |      | 3.0 (O)
 
 3. Simulate Data
+    * [Discrete](Simulation_data.ipynb) 
     * [Continuous](https://github.com/evanseitz/cryoEM_synthetic_continua)
 
 
