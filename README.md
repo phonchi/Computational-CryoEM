@@ -22,7 +22,6 @@ This is a curated list for computational cryo-EM method mainly target for single
 ## Import Data
 1. From EMPIAR (https://www.ebi.ac.uk/pdbe/emdb/empiar/)
 2. From tutorial data set
-
 | DataSet (Molecule) | File Size | Movie (#frame) | Micrograph Size (Pixel Size) | Picked Particles (Size) | Final Resolution(A)(Symmetry)|
 | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
 | [Scipion](https://github.com/I2PC/scipion/wiki/tutorials/scipion_tutorial_betagal.pdf) ([Beta-gal](https://drive.google.com/file/d/17e7MCk6-FP3X9Jn9-U-WvWw-L1oY178V/view?usp=sharing]))    | 4.0GB     | 15(16)     |  1950x1950 (3.54)    |  (100x100)    | 7.3 (D2)     |
