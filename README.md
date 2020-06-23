@@ -120,28 +120,39 @@ This is a curated list for computational cryo-EM method mainly target for single
 1. `Relion` - [**RELION: Implementation of a Bayesian approach to cryo-EM structure determination**](https://www.sciencedirect.com/science/article/pii/S1047847712002481)
 2. [`CryoSparc`](https://www.nature.com/articles/nmeth.4169)
 
+### 3D classification
+1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf)
+2. `CryoSparc`
+
+### Focus classifcation
+
 ### 3D non-uniform Refinemnet
 1. `CryoSparc` - [**Non-uniform refinement: Adaptive regularization improves single particle cryo-EM reconstruction**](https://www.biorxiv.org/content/10.1101/2019.12.15.877092v1)
 2. [`SideSplitter`](https://github.com/StructuralBiology-ICLMedicine/SIDESPLITTER) - [**Mitigating Local Over-fitting During Single Particle Reconstruction with SIDESPLITTER**](https://www.biorxiv.org/content/10.1101/2019.12.12.874081v2)
 
 
-### 3D classification
-1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf)
-2. `CryoSparc`
-
 ### 3D variability
 1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.biorxiv.org/content/10.1101/2020.04.08.032466v1) ( Use in `CryoSparc`)
 2. [`CryoDRGN`](https://github.com/zhonge/cryodrgn) - [**CryoDRGN: Reconstruction of heterogeneous structures from cryo-electron micrographs using neural networks**](https://www.biorxiv.org/content/10.1101/2020.03.27.003871v1)
+
+
 
 ## Postprocessing
 1. `CTF refinement` - ([`Relion3`](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250425/)/[`CisTEM`](https://cistem.org/documentation#tab-1-12), 3D Reference required)
 2. `Bayesian Polishing` - [**A Bayesian approach to beam-induced motion correction in cryo-EM single-particle analysis**](https://journals.iucr.org/m/issues/2019/01/00/fq5003/)  ( Use in Relion, 3D Reference required)
 3. [`M`](http://www.warpem.com/warp/?page_id=827) - [**Multi-particle cryo-EM refinement with M visualizes ribosome-antibiotic complex at 3.7 Å inside cells**](https://www.biorxiv.org/content/10.1101/2020.06.05.136341v1)  (For both movie data and tilted data)
 
+### Local resolution
+1. [`ResMap`](http://resmap.sourceforge.net/) - [**Quantifying the Local Resolution of Cryo-EM Density Maps**](https://www.nature.com/articles/nmeth.2727)
+2. `MonoRes` - [**MonoRes: Automatic and Accurate Estimation of Local Resolution for Electron Microscopy Maps**](https://pubmed.ncbi.nlm.nih.gov/29395788/) (Use in `Scipion`)
+
 ### Denoising 3D volume
 1. [`Warp`](http://www.warpem.com/warp/?page_id=389) - Based on Noise2Noise
 2. `Topaz`
 3. [`Relion`](https://github.com/3dem/externprior) - [**Exploiting prior knowledge about biological macromolecules in cryo-EM structure determination**](https://www.biorxiv.org/content/10.1101/2020.03.25.007914v1)
+
+## Visualization
+1. [`Chimera`](https://www.cgl.ucsf.edu/chimera/)
 
 # Conventions
 ## Contrast
@@ -193,7 +204,7 @@ Convert binary data
 
 ## Operate on `Star file`
 1. Using [`StarTool`](https://github.com/cdienem/StarTool)
-2. Using 
+2. Using Custom function like [here](Parse_Star.ipynb)
 
 ## Performing Focus Classification
 ### Using Chimera
