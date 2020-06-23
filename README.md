@@ -179,17 +179,21 @@ This is the FSC curve calculated using the tight mask with correction by noise s
 
 # Tips
 ## Format Conversion
-### Using [PyRelion](https://github.com/OPIC-Oxford/localrec/wiki/Tips-and-tricks)
+1. Using [PyRelion](https://github.com/OPIC-Oxford/localrec/wiki/Tips-and-tricks)
 Operate Star files
 
-### Using [PyEM](https://github.com/asarnow/pyem)
+2. Using [PyEM](https://github.com/asarnow/pyem)
 Convert metadata
 
-### Using [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2)
+3. Using [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2)
 Convert binary data
 
-### Using [SPHIRE](http://sphire.mpg.de/)
+4. Using [SPHIRE](http://sphire.mpg.de/)
 Convert binary data
+
+## Operate on `Star file`
+1. Using [`StarTool`](https://github.com/cdienem/StarTool)
+2. Using 
 
 ## Performing Focus Classification
 ### Using Chimera
