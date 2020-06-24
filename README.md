@@ -35,10 +35,10 @@ This is a curated list for computational cryo-EM method mainly target for single
 
 ## [Software](http://3dem.ucsd.edu/software.shtm)
 * [Scipion](http://scipion.i2pc.es/) - An integrated platform that allows user to use a variety of medthos in the same framework.
-* [Relion](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page) - A comprehensive package that ustilize Bayesian approach for 2D classification and 3D refinement.
-* [CryoSparc 2](https://cryosparc.com/) - A general package that employs stochastic gradient secsent, branch and bound and GPU acceleration for rapid reconstructions.
-* [Sphire](http://sphire.mpg.de/) - A general package that contains neural network methods for particle pickeing, denoising and classification.
-* [CisTEM](https://cistem.org/) - An easy to use framework that implementing a complete pipeline for single particle analysis.
+* [Relion](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page) - A comprehensive package that utilizes Bayesian approach for 2D classification and 3D refinement.
+* [CryoSparc 2](https://cryosparc.com/) - A general package that employs stochastic gradient descent, branch and bound as well as GPU acceleration for rapid reconstructions.
+* [Sphire](http://sphire.mpg.de/) - A general package that contains neural network methods for particle picking, denoising and classification.
+* [CisTEM](https://cistem.org/) - An easy to use framework that implements a complete pipeline for single particle analysis.
 * [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2) - A comprehensive package that contains python interface and handy scripts for common tasks.
 * [SPIDER](https://spider.wadsworth.org/spider_doc/spider/docs/spider.html) - A well-known package that implements image processing methods for electron microscopy.
 
