@@ -11,14 +11,21 @@ This is a curated list for computational cryo-EM method mainly target for single
 
 
 # Resources
+## Introduction
+* [A quick introduction video for cryo-EM](https://www.youtube.com/watch?v=Qq8DO-4BnIY)
+* [A Primer to Single-Particle Cryo-Electron Microscopy](https://www.sciencedirect.com/science/article/pii/S0092867415003700?via%3Dihub) - A great review to start with.
+* [Principles of cryo-EM single-particle image processing](https://pubmed.ncbi.nlm.nih.gov/26705325/) - Highlight the principles when dealing with cryo-EM dataset.
+* [Single-particle cryo-electron microscopy: Mathematical theory, computational challenges, and opportunities](https://web.math.princeton.edu/~amits/publications/IEEE_Signal_Processing_Magazine.pdf) - Review that covers recent updates.
+* [Computational Methods for Single-Particle Electron Cryomicroscopy](https://www.annualreviews.org/doi/abs/10.1146/annurev-biodatasci-021020-093826) - A comprehensive review for math and computation behind sigle-particle cryo-EM methods.
+
 ## Courses
 * [Getting Started in Cryo-EM](http://cryo-em-course.caltech.edu/outline)
 * [Electron Microscopy Training by MRC LAB](https://www2.mrc-lmb.cam.ac.uk/research/scientific-training/electron-microscopy/)
 * [nysbc training course](http://semc.nysbc.org/the-winter-spring-2018-em-course/)
 
 ## Resources
-* [3DEM Methods](http://3demmethods.i2pc.es/index.php/Main_Page)
-* [A collective resource](https://github.com/barrykui/awesome-cryoem)
+* [3DEM Methods](http://3demmethods.i2pc.es/index.php/Main_Page) - A great wiki that collects papers or books for computational methods.
+* [A collective resource](https://github.com/barrykui/awesome-cryoem) - A great repository that cover single particle analysis, model buidling and tomography.
 * [3DEM Conventions](https://github.com/azazellochg/3DEM-conventions)
 * [Chimera Tutorial](http://embo2015.cryst.bbk.ac.uk/embo2015/course/practicals/prac-7/Practical-7-Maya-Topf-9-Sept-15.pdf)
 
@@ -26,21 +33,21 @@ This is a curated list for computational cryo-EM method mainly target for single
 * [3DEM Events](http://www.emdatabank.org/3dem_events.html)
 * [NRAMM Events](http://nramm.nysbc.org/workshops-and-courses/?lcp_page0=1#lcp_instance_0)
 
-## Software
-* [Scipion](http://scipion.i2pc.es/)
-* [Relion](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page)
-* [CryoSparc 2](https://cryosparc.com/)
-* [Sphire](http://sphire.mpg.de/)
-* [CisTEM](https://cistem.org/)
-* [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2)
-* [SPIDER](https://spider.wadsworth.org/spider_doc/spider/docs/spider.html)
+## [Software](http://3dem.ucsd.edu/software.shtm)
+* [Scipion](http://scipion.i2pc.es/) - An integrated platform that allows user to use a variety of medthos in the same framework.
+* [Relion](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page) - A comprehensive package that ustilize Bayesian approach for 2D classification and 3D refinement.
+* [CryoSparc 2](https://cryosparc.com/) - A general package that employs stochastic gradient secsent, branch and bound and GPU acceleration for rapid reconstructions.
+* [Sphire](http://sphire.mpg.de/) - A general package that contains neural network methods for particle pickeing, denoising and classification.
+* [CisTEM](https://cistem.org/) - An easy to use framework that implementing a complete pipeline for single particle analysis.
+* [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2) - A comprehensive package that contains python interface and handy scripts for common tasks.
+* [SPIDER](https://spider.wadsworth.org/spider_doc/spider/docs/spider.html) - A well-known package that implements image processing methods for electron microscopy.
 
 
 
 # Workflow
 ## Import Data
-1. From EMPIAR (https://www.ebi.ac.uk/pdbe/emdb/empiar/)
-2. From tutorial data set
+1. From [EMPIAR](https://www.ebi.ac.uk/pdbe/emdb/empiar/) or [EMDB](https://www.ebi.ac.uk/pdbe/emdb/index.html/).
+2. From tutorial data set.
 
 
  DataSet (Molecule) | File Size | Movie (#frame) | Micrograph Size (Pixel Size) | Picked Particles (Size) | Final Resolution(A)(Symmetry)
@@ -50,12 +57,12 @@ This is a curated list for computational cryo-EM method mainly target for single
  [CryoSparc 2](https://cryosparc.com/docs/tutorials/t20s) ([T20S](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10025/))    | 8.1GB     | 20(38)     |  7420x7676 (0.6575)    | (440x440)     | 2.93 (D7)
  [CisTEM](https://cistem.org/documentation#tab-1-1) ([ApoFerritin](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10146/))    | 5.6GB     | 20(50)     |  1240x1200 (1.5)    |      | 3.0 (O)
 
-3. Simulate Data
+3. Generate simulation data
     * [Discrete](Simulation_data.ipynb) 
     * [Continuous](https://github.com/evanseitz/cryoEM_synthetic_continua)
 
 
-## Motion correction
+## [Motion correction](https://www.sciencedirect.com/science/article/pii/S0076687916300271?via%3Dihub)/ [Damage compensation](https://www.sciencedirect.com/science/article/pii/S0076687910810158?via%3Dihub)
 ### Whole Frame Alignment
 1. [`MotionCorr2`](https://emcore.ucsf.edu/ucsf-motioncor2) - [**MotionCor2: anisotropic correction of beam-induced motion for improved cryo-electron microscopy**](https://www.nature.com/articles/nmeth.4193?proof=t) (Use in `Relion`, `CryoSparc` and [`Warp`](http://www.warpem.com/warp/))
 2. [`Unblur`](https://grigoriefflab.umassmed.edu/unblur_summovie) - [**Measuring the optimal exposure for single particle cryo-EM using a 2.6 Å reconstruction of rotavirus VP6**](https://elifesciences.org/articles/06980) ( Use in [`CisTEM`](https://cistem.org/documentation#tab-1-6))
@@ -65,7 +72,7 @@ This is a curated list for computational cryo-EM method mainly target for single
 1. [`Alignparts`](https://sites.google.com/site/rubinsteingroup/direct-detector-align_lmbfgs) - [**Alignment of cryo-EM Movies of Individual Particles by Optimization of Image Translations**](https://pubmed.ncbi.nlm.nih.gov/26296328/) (Use in [`CryoSparc`(local, patch)](https://cryosparc.com/docs/tutorials/patch-motion-ctf))
 
 
-## CTF estimation
+## [CTF estimation](https://www.sciencedirect.com/science/article/pii/S0076687910820026?via%3Dihub)
 ### Whole frame
 1. [`CTFFIND4`](https://grigoriefflab.umassmed.edu/ctffind4) - [**CTFFIND4: Fast and accurate defocus estimation from electron micrographs**](https://www.sciencedirect.com/science/article/pii/S1047847715300460) ( Use in [`CisTEM`](http://grigoriefflab.janelia.org/ctffind4))
 2. [`gCTF`](https://www2.mrc-lmb.cam.ac.uk/research/locally-developed-software/zhang-software/#gctf) - [**Gctf: Real-time CTF determination and correction**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4711343/)
@@ -76,14 +83,15 @@ This is a curated list for computational cryo-EM method mainly target for single
 ### Denoising micrograph
 1. `Topaz` - [**Topaz-Denoise: general deep denoising models for cryoEM**](https://www.biorxiv.org/content/10.1101/838920v1.full)
 2.  [`JANNI`](https://sphire.mpg.de/wiki/doku.php?id=janni) - Just Another Noise 2 Noise Implementation 
-3.  `Warp`
+3.  `Warp` - Contains methods base on noise2noise and deconvolution filter 
 
 ## Particle-picking
 ### Semi-superviesd
 1. [`Topaz`](https://github.com/tbepler/topaz) - [**Positive-unlabeled convolutional neural networks for particle picking in cryo-electron micrographs**](https://www.nature.com/articles/s41592-019-0575-8)
 2. [`Cryolo`](https://sphire.mpg.de/wiki/doku.php?id=pipeline:window:cryolo) - [**SPHIRE-crYOLO is a fast and accurate fully automated particle picker for cryo-EM**](https://www.nature.com/articles/s42003-019-0437-z)
+3. `Xmipp` - Based on Support Vector Machine
 ### Template-based
-1. `Relion`, `CryoSparc`
+1. `Relion`, `CryoSparc` - Use 2D class averages or 3D projection for more accurate particle picking
 ### Automatic
 1. [`DoG`](https://emg.nysbc.org/redmine/projects/software/wiki/DoGpicker) - [**DoG Picker and TiltPicker: software tools to facilitate particle selection in single particle electron microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2768396/)
 2. [`APPLE`](https://github.com/PrincetonUniversity/APPLEpicker) - [**APPLE picker: Automatic particle picking, a low-effort cryo-EM framework**](https://www.sciencedirect.com/science/article/pii/S1047847718302326)
@@ -95,15 +103,15 @@ This is a curated list for computational cryo-EM method mainly target for single
 
 ## 2D classification
 
-### MRA-based
+### Multirefence alignment based
 1. `ISAC` - [**Iterative Stable Alignment and Clustering of 2D Transmission Electron Microscope Images**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3426367/)
 2. `CL2D` - [**A clustering approach to multireference alignment of single-particle projections in electron microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2893300/)
 
-### Maximum-likelihood
-1. `Relion` - Bayesian
-2. `CryoSparc` - Bayesian with Branch and bound
-3. `CisTEM` - Maximum likelihood
-### Mixed
+### [Maximum-likelihood based](https://www.sciencedirect.com/science/article/pii/S0076687910820117?via%3Dihub)
+1. `Relion` - Bayesian (Empirical Bayes) approach
+2. `CryoSparc` - Bayesian with Branch and bound method
+3. `CisTEM` - Maximum likelihood method
+### Mixed approach
 1. [`ROME`](http://ipccsb.dfci.harvard.edu/rome/) - [**Massively parallel unsupervised single-particle cryo-EM data clustering via statistical manifold learning**](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182130)
 
 ### Automatic select 2D class
@@ -118,20 +126,20 @@ This is a curated list for computational cryo-EM method mainly target for single
 ## 3D Refinement
 ### 3D Homogeneous Refinemnet
 1. `Relion` - [**RELION: Implementation of a Bayesian approach to cryo-EM structure determination**](https://www.sciencedirect.com/science/article/pii/S1047847712002481)
-2. [`CryoSparc`](https://www.nature.com/articles/nmeth.4169)
+2. [`CryoSparc`](https://www.nature.com/articles/nmeth.4169) - Use Expectation-Maximization with branch and bound method for higher resolution
 
 ### 3D classification
-1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf)
-2. `CryoSparc`
+1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf), `CryoSparc`  - Perturb the initial model and use projection matching with weighted assignment
 
-### Focus classifcation
+
+### [Focus classifcation](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00033/full)
 
 ### 3D non-uniform Refinemnet
 1. `CryoSparc` - [**Non-uniform refinement: Adaptive regularization improves single particle cryo-EM reconstruction**](https://www.biorxiv.org/content/10.1101/2019.12.15.877092v1)
 2. [`SideSplitter`](https://github.com/StructuralBiology-ICLMedicine/SIDESPLITTER) - [**Mitigating Local Over-fitting During Single Particle Reconstruction with SIDESPLITTER**](https://www.biorxiv.org/content/10.1101/2019.12.12.874081v2)
 
 
-### 3D variability
+### [3D variability](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
 1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.biorxiv.org/content/10.1101/2020.04.08.032466v1) ( Use in `CryoSparc`)
 2. [`CryoDRGN`](https://github.com/zhonge/cryodrgn) - [**CryoDRGN: Reconstruction of heterogeneous structures from cryo-electron micrographs using neural networks**](https://www.biorxiv.org/content/10.1101/2020.03.27.003871v1)
 
@@ -148,11 +156,11 @@ This is a curated list for computational cryo-EM method mainly target for single
 
 ### Denoising 3D volume
 1. [`Warp`](http://www.warpem.com/warp/?page_id=389) - Based on Noise2Noise
-2. `Topaz`
+2. `Topaz` - Contains 3D denoise functionality in `v0.2.4`
 3. [`Relion`](https://github.com/3dem/externprior) - [**Exploiting prior knowledge about biological macromolecules in cryo-EM structure determination**](https://www.biorxiv.org/content/10.1101/2020.03.25.007914v1)
 
 ## Visualization
-1. [`Chimera`](https://www.cgl.ucsf.edu/chimera/)
+1. [`Chimera`](https://www.cgl.ucsf.edu/chimera/) - [**UCSF Chimera--a Visualization System for Exploratory Research and Analysis**](https://pubmed.ncbi.nlm.nih.gov/15264254/)
 
 # Conventions
 ## Contrast
