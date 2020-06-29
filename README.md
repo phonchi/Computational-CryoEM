@@ -5,7 +5,7 @@ This is a curated list for computational cryo-EM method mainly target for single
 - [**Computational CryoEM Methods**](#computational-cryoEM-methods)
 - [**Resources**](#resources)
 - [**Workflow**](#workflow)
-    - [Motion correction / Damage compensation](#motion-correction)
+    - [Motion correction and Damage compensation](#motion-correction)
     - [CTF estimation](#ctf-estimation)
     - [Particle picking](#particle-picking)
     - [2D classification](#2D-classification)
@@ -70,7 +70,7 @@ This is a curated list for computational cryo-EM method mainly target for single
     * [Continuous](https://github.com/evanseitz/cryoEM_synthetic_continua)
 
 
-## [Motion correction](https://www.sciencedirect.com/science/article/pii/S0076687916300271?via%3Dihub) / [Damage compensation](https://www.sciencedirect.com/science/article/pii/S0076687910810158?via%3Dihub)
+## [Motion correction](https://www.sciencedirect.com/science/article/pii/S0076687916300271?via%3Dihub) and [Damage compensation](https://www.sciencedirect.com/science/article/pii/S0076687910810158?via%3Dihub)
 * ### Whole Frame Alignment
 1. [`MotionCorr2`](https://emcore.ucsf.edu/ucsf-motioncor2) - [**MotionCor2: anisotropic correction of beam-induced motion for improved cryo-electron microscopy**](https://www.nature.com/articles/nmeth.4193?proof=t) (Use in `Relion`, `CryoSparc` and [`Warp`](http://www.warpem.com/warp/))
 2. [`Unblur`](https://grigoriefflab.umassmed.edu/unblur_summovie) - [**Measuring the optimal exposure for single particle cryo-EM using a 2.6 Å reconstruction of rotavirus VP6**](https://elifesciences.org/articles/06980) ( Use in [`CisTEM`](https://cistem.org/documentation#tab-1-6))
