@@ -5,7 +5,7 @@ This is a curated list for computational cryo-EM method mainly target for single
 - [**Computational CryoEM Methods**](#computational-cryoEM-methods)
 - [**Resources**](#resources)
 - [**Workflow**](#workflow)
-    - [Motion correction](#motion-correction)
+    - [Motion correction / Damage compensation](#motion-correction)
     - [CTF estimation](#ctf-estimation)
     - [Particle picking](#particle-picking)
     - [2D classification](#2D-classification)
