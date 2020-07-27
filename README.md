@@ -204,7 +204,7 @@ For the format define in RELION the actual pixel size is `rlnDetectorPixelSize *
 ## Calculate FSC manually
 Using [e2proc3d](http://sphire.mpg.de/wiki/doku.php?id=pipeline:utilities:e2proc3d)
 
-## Mask takes [CryoSparc](https://discuss.cryosparc.com/t/tight-corrected-and-loose-gsfsc-curves/201/5) for example
+## Mask generation in [CryoSparc](https://discuss.cryosparc.com/t/tight-corrected-and-loose-gsfsc-curves/201/5)
 
 ### No Mask:
 This is the raw FSC calculated between two independent half-maps reconstructed from the data. There is no masking applied, so both the structure and solvent are included in this FSC.
@@ -222,6 +222,16 @@ This is the same as the loose mask, except the dilation distances are 6 angstrom
 This is the FSC curve calculated using the tight mask with correction by noise substitution [1]. The two half maps have their phases randomized beyond a certain resolution, then the tight mask is applied to both, and an FSC is calculated. This FSC is used along with the original FSC before phase randomization to compute the corrected FSC as in [1]. This accounts for correlation effects induced by masking. The resolution at which phase randomization begins is the resolution at which the no-mask FSC drops below the FSC = 0.143 criterion.
 
 > Chen, S. et al. High-resolution noise substitution to measure overfitting and validate resolution in 3D structure determination by single particle electron cryomicroscopy. Ultramicroscopy 135, 24–35 (2013).
+
+## Sharpen and filtering in [CryoSparc](https://discuss.cryosparc.com/t/how-is-the-non-uniform-refinement-map-filtered-map-created/4388)
+The `map_filtered` output in non-uniform refinement is generated as follows, after refinement has converged:
+
+1. both raw, unfiltered halfmaps are averaged together
+2. the raw map is filtered using the Gold-Standard FSC curve
+3. the filtered map is sharpened using the Guinier-plot estimated b-factor
+4. the sharpened map is outputted as `_map_sharp_local.mrc` (confusing filename… sorry)
+5. the sharpened map is locally filtered using a local resolution estimate computed from the half-maps and the locally filtered map is outputted as `_map_filtered.mrc`
+
 
 # Tips
 ## Format Conversion
@@ -257,7 +267,7 @@ A focus mask is defined as a sphere specified by radius and x,y,z coordinates of
 1. Execute vop resample #3 onGrid #0 on the Command Line. This will generate a copy of the solid sphere as a new model #1, now resampled in the same coordinate system as the original 3D map.
 1. Execute measure center #1 on the Command Line. This will display the x,y,z coordinates of the mask in pixel coordinates below the command line. These coordinates have to be converted to Å by multiplying them with the pixel size of the 3D map before they can be used in cisTEM's Manual Refine panel.
 
-### [CryoSparc](https://cryosparc.com/blog/local-refinement-snRNP-case-study/)
+### [Local classification in CryoSparc](https://cryosparc.com/blog/local-refinement-snRNP-case-study/)
 
 ## Display images
 ### Micrographs
