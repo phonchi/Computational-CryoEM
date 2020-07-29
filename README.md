@@ -191,18 +191,20 @@ This is a curated list for computational cryo-EM method mainly target for single
 1. [`Chimera`](https://www.cgl.ucsf.edu/chimera/) - [**UCSF Chimera--a Visualization System for Exploratory Research and Analysis**](https://pubmed.ncbi.nlm.nih.gov/15264254/)
 
 # Conventions
-## Contrast
+## 3DEM Convention
+* [3DEM Conventions](https://github.com/azazellochg/3DEM-conventions)
+* [Resolution Measure](https://www.sciencedirect.com/science/article/pii/S0079610716300037)
+
+## Image contrast
 `White on Black` - Relion, Xmipp, EMAN2, CryoSparc (Cryo-EM data is typically recorded as Black on White but will invert during processing)
 
 `Black on White` - Frealign (CisTEM)
 
 ## Pixel size
-For the format define in RELION the actual pixel size is `rlnDetectorPixelSize * 10000 / rlnMagnification`
+For the format define in RELION the actual pixel size is calculated as `rlnDetectorPixelSize * 10000 / rlnMagnification`
 
-## 3DEM Convention
-* [3DEM Conventions](https://github.com/azazellochg/3DEM-conventions)
-* [Resolution Measure](https://www.sciencedirect.com/science/article/pii/S0079610716300037)
-## Calculate FSC manually
+
+## FSC calculation
 Using [e2proc3d](http://sphire.mpg.de/wiki/doku.php?id=pipeline:utilities:e2proc3d)
 
 ## Mask generation in [CryoSparc](https://discuss.cryosparc.com/t/tight-corrected-and-loose-gsfsc-curves/201/5)
@@ -277,3 +279,9 @@ A focus mask is defined as a sphere specified by radius and x,y,z coordinates of
 ## Display images
 ### Micrographs
 In Matlab use `grayImage = uint8(255 * mat2gray(originalImage)); imshow(grayImage);`
+
+## Chimera
+### [Dispaly local resolution](https://discuss.cryosparc.com/t/view-coloured-3d-map-in-chimera-using-output-from-local-resolution/1003)
+### [Flip handedness model and map](https://github.com/asarnow/pyem/wiki/Z-Flip-for-Models-and-Maps)
+### Slice view
+`volume #0 planes z,220 step 1 level -1 style surface`
