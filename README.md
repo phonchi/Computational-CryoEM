@@ -14,6 +14,7 @@ This is a curated list for computational cryo-EM method mainly target for single
     - [Postprocessing](#postprocessing)
 - [**Conventions**](#conventions)
 - [**Tips**](#tips)
+    - [Format Conversion](#format-conversion)
 
 ---
 
@@ -247,9 +248,13 @@ Convert binary data
 4. Using [SPHIRE](http://sphire.mpg.de/)
 Convert binary data
 
-## Operate on `Star file`
+## Parse `Star file`
 1. Using [`StarTool`](https://github.com/cdienem/StarTool)
 2. Using Custom function like [here](Parse_Star.ipynb)
+
+## Parse `CryoSparc file`
+1. Using [`PyEM`](https://github.com/asarnow/pyem)
+2. Using Custom function like [here](Parse_CryoSparc.ipynb)
 
 ## Performing Focus Classification
 ### Using Chimera
