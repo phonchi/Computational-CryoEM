@@ -256,7 +256,7 @@ Convert binary data
 
 ## Parse `CryoSparc file`
 1. Using [`PyEM`](https://github.com/asarnow/pyem)
-2. Using Custom function like [here](Parse_CryoSparc.ipynb)
+2. Using Custom function like [here](Parse_CryoSparc.ipynb). See full tutorial [here](https://guide.cryosparc.com/processing-data/manipulating-.cs-files-created-by-cryosparc) 
 
 ## Performing Focus Classification
 ### Using Chimera
