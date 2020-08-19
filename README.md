@@ -123,7 +123,7 @@ This is a curated list for computational cryo-EM method mainly target for single
 ## 2D classification
 
 * ### Multirefence alignment based classification
-1. `ISAC` - [**Iterative Stable Alignment and Clustering of 2D Transmission Electron Microscope Images**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3426367/)
+1. `ISAC` - [**Iterative Stable Alignment and Clustering of 2D Transmission Electron Microscope Images**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3426367/). [[GPU version]](https://sphire.mpg.de/wiki/doku.php?id=gpu_isac)
 2. `CL2D` - [**A clustering approach to multireference alignment of single-particle projections in electron microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2893300/)
 
 * ### [Maximum-likelihood based classification](https://www.sciencedirect.com/science/article/pii/S0076687910820117?via%3Dihub)
@@ -189,6 +189,7 @@ This is a curated list for computational cryo-EM method mainly target for single
 
 ## Visualization
 1. [`Chimera`](https://www.cgl.ucsf.edu/chimera/) - [**UCSF Chimera--a Visualization System for Exploratory Research and Analysis**](https://pubmed.ncbi.nlm.nih.gov/15264254/)
+2. [`ChimeraX`](http://www.rbvi.ucsf.edu/chimerax/) - [**UCSF ChimeraX: Meeting modern challenges in visualization and analysis**](https://onlinelibrary.wiley.com/doi/full/10.1002/pro.3235)
 
 # Conventions
 ## 3DEM Convention
@@ -282,6 +283,6 @@ In Matlab use `grayImage = uint8(255 * mat2gray(originalImage)); imshow(grayImag
 
 ## Chimera
 ### [Dispaly local resolution](https://discuss.cryosparc.com/t/view-coloured-3d-map-in-chimera-using-output-from-local-resolution/1003)
-### [Flip handedness model and map](https://github.com/asarnow/pyem/wiki/Z-Flip-for-Models-and-Maps)
+### [Flip handedness of model and map](https://github.com/asarnow/pyem/wiki/Z-Flip-for-Models-and-Maps)
 ### Slice view
 `volume #0 planes z,220 step 1 level -1 style surface`
