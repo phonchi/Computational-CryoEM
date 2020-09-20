@@ -99,9 +99,11 @@ This is a curated list for computational cryo-EM method mainly target for single
 3. [`Warp`](http://www.warpem.com/warp/?page_id=185) - Contains Patch-based CTF estimation.
 
 * ### Denoising micrograph
-1. `Topaz` - [**Topaz-Denoise: general deep denoising models for cryoEM**](https://www.biorxiv.org/content/10.1101/838920v1.full)
-2.  [`JANNI`](https://sphire.mpg.de/wiki/doku.php?id=janni) - Just Another Noise 2 Noise Implementation 
-3.  `Warp` - Contains methods base on noise2noise and deconvolution filter 
+1. [`Restore`](https://github.com/eugenepalovcak/restore) - [**Enhancing SNR and generating contrast for cryo-EM images with convolutional neural networks**](https://www.biorxiv.org/content/10.1101/2020.08.16.253070v1)
+2. `Topaz` - [**Topaz-Denoise: general deep denoising models for cryoEM**](https://www.biorxiv.org/content/10.1101/838920v1.full)
+3.  [`JANNI`](https://sphire.mpg.de/wiki/doku.php?id=janni) - Just Another Noise 2 Noise Implementation 
+4.  `Warp` - Contains methods base on noise2noise and deconvolution filter 
+
 
 ## Particle picking
 * ### Semi-superviesd picking
@@ -159,6 +161,7 @@ This is a curated list for computational cryo-EM method mainly target for single
 * ### [3D variability](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
 1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.biorxiv.org/content/10.1101/2020.04.08.032466v1) ( Use in `CryoSparc`)
 2. [`CryoDRGN`](https://github.com/zhonge/cryodrgn) - [**CryoDRGN: Reconstruction of heterogeneous structures from cryo-electron micrographs using neural networks**](https://www.biorxiv.org/content/10.1101/2020.03.27.003871v1)
+3. [`ManifoldEM`](https://github.com/GMashayekhi/ManifoldEM_Matlab) - [**Retrieving functional pathways of biomolecules from single-particle snapshots**](https://www.nature.com/articles/s41467-020-18403-x)
 
 * ### [Focus classifcation](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00033/full)
 1. [`localrec`](https://github.com/OPIC-Oxford/localrec) - [**Localized reconstruction of subunits from electron cryomicroscopy images of macromolecular complexes**](https://www.nature.com/articles/ncomms9843) (Use in `Scipion`)
