@@ -22,6 +22,7 @@ This is a curated list for computational cryo-EM method mainly target for single
 # Resources
 ## Introduction
 * [A quick introduction video for cryo-EM](https://www.youtube.com/watch?v=Qq8DO-4BnIY)
+* [Cryo-EM workflow by Nvidia](https://resources.nvidia.com/en-us-drug-discovery/) - Descibe the blueprint of cryo-EM using GPU processing.
 * [A Primer to Single-Particle Cryo-Electron Microscopy](https://www.sciencedirect.com/science/article/pii/S0092867415003700?via%3Dihub) - A great review to start with.
 * [Principles of cryo-EM single-particle image processing](https://pubmed.ncbi.nlm.nih.gov/26705325/) - Highlight the principles when dealing with cryo-EM dataset.
 * [Single-particle cryo-electron microscopy: Mathematical theory, computational challenges, and opportunities](https://web.math.princeton.edu/~amits/publications/IEEE_Signal_Processing_Magazine.pdf) - Review that covers recent updates.
