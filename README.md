@@ -2,7 +2,10 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 This is a curated list for computational cryo-EM method mainly target for single particle analysis!
+
 You will find the paper and associated software for the popular algorithms used in the field.
+
+The format for the item is [software link] - [Paper link] (Available in which package) and the headings contain link to a review paper.
 
 
 
