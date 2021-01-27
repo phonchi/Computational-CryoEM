@@ -10,7 +10,6 @@ Your contributions are always welcome!
 
 - Add a section if needed.
 
-  - Add the section description.
   - Add the section title to Table of Contents.
 
 - Check your spelling and grammar.
