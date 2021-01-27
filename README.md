@@ -22,6 +22,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 - [**Conventions**](#conventions)
 - [**Tips**](#tips)
     - [Format Conversion](#format-conversion)
+- [**Contributing**](#contributing)
 
 ---
 
@@ -304,3 +305,6 @@ In Matlab use `grayImage = uint8(255 * mat2gray(originalImage)); imshow(grayImag
 ### [Flip handedness of model and map](https://github.com/asarnow/pyem/wiki/Z-Flip-for-Models-and-Maps)
 ### Slice view
 `volume #0 planes z,220 step 1 level -1 style surface`
+
+# Contributing
+Your contributions are highly appreciated! Please take a look at the [contribution guidelines](https://github.com/phonchi/Computational-CryoEM/blob/master/CONTRIBUTING.md) first.
