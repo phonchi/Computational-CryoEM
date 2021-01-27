@@ -1,11 +1,11 @@
 # Computational CryoEM Methods 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-This is a curated list for computational cryo-EM method mainly target for single particle analysis!
+This repository is a curated list for computational cryo-EM methods mainly target for single particle analysis!
 
-You will find the paper and associated software for the popular algorithms used in the field.
+You will find the paper and associated software for the popular algorithms used in the cryo-EM field.
 
-The format for the item is [software link] - [Paper link] (Available in which package) and the headings contain link to a review paper.
+The format for the item is [software link] - [Paper link] (Available in which package) and the headings may contain a ink to a review paper.
 
 
 
@@ -29,21 +29,22 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 # Resources
 ## Introduction
 * [A quick introduction video for cryo-EM](https://www.youtube.com/watch?v=Qq8DO-4BnIY)
-* [Cryo-EM workflow by Nvidia](https://resources.nvidia.com/en-us-drug-discovery/) - Descibe the blueprint of cryo-EM using GPU processing.
+* [Cryo-EM workflow by Nvidia](https://resources.nvidia.com/en-us-drug-discovery/) - Describe the blueprint of cryo-EM using GPU processing.
 * [A Primer to Single-Particle Cryo-Electron Microscopy](https://www.sciencedirect.com/science/article/pii/S0092867415003700?via%3Dihub) - A great review to start with.
-* [Principles of cryo-EM single-particle image processing](https://pubmed.ncbi.nlm.nih.gov/26705325/) - Highlight the principles when dealing with cryo-EM dataset.
+* [Principles of cryo-EM single-particle image processing](https://pubmed.ncbi.nlm.nih.gov/26705325/) - Highlight the principles when dealing with a cryo-EM dataset.
 * [Single-particle cryo-electron microscopy: Mathematical theory, computational challenges, and opportunities](https://web.math.princeton.edu/~amits/publications/IEEE_Signal_Processing_Magazine.pdf) - Review that covers recent updates.
-* [Computational Methods for Single-Particle Electron Cryomicroscopy](https://www.annualreviews.org/doi/abs/10.1146/annurev-biodatasci-021020-093826) - A comprehensive review for mathematical background behind single-particle cryo-EM methods.
+* [Computational Methods for Single-Particle Electron Cryomicroscopy](https://www.annualreviews.org/doi/abs/10.1146/annurev-biodatasci-021020-093826) - A comprehensive review for the mathematical background behind single-particle cryo-EM methods.
 
 ## Courses
 * [Getting Started in Cryo-EM](http://cryo-em-course.caltech.edu/outline)
 * [Electron Microscopy Training by MRC LAB](https://www2.mrc-lmb.cam.ac.uk/research/scientific-training/electron-microscopy/)
 * [nysbc training course](http://semc.nysbc.org/the-winter-spring-2018-em-course/)
 
+
 ## Resources
 * [3DEM Methods](http://3demmethods.i2pc.es/index.php/Main_Page) - A great wiki that collects papers or books for computational methods.
-* [A collective resource](https://github.com/barrykui/awesome-cryoem) - A great repository that cover single particle analysis, model buidling and tomography.
-* [3DEM Conventions](https://github.com/azazellochg/3DEM-conventions)
+* [A collective resource](https://github.com/barrykui/awesome-cryoem) - A great repository that covers single particle analysis, model building and tomography.
+* [Math behind CryoEM](https://github.com/geoffwoollard/learn_cryoem_math) - A great repository that collects the materials which elaborate the math behind single-particle analysis.
 * [Chimera Tutorial](http://embo2015.cryst.bbk.ac.uk/embo2015/course/practicals/prac-7/Practical-7-Maya-Topf-9-Sept-15.pdf)
 
 ## Events
@@ -51,12 +52,12 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * [NRAMM Events](http://nramm.nysbc.org/workshops-and-courses/?lcp_page0=1#lcp_instance_0)
 
 ## [Software](http://3dem.ucsd.edu/software.shtm)
-* [Scipion](http://scipion.i2pc.es/) - An integrated platform that allows user to use a variety of medthos in the same framework.
+* [Scipion](http://scipion.i2pc.es/) - An integrated platform that allows users to use a variety of methods in the same framework.
 * [Relion](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page) - A comprehensive package that utilizes Bayesian approach for 2D classification and 3D refinement.
 * [CryoSparc 2](https://cryosparc.com/) - A general package that employs stochastic gradient descent, branch and bound as well as GPU acceleration for rapid reconstructions.
 * [Sphire](http://sphire.mpg.de/) - A general package that contains neural network methods for particle picking, denoising and classification.
-* [CisTEM](https://cistem.org/) - An easy to use framework that implements a complete pipeline for single particle analysis.
-* [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2) - A comprehensive package that contains python interface and handy scripts for common tasks.
+* [CisTEM](https://cistem.org/) - An easy-to-use framework that implements a complete pipeline for single-particle analysis.
+* [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2) - A comprehensive package that contains a python interface and handy scripts for common tasks.
 * [SPIDER](https://spider.wadsworth.org/spider_doc/spider/docs/spider.html) - A well-known package that implements image processing methods for electron microscopy.
 
 
@@ -114,7 +115,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 
 
 ## Particle picking
-* ### Semi-superviesd picking
+* ### Semi-supervised picking
 1. [`Topaz`](https://github.com/tbepler/topaz) - [**Positive-unlabeled convolutional neural networks for particle picking in cryo-electron micrographs**](https://www.nature.com/articles/s41592-019-0575-8). [[Video]](https://www.youtube.com/watch?v=FnCnsT3GIC4&list=PLFEB3YHuxu11Jp_pOCIEtXxSqozFHve0O&index=10)
 2. [`Cryolo`](https://sphire.mpg.de/wiki/doku.php?id=pipeline:window:cryolo) - [**SPHIRE-crYOLO is a fast and accurate fully automated particle picker for cryo-EM**](https://www.nature.com/articles/s42003-019-0437-z). [[Video](https://www.youtube.com/watch?v=JTgldM4wAAk&list=UUbo1TnKiXGtkE_R5b526JmQ&index=6&t=1s&app=desktop)]
 4. `Xmipp` - [**A pattern matching approach to the automatic selection of particles from low-contrast electron micrographs**](https://academic.oup.com/bioinformatics/article/29/19/2460/189951)
@@ -125,8 +126,8 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 2. `LoG` - [**The Laplacian of Gaussian and Arbitrary Z-Crossings Approach Applied to Automated Single Particle Reconstruction**](https://pubmed.ncbi.nlm.nih.gov/17490891/) (Use in `Relion` auto-picking) 
 3. [`APPLE`](https://github.com/PrincetonUniversity/APPLEpicker) - [**APPLE picker: Automatic particle picking, a low-effort cryo-EM framework**](https://www.sciencedirect.com/science/article/pii/S1047847718302326)
 
-* ### Denoising patricle and dimenison reduction
-1. `2SDR` - [**Two-stage dimension reduction for noisy high-dimensional images and application to Cryogenic Electron Microscopy**](https://arxiv.org/abs/1911.09816)
+* ### Denoising particle and dimenison reduction
+1. [`2SDR`](http://sabid.stat.sinica.edu.tw/start) - [**Two-stage dimension reduction for noisy high-dimensional images and application to Cryogenic Electron Microscopy**](https://www.intlpress.com/site/pub/pages/journals/items/amsa/content/vols/0005/0002/a004/index.php)
 2. [`CWF`](https://github.com/PrincetonUniversity/cwf_denoise) - [**Denoising and covariance estimation of single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S104784771630082X)
 3. [`GAN`](https://github.com/cianfrocco-lab/GAN-for-Cryo-EM-image-denoising) - [**Generative adversarial networks as a tool to recover structural information from cryo-electron microscopy data**](https://www.biorxiv.org/content/10.1101/256792v1.article-info)
 
@@ -144,9 +145,10 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 1. [`ROME`](http://ipccsb.dfci.harvard.edu/rome/) - [**Massively parallel unsupervised single-particle cryo-EM data clustering via statistical manifold learning**](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182130)
 
 * ### Automatic selection of 2D classes
-1. [`Cinderella`](https://sphire.mpg.de/wiki/doku.php?id=auto_2d_class_selection) - Cinderella: Deep learning based binary classification tool
+1. [`Cryoassess`](https://github.com/cianfrocco-lab/Automatic-cryoEM-preprocessing) -[**High-Throughput Cryo-EM Enabled by User-Free Preprocessing Routines**](https://www.sciencedirect.com/science/article/pii/S0969212620300800?via%3Dihub)
+2. [`Cinderella`](https://sphire.mpg.de/wiki/doku.php?id=auto_2d_class_selection) - Cinderella: Deep learning based binary classification tool
 * ### New clustering methods
-1. γ-SUP - [γ-SUP: A clustering algorithm for cryo-electron microscopy images of asymmetric particles](https://projecteuclid.org/euclid.aoas/1396966286)
+1. [`γ-SUP`](http://sabid.stat.sinica.edu.tw/start) - [γ-SUP: A clustering algorithm for cryo-electron microscopy images of asymmetric particles](https://projecteuclid.org/euclid.aoas/1396966286)
 ## Ab-initial model 
 * ### Class-averages based method
 1. [`Simple`](https://simplecryoem.com/)-[**Single-particle cryo-EM-Improved Ab Initio 3D Reconstruction With SIMPLE/PRIME**](https://pubmed.ncbi.nlm.nih.gov/28795512/)
@@ -170,7 +172,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.biorxiv.org/content/10.1101/2020.04.08.032466v1) ( Use in `CryoSparc`)
 2. [`CryoDRGN`](https://github.com/zhonge/cryodrgn) - [**CryoDRGN: Reconstruction of heterogeneous structures from cryo-electron micrographs using neural networks**](https://www.biorxiv.org/content/10.1101/2020.03.27.003871v1)
 3. [`ManifoldEM`](https://github.com/GMashayekhi/ManifoldEM_Matlab) - [**Retrieving functional pathways of biomolecules from single-particle snapshots**](https://www.nature.com/articles/s41467-020-18403-x
-4. `AlphaCryo4D` - [**Deep manifold learning reveals hidden dynamics of proteasome autoregulation**](https://arxiv.org/abs/2012.12854)
+4. [`AlphaCryo4D`](https://github.com/AlphaCryo4D/AlphaCryo4D) - [**Deep manifold learning reveals hidden dynamics of proteasome autoregulation**](https://arxiv.org/abs/2012.12854)
 
 * ### [Focus classifcation](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00033/full)
 1. [`localrec`](https://github.com/OPIC-Oxford/localrec) - [**Localized reconstruction of subunits from electron cryomicroscopy images of macromolecular complexes**](https://www.nature.com/articles/ncomms9843) (Use in `Scipion`)
@@ -218,7 +220,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 `Black on White` - Frealign (CisTEM)
 
 ## Pixel size
-For the format define in RELION the actual pixel size is calculated as `rlnDetectorPixelSize * 10000 / rlnMagnification`
+For the format defined in RELION, the actual pixel size is calculated as `rlnDetectorPixelSize * 10000 / rlnMagnification`
 
 
 ## FSC calculation
@@ -239,7 +241,7 @@ This is the FSC calculated after applying a soft solvent mask to both half maps.
 This is the same as the loose mask, except the dilation distances are 6 angstroms for the value 1.0 distance and 12 angstroms for the value 0.0 distance.
 
 ### Corrected:
-This is the FSC curve calculated using the tight mask with correction by noise substitution [1]. The two half maps have their phases randomized beyond a certain resolution, then the tight mask is applied to both, and an FSC is calculated. This FSC is used along with the original FSC before phase randomization to compute the corrected FSC as in [1]. This accounts for correlation effects induced by masking. The resolution at which phase randomization begins is the resolution at which the no-mask FSC drops below the FSC = 0.143 criterion.
+This is the FSC curve calculated using the tight mask with correction by noise substitution [1]. The two half maps have their phases randomized beyond a certain resolution, then the tight mask is applied to both, and an FSC is calculated. This FSC is used along with the original FSC before phase randomization to compute the corrected FSC as in [1]. This accounts for correlation effects induced by masking. The resolution at which phase randomization begins is the resolution at which the no-mask FSC drops below the FSC = 0.143 criteria.
 
 > Chen, S. et al. High-resolution noise substitution to measure overfitting and validate resolution in 3D structure determination by single particle electron cryomicroscopy. Ultramicroscopy 135, 24–35 (2013).
 
