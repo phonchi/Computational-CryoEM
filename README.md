@@ -172,7 +172,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * ### [3D variability](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
 1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.biorxiv.org/content/10.1101/2020.04.08.032466v1) ( Use in `CryoSparc`)
 2. [`CryoDRGN`](https://github.com/zhonge/cryodrgn) - [**CryoDRGN: Reconstruction of heterogeneous structures from cryo-electron micrographs using neural networks**](https://www.biorxiv.org/content/10.1101/2020.03.27.003871v1)
-3. [`ManifoldEM`](https://github.com/GMashayekhi/ManifoldEM_Matlab) - [**Retrieving functional pathways of biomolecules from single-particle snapshots**](https://www.nature.com/articles/s41467-020-18403-x
+3. [`ManifoldEM`](https://github.com/GMashayekhi/ManifoldEM_Matlab) - [**Retrieving functional pathways of biomolecules from single-particle snapshots**](https://www.nature.com/articles/s41467-020-18403-x)
 4. [`AlphaCryo4D`](https://github.com/AlphaCryo4D/AlphaCryo4D) - [**Deep manifold learning reveals hidden dynamics of proteasome autoregulation**](https://arxiv.org/abs/2012.12854)
 
 * ### [Focus classifcation](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00033/full)
