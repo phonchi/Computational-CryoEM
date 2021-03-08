@@ -60,6 +60,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * [CisTEM](https://cistem.org/) - An easy-to-use framework that implements a complete pipeline for single-particle analysis.
 * [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2) - A comprehensive package that contains a python interface and handy scripts for common tasks.
 * [SPIDER](https://spider.wadsworth.org/spider_doc/spider/docs/spider.html) - A well-known package that implements image processing methods for electron microscopy.
+* [ASPIRE](http://spr.math.princeton.edu/) - A software that used algorithms based on rigorous mathematical theory. 
 
 
 
@@ -125,11 +126,11 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * ### Automatic picking
 1. [`DoG`](https://emg.nysbc.org/redmine/projects/software/wiki/DoGpicker) - [**DoG Picker and TiltPicker: software tools to facilitate particle selection in single particle electron microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2768396/)
 2. `LoG` - [**The Laplacian of Gaussian and Arbitrary Z-Crossings Approach Applied to Automated Single Particle Reconstruction**](https://pubmed.ncbi.nlm.nih.gov/17490891/) (Use in `Relion` auto-picking) 
-3. [`APPLE`](https://github.com/PrincetonUniversity/APPLEpicker) - [**APPLE picker: Automatic particle picking, a low-effort cryo-EM framework**](https://www.sciencedirect.com/science/article/pii/S1047847718302326)
+3. [`APPLE`](https://github.com/PrincetonUniversity/APPLEpicker) - [**APPLE picker: Automatic particle picking, a low-effort cryo-EM framework**](https://www.sciencedirect.com/science/article/pii/S1047847718302326) (Use in `ASPIRE` auto-picking) 
 
 * ### Denoising particle and dimenison reduction
 1. [`2SDR`](http://sabid.stat.sinica.edu.tw/start) - [**Two-stage dimension reduction for noisy high-dimensional images and application to Cryogenic Electron Microscopy**](https://www.intlpress.com/site/pub/pages/journals/items/amsa/content/vols/0005/0002/a004/index.php)
-2. [`CWF`](https://github.com/PrincetonUniversity/cwf_denoise) - [**Denoising and covariance estimation of single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S104784771630082X)
+2. [`CWF`](https://github.com/PrincetonUniversity/cwf_denoise) - [**Denoising and covariance estimation of single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S104784771630082X) (Use in `ASPIRE`) 
 3. [`GAN`](https://github.com/cianfrocco-lab/GAN-for-Cryo-EM-image-denoising) - [**Generative adversarial networks as a tool to recover structural information from cryo-electron microscopy data**](https://www.biorxiv.org/content/10.1101/256792v1.article-info)
 
 ## 2D classification
@@ -142,8 +143,10 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 1. `Relion` - Bayesian (Empirical Bayes) approach
 2. `CryoSparc` - Bayesian with Branch and bound method
 3. `CisTEM` - Maximum likelihood method
+4. [`SubspaceEM`](https://www.mathworks.com/matlabcentral/fileexchange/50091-subspaceem-a-fast-maximum-a-posteriori-algorithm-for-cryo-em-single-particle-reconstruction) - [**SubspaceEM: A fast maximum-a-posteriori algorithm for cryo-EM single particle reconstruction**](https://www.sciencedirect.com/science/article/pii/S1047847715000714)
+
 * ### Mixed approach classification
-1. [`ROME`](http://ipccsb.dfci.harvard.edu/rome/) - [**Massively parallel unsupervised single-particle cryo-EM data clustering via statistical manifold learning**](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182130)
+6. [`ROME`](http://ipccsb.dfci.harvard.edu/rome/) - [**Massively parallel unsupervised single-particle cryo-EM data clustering via statistical manifold learning**](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182130)
 
 * ### Automatic selection of 2D classes
 1. [`Cryoassess`](https://github.com/cianfrocco-lab/Automatic-cryoEM-preprocessing) -[**High-Throughput Cryo-EM Enabled by User-Free Preprocessing Routines**](https://www.sciencedirect.com/science/article/pii/S0969212620300800?via%3Dihub)
@@ -170,11 +173,12 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 2. [`SideSplitter`](https://github.com/StructuralBiology-ICLMedicine/SIDESPLITTER) - [**Mitigating Local Over-fitting During Single Particle Reconstruction with SIDESPLITTER**](https://www.sciencedirect.com/science/article/pii/S1047847720301180). [[Video]](https://www.youtube.com/watch?v=jTNH6Z0n254&list=PLFEB3YHuxu11Jp_pOCIEtXxSqozFHve0O&index=12)
 
 
-* ### [3D variability](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
+* ### [3D variability and energy landscpae generation](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
 1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S1047847721000071) ( Use in `CryoSparc`)
 2. [`CryoDRGN`](https://github.com/zhonge/cryodrgn) - [**CryoDRGN: Reconstruction of heterogeneous structures from cryo-electron micrographs using neural networks**](https://www.nature.com/articles/s41592-020-01049-4?utm_source=other&utm_medium=other&utm_content=null&utm_campaign=JRCN_1_DD01_CN_NatureRJ_article_paid_XMOL)
 3. [`ManifoldEM`](https://github.com/GMashayekhi/ManifoldEM_Matlab) - [**Retrieving functional pathways of biomolecules from single-particle snapshots**](https://www.nature.com/articles/s41467-020-18403-x)
 4. [`AlphaCryo4D`](https://github.com/AlphaCryo4D/AlphaCryo4D) - [**Deep manifold learning reveals hidden dynamics of proteasome autoregulation**](https://arxiv.org/abs/2012.12854)
+5. [`BioEM`](https://github.com/bio-phys/BioEM) - [**A Bayesian approach for extracting free energy profiles from cryo-electron microscopy experiments using a path collective variable**](https://arxiv.org/abs/2102.02077)
 
 * ### [Focus classifcation](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00033/full)
 1. [`localrec`](https://github.com/OPIC-Oxford/localrec) - [**Localized reconstruction of subunits from electron cryomicroscopy images of macromolecular complexes**](https://www.nature.com/articles/ncomms9843) (Use in `Scipion`)
@@ -190,7 +194,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 5. [`M`](http://www.warpem.com/warp/?page_id=827) - [**Multi-particle cryo-EM refinement with M visualizes ribosome-antibiotic complex at 3.5 Å inside cells**](https://www.nature.com/articles/s41592-020-01054-7). [[Video]](https://www.youtube.com/watch?v=kiS-ELvQ1gc&list=PLFEB3YHuxu11Jp_pOCIEtXxSqozFHve0O&index=18)
 
 * ### [Local resolution](https://www.sciencedirect.com/science/article/pii/S0959440X20301044) and directional resolution
-1. [`blocres`](https://lsbr.niams.nih.gov/bsoft/programs/blocres.html) - [**One number does not fit all: Mapping local variations in resolution in cryo-EM reconstructions**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3837392/)
+1. [`Blocres`](https://lsbr.niams.nih.gov/bsoft/programs/blocres.html) - [**One number does not fit all: Mapping local variations in resolution in cryo-EM reconstructions**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3837392/)
 1. [`ResMap`](https://sourceforge.net/projects/resmap-latest/) - [**Quantifying the Local Resolution of Cryo-EM Density Maps**](https://www.nature.com/articles/nmeth.2727)
 2. `MonoRes` - [**MonoRes: Automatic and Accurate Estimation of Local Resolution for Electron Microscopy Maps**](https://pubmed.ncbi.nlm.nih.gov/29395788/) (Use in `Scipion`)
 3. [`3DFSC`](https://github.com/nysbc/Anisotropy) - [**Addressing preferred specimen orientation in single-particle cryo-EM through tilting**](https://www.nature.com/articles/nmeth.4347)
