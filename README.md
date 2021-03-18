@@ -35,7 +35,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * [Principles of cryo-EM single-particle image processing](https://pubmed.ncbi.nlm.nih.gov/26705325/) - Highlight the principles when dealing with a cryo-EM dataset.
 * [Single-particle cryo-electron microscopy: Mathematical theory, computational challenges, and opportunities](https://web.math.princeton.edu/~amits/publications/IEEE_Signal_Processing_Magazine.pdf) - Review that covers recent updates.
 * [Computational Methods for Single-Particle Electron Cryomicroscopy](https://www.annualreviews.org/doi/abs/10.1146/annurev-biodatasci-021020-093826) - A comprehensive review for the mathematical background behind single-particle cryo-EM methods.
-* [Cryo-EM: Breakthroughs in Chemistry, Structural Biology, and Statistical Underpinnings](https://statistics.stanford.edu/research/cryo-em-breakthroughs-chemistry-structural-biology-and-statistical-underpinnings) - Review that covers statsitical problem behind cryo-EM.
+* [Cryo-EM: Breakthroughs in Chemistry, Structural Biology, and Statistical Underpinnings](https://statistics.stanford.edu/research/cryo-em-breakthroughs-chemistry-structural-biology-and-statistical-underpinnings) - Review that covers statsitical problems behind cryo-EM.
 
 ## Courses
 * [Getting Started in Cryo-EM](http://cryo-em-course.caltech.edu/outline)
@@ -54,8 +54,8 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * [NRAMM Events](http://nramm.nysbc.org/workshops-and-courses/?lcp_page0=1#lcp_instance_0)
 
 ## [Software](http://3dem.ucsd.edu/software.shtm)
-* [Scipion](http://scipion.i2pc.es/) - An integrated platform that allows users to use a variety of methods in the same framework. [Documentation](https://scipion-em.github.io/docs/)
-* [Relion](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page) - A comprehensive package that utilizes Bayesian approach for 2D classification and 3D refinement. [Documentation](https://relion.readthedocs.io/en/latest/)
+* [Scipion](http://scipion.i2pc.es/) - An integrated platform that allows users to use a variety of methods in the same framework. [[Documentation](https://scipion-em.github.io/docs/)]
+* [Relion](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page) - A comprehensive package that utilizes Bayesian approach for 2D classification and 3D refinement. [[Documentation](https://relion.readthedocs.io/en/latest/)]
 * [CryoSparc 2](https://cryosparc.com/) - A general package that employs stochastic gradient descent, branch and bound as well as GPU acceleration for rapid reconstructions.
 * [Sphire](http://sphire.mpg.de/) - A general package that contains neural network methods for particle picking, denoising and classification.
 * [CisTEM](https://cistem.org/) - An easy-to-use framework that implements a complete pipeline for single-particle analysis.
