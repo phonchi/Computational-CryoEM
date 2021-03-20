@@ -154,6 +154,10 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 2. [`Cinderella`](https://sphire.mpg.de/wiki/doku.php?id=auto_2d_class_selection) - Cinderella: Deep learning based binary classification tool
 * ### New clustering methods
 1. [`γ-SUP`](http://sabid.stat.sinica.edu.tw/start) - [γ-SUP: A clustering algorithm for cryo-electron microscopy images of asymmetric particles](https://projecteuclid.org/euclid.aoas/1396966286)
+
+## [3D Reconstruction](https://www.sciencedirect.com/science/article/pii/S0076687910820014)
+1. [**A Survey of the Use of Iterative Reconstruction Algorithms in Electron Microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5623807/)
+
 ## Ab-initial model 
 * ### Class-averages based method
 1. [`Simple`](https://simplecryoem.com/)-[**Single-particle cryo-EM-Improved Ab Initio 3D Reconstruction With SIMPLE/PRIME**](https://pubmed.ncbi.nlm.nih.gov/28795512/)
