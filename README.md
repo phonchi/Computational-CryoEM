@@ -38,7 +38,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * [Cryo-EM: Breakthroughs in Chemistry, Structural Biology, and Statistical Underpinnings](https://statistics.stanford.edu/research/cryo-em-breakthroughs-chemistry-structural-biology-and-statistical-underpinnings) - Review that covers statsitical problems behind cryo-EM.
 
 ## Courses
-* [Getting Started in Cryo-EM](http://cryo-em-course.caltech.edu/outline)
+* [Getting Started in Cryo-EM](http://cryo-em-course.caltech.edu/overview)
 * [Electron Microscopy Training by MRC LAB](https://www2.mrc-lmb.cam.ac.uk/research/scientific-training/electron-microscopy/)
 * [nysbc training course](http://semc.nysbc.org/the-winter-spring-2018-em-course/)
 
