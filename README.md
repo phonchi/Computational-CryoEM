@@ -69,7 +69,20 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 # Workflow
 ## Import Data
 1. From [EMPIAR](https://www.ebi.ac.uk/pdbe/emdb/empiar/) or [EMDB](https://www.ebi.ac.uk/pdbe/emdb/index.html/).
-2. From tutorial data set.
+
+ DataSet (Molecule) | File Size | Movie (#frame) | Micrograph Size (Pixel Size) | Picked Particles (Size) | Final Resolution(A)(Symmetry)| Notes
+ :--------: | :--------: | :--------: | :--------: | :--------: | :--------: | :--------:
+ [70S ribosome](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Classification_example)  | 0.7GB     | N/A     |  N/A (2.82)    |  10,000 (130x130)    |  ~9 (C1) | Test set for classification (2 classes)
+ [50S ribosome](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10076/)   | 50.3GB     | N/A     |  N/A (1.31)    |  131,899 (320X320)    | N/A| Test set for classification (4~7 classes)
+ [80S ribosome](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Benchmarks_%26_computer_hardware)   | 1.2TB     | 1081(16)     |  4096x4096 (1.34)    | 105,247 (360x360)     | 3.2 (C1) | Test set for computational performance
+ [Beta-Gal](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10204/)   | 321.4GB   | 1338(49)     |  3710x3838 (0.885)    | N/A     | 2.6 (D2)| Test set for high-resolution reconstruction
+ [Apoferritin](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10200/)   | 191.5GB     | 1255(40)     |  3710x3838 (0.814)    |   N/A   | 1.65 (O)| Test set for high-resolution reconstruction
+ [T20S](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10025/)   | 2.0TB     | 196(38)     |  7420x7676 (0.6575)    |  49,955(448X448)    | 2.8 (D7)| Test set for high-resolution reconstruction
+ [TRPV1](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10059/)   | 93.8GB     | 1200(1)     |  3710x3838 (1.256)    |  218,805 (192X192)    | 2.95 (C4)| Test set for Membrane protein (Nonuniform reconstruction)
+ [Spliceosome](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10180/)   | 126.5GB     | N/A     |  N/A (1.699)    |  327,490 (320X320)    | N/A | Test set for continuous conformation
+ 
+
+3. From tutorial data set.
 
 
  DataSet (Molecule) | File Size | Movie (#frame) | Micrograph Size (Pixel Size) | Picked Particles (Size) | Final Resolution(A)(Symmetry)
@@ -82,6 +95,14 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 3. Generate simulation data
     * [Discrete](Simulation_data.ipynb) 
     * [Continuous](https://github.com/evanseitz/cryoEM_synthetic_continua)
+    * From [CryoDrgn](https://github.com/zhonge/cryodrgn) - Use [`write_starfile.py`](https://github.com/zhonge/cryodrgn/blob/master/utils/write_starfile.py) to convert to star format
+    
+ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles (Size) 
+ :--------: | :--------: | :--------: | :--------: | :--------: 
+ [Ribosome](https://zenodo.org/record/4355284#.YHPD3a8zbmF)  | 3.1GB     | N/A (3)   | 50,000 (128x128) 
+ [Uniform](https://zenodo.org/record/4355284#.YHPD3a8zbmF)   | 3.0GB     | N/A (6)   | 50,000 (128x128) 
+ [Cooperative](https://zenodo.org/record/4355284#.YHPD3a8zbmF)  | 3.0GB     | N/A (6)   | 50,000 (128x128)
+ [Noncontiguous](https://zenodo.org/record/4355284#.YHPD3a8zbmF)   | 3.0GB     | N/A (6)   | 50,000 (128x128) 
 
 
 ## [Motion correction](https://www.sciencedirect.com/science/article/pii/S0076687916300271?via%3Dihub)
