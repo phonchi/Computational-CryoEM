@@ -96,9 +96,10 @@ The format for the item is [software link] - [Paper link] (Available in which pa
     * [Discrete](Simulation_data.ipynb) 
     * [Continuous](https://github.com/evanseitz/cryoEM_synthetic_continua)
     * From [CryoDrgn](https://github.com/zhonge/cryodrgn) - Use [`write_starfile.py`](https://github.com/zhonge/cryodrgn/blob/master/utils/write_starfile.py) to convert to star format
-    
- DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles (Size) 
- :--------: | :--------: | :--------: | :--------: | :--------: 
+
+
+DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles (Size) 
+ :--------: | :--------: | :--------: | :--------: 
  [Ribosome](https://zenodo.org/record/4355284#.YHPD3a8zbmF)  | 3.1GB     | N/A (3)   | 50,000 (128x128) 
  [Uniform](https://zenodo.org/record/4355284#.YHPD3a8zbmF)   | 3.0GB     | N/A (6)   | 50,000 (128x128) 
  [Cooperative](https://zenodo.org/record/4355284#.YHPD3a8zbmF)  | 3.0GB     | N/A (6)   | 50,000 (128x128)
