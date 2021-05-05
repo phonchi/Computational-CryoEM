@@ -18,7 +18,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
     - [2D classification](#2D-classification)
     - [Ab-initial Model](#ab-initial-model)
     - [3D refinement](#3d-refinement)
-    - [3D variabilty analysis](#3d-variabilty-analysis)
+    - [3D variability analysis](#3D-variability-analysis)
     - [Postprocessing](#postprocessing)
 - [**Conventions**](#conventions)
 - [**Tips**](#tips)
