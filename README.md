@@ -18,6 +18,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
     - [2D classification](#2D-classification)
     - [Ab-initial Model](#ab-initial-model)
     - [3D refinement](#3d-refinement)
+    - [3D variabilty analysis](#3d-variabilty-analysis)
     - [Postprocessing](#postprocessing)
 - [**Conventions**](#conventions)
 - [**Tips**](#tips)
@@ -202,7 +203,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 2. [`SideSplitter`](https://github.com/StructuralBiology-ICLMedicine/SIDESPLITTER) - [**Mitigating Local Over-fitting During Single Particle Reconstruction with SIDESPLITTER**](https://www.sciencedirect.com/science/article/pii/S1047847720301180). [[Video]](https://www.youtube.com/watch?v=jTNH6Z0n254&list=PLFEB3YHuxu11Jp_pOCIEtXxSqozFHve0O&index=12)
 
 
-* ### [3D variability and energy landscpae generation](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
+## [3D variability analysis](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
 1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S1047847721000071) ( Use in `CryoSparc`)
 2. [`CryoDRGN`](https://github.com/zhonge/cryodrgn) - [**CryoDRGN: Reconstruction of heterogeneous structures from cryo-electron micrographs using neural networks**](https://www.nature.com/articles/s41592-020-01049-4?utm_source=other&utm_medium=other&utm_content=null&utm_campaign=JRCN_1_DD01_CN_NatureRJ_article_paid_XMOL)
 3. [`ManifoldEM`](https://github.com/GMashayekhi/ManifoldEM_Matlab) - [**Retrieving functional pathways of biomolecules from single-particle snapshots**](https://www.nature.com/articles/s41467-020-18403-x)
