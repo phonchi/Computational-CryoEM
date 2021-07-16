@@ -29,6 +29,10 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 
 
 # Resources
+## Preface
+* [Protein Folding Problem](https://www.youtube.com/watch?v=KpedmJdrTpY&t=2s&ab_channel=DeepMind) - Great video that describes the importance of understanding protein structure.
+* [What is cryoEM] (https://www.youtube.com/watch?v=Qq8DO-4BnIY&ab_channel=UCSanFrancisco%28UCSF%29) - Great video that describes how cryoEM can help us understanding the protein structure.
+
 ## Introduction
 * [A quick introduction video for cryo-EM](https://www.youtube.com/watch?v=Qq8DO-4BnIY)
 * [Cryo-EM workflow by Nvidia](https://resources.nvidia.com/en-us-drug-discovery/) - Describe the blueprint of cryo-EM using GPU processing.
@@ -262,6 +266,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 ## 3DEM Convention
 * [3DEM Conventions](https://github.com/azazellochg/3DEM-conventions)
 * [Resolution Measure](https://www.sciencedirect.com/science/article/pii/S0079610716300037)
+* [Symmetry](https://scipion-em.github.io/docs/docs/developer/symmetries)
 
 ## Image contrast
 `White on Black` - Relion, Xmipp, EMAN2, CryoSparc (Cryo-EM data is typically recorded as Black on White but will invert during processing)
@@ -269,7 +274,8 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 `Black on White` - Frealign (CisTEM)
 
 ## Pixel size
-For the format defined in RELION, the actual pixel size is calculated as `rlnDetectorPixelSize * 10000 / rlnMagnification`
+For the format defined in RELION, the actual pixel size is calculated as `rlnDetectorPixelSize * 10000 / rlnMagnification`.
+In Relion 3.1 it has been replaced with rlnImagePixelSize.
 
 
 ## FSC calculation
