@@ -31,7 +31,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 # Resources
 ## Preface
 * [Protein Folding Problem](https://www.youtube.com/watch?v=KpedmJdrTpY&t=2s&ab_channel=DeepMind) - Great video that describes the importance of understanding protein structure.
-* [What is cryoEM] (https://www.youtube.com/watch?v=Qq8DO-4BnIY&ab_channel=UCSanFrancisco%28UCSF%29) - Great video that describes how cryoEM can help us understanding the protein structure.
+* [What is cryoEM](https://www.youtube.com/watch?v=Qq8DO-4BnIY&ab_channel=UCSanFrancisco%28UCSF%29) - Great video that describes how cryoEM can help us understanding the protein structure.
 
 ## Introduction
 * [A quick introduction video for cryo-EM](https://www.youtube.com/watch?v=Qq8DO-4BnIY)
