@@ -187,7 +187,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 1. [`γ-SUP`](http://sabid.stat.sinica.edu.tw/start) - [**γ-SUP: A clustering algorithm for cryo-electron microscopy images of asymmetric particles**](https://projecteuclid.org/euclid.aoas/1396966286)
 2. [`Wasserstein-k-means`](https://github.com/4tywon/wasserstein-k-means) - [**Wasserstein K-Means for Clustering Tomographic Projections**](https://arxiv.org/abs/2010.09989)
 
-## [3D Reconstruction](https://www.sciencedirect.com/science/article/pii/S0076687910820014)
+## [3D Tomographic Reconstruction](https://www.sciencedirect.com/science/article/pii/S0076687910820014)
 1. [**A Survey of the Use of Iterative Reconstruction Algorithms in Electron Microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5623807/)
 2. [`ASTRA`](https://github.com/astra-toolbox/astra-toolbox)
 
@@ -202,6 +202,12 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 1. `Relion` - [**RELION: Implementation of a Bayesian approach to cryo-EM structure determination**](https://www.sciencedirect.com/science/article/pii/S1047847712002481). [[Video]](https://www.youtube.com/watch?time_continue=2&v=TfLFCeehfjM&feature=emb_title)
 2. [`CryoSparc`](https://www.nature.com/articles/nmeth.4169) - Use Expectation-Maximization with branch and bound method for higher resolution
 3. [`OPUS-SSRI`](https://github.com/alncat/cryoem) - [**Sparseness and Smoothness Regularized Imaging for improving the resolution of Cryo-EM single-particle reconstruction**](https://www.pnas.org/content/118/2/e2013756118)
+
+* ### New 3D reconstruction paradigm
+1. [`Pose Estimation with VAE-GAN`](https://github.com/compSPI/article-CVPR-workshop-2020)-[**Estimation of Orientation and Camera Parameters from Cryo-Electron Microscopy Images with Variational Autoencoders and Generative Adversarial**](https://openaccess.thecvf.com/content_CVPRW_2020/html/w57/Miolane_Estimation_of_Orientation_and_Camera_Parameters_From_Cryo-Electron_Microscopy_Images_CVPRW_2020_paper.html). [[Related work]](https://arxiv.org/abs/2107.02958)
+2. [`CryoGAN`](https://github.com/harshit-gupta-cor/CryoGAN) - [**CryoGAN: A New Reconstruction Paradigm for Single-Particle Cryo-EM Via Deep Adversarial Learning**](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9483649)
+3. [`Orientation recovery with Siamese neural network`](https://github.com/JelenaBanjac/protein-reconstruction) - [**Learning to recover orientations from projections in single-particle cryo-EM**](https://arxiv.org/abs/2104.06237)
+
 
 * ### 3D classification
 1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf), `CryoSparc`  - Perturb the initial model and use projection matching with weighted assignment
@@ -249,6 +255,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 2. [`DeepEnhancer`](https://github.com/rsanchezgarc/deepEMhancer)-[**DeepEMhancer: a deep learning solution for cryo-EM volume post-processing**](https://www.biorxiv.org/content/10.1101/2020.06.12.148296v3)
 3. [`LocScale`](https://git.embl.de/jakobi/LocScale)[**Model-based local density sharpening of cryo-EM maps**](https://elifesciences.org/articles/27131) (Use in [`ccpem`](https://www.ccpem.ac.uk/download.php))
 4. [`LocalDeblur`](https://github.com/I2PC/scipion-em-xmipp/wiki/XmippProtLocSharp) - [**Automatic local resolution-based sharpening of cryo-EM maps**](https://academic.oup.com/bioinformatics/article/36/3/765/5554698)
+5. [`EM-GAN`](https://kiharalab.org/emsuites/emgan.php) - **Improved Protein Structure Modeling Using Enhanced Cryo-EM Maps With 3D Deep Generative Networks**
 
 * ### Denoising 3D volume
 1. [`Warp`](http://www.warpem.com/warp/?page_id=389) - Based on Noise2Noise
