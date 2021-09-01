@@ -65,7 +65,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * [Relion](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page) - A comprehensive package that utilizes Bayesian approach for 2D classification and 3D refinement. [[Documentation](https://relion.readthedocs.io/en/latest/)]
 * [CryoSparc 2](https://cryosparc.com/) - A general package that employs stochastic gradient descent, branch and bound as well as GPU acceleration for rapid reconstructions.
 * [Sphire](http://sphire.mpg.de/) - A general package that contains neural network methods for particle picking, denoising and classification.
-* [CisTEM](https://cistem.org/) - An easy-to-use framework that implements a complete pipeline for single-particle analysis.
+* [CisTEM](https://github.com/timothygrant80/cisTEM) - An easy-to-use framework that implements a complete pipeline for single-particle analysis.
 * [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2) - A comprehensive package that contains a python interface and handy scripts for common tasks.
 * [SPIDER](https://spider.wadsworth.org/spider_doc/spider/docs/spider.html) - A well-known package that implements image processing methods for electron microscopy.
 * [ASPIRE](http://spr.math.princeton.edu/) - A software that used algorithms based on rigorous mathematical theory. 
@@ -112,7 +112,14 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
  [Noncontiguous](https://zenodo.org/record/4355284#.YHPD3a8zbmF)   | 3.0GB     | N/A (6)   | 50,000 (128x128) 
 
 
-## [Motion correction](https://www.sciencedirect.com/science/article/pii/S0076687916300271?via%3Dihub)
+## Image Formation model
+1.[`TEM Simulator`](http://tem-simulator.sourceforge.net/) - [**Simulation of transmission electron microscope images of biological specimens**](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2818.2011.03497.x)
+
+2. [`InSilicoTEM`](https://github.com/M4I-nanoscopy/InSilicoTEM/tree/v2.0.0) - [**Image formation modeling in cryo-electron microscopy**](https://www.sciencedirect.com/science/article/abs/pii/S1047847713001226)
+
+3. [`CisTEM_Simulate`](https://github.com/timothygrant80/cisTEM/blob/master/src/programs/simulate/simulate.cpp) - [**Cryo-TEM simulations of amorphous radiation-sensitive samples using multislice wave propagation**](https://github.com/timothygrant80/cisTEM/blob/master/src/programs/simulate/simulate.cpp)
+
+## [Motion correction](https://www.sciencedirect.com/science/article/pii/S0076687916300271?via%3Dihub) 
 
 * ### Whole frame alignment
 1. [`Unblur`](https://grigoriefflab.umassmed.edu/unblur_summovie) - [**Measuring the optimal exposure for single particle cryo-EM using a 2.6 Å reconstruction of rotavirus VP6**](https://elifesciences.org/articles/06980) ( Use in [`CisTEM`](https://cistem.org/documentation#tab-1-6))
