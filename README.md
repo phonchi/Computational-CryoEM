@@ -23,6 +23,9 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 - [**Conventions**](#conventions)
 - [**Tips**](#tips)
     - [Format Conversion](#format-conversion)
+    - [Performing Focus Classification](#performing-focus-classification)
+    - [Display images](#display-images)
+    - [Using Chimera](#using-chimera)
 - [**Contributing**](#contributing)
 
 ---
@@ -368,7 +371,7 @@ A focus mask is defined as a sphere specified by radius and x,y,z coordinates of
 ### Micrographs
 In Matlab use `grayImage = uint8(255 * mat2gray(originalImage)); imshow(grayImage);`
 
-## Chimera
+## Using Chimera
 ### [Dispaly local resolution](https://discuss.cryosparc.com/t/view-coloured-3d-map-in-chimera-using-output-from-local-resolution/1003)
 ### [Flip handedness of model and map](https://github.com/asarnow/pyem/wiki/Z-Flip-for-Models-and-Maps)
 ### Slice view
