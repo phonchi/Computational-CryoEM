@@ -373,6 +373,9 @@ In Matlab use `grayImage = uint8(255 * mat2gray(originalImage)); imshow(grayImag
 ### [Flip handedness of model and map](https://github.com/asarnow/pyem/wiki/Z-Flip-for-Models-and-Maps)
 ### Slice view
 `volume #0 planes z,220 step 1 level -1 style surface`
+### [Visualizing dynamic movies](https://guide.cryosparc.com/processing-data/tutorials-and-case-studies/tutorial-3d-variability-analysis-part-one#visualization)
+#### [Using Script](https://github.com/zhonge/cryodrgn/discussions/79) 
+
 
 # Contributing
 Your contributions are highly appreciated! Please take a look at the [contribution guidelines](https://github.com/phonchi/Computational-CryoEM/blob/master/CONTRIBUTING.md) first.
