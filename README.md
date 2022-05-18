@@ -350,7 +350,7 @@ Convert binary data
 2. Using Custom function like [here](Parse_CryoSparc.ipynb). See full tutorial [here](https://guide.cryosparc.com/processing-data/manipulating-.cs-files-created-by-cryosparc) 
 
 ## Performing Focus Classification
-### Using Chimera
+### With Chimera
 ### [CisTEM](https://cistem.org/frequently-asked-questions#tab-1-4)
 A focus mask is defined as a sphere specified by radius and x,y,z coordinates of the sphere center, all given in Å. In order to find x,y,z, in CisTEM
 1. Open the 3D map in Chimera. The map should be assigned model #0.
