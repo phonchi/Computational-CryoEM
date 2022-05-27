@@ -372,6 +372,11 @@ A focus mask is defined as a sphere specified by radius and x,y,z coordinates of
 In Matlab use `grayImage = uint8(255 * mat2gray(originalImage)); imshow(grayImage);`
 
 ## Using Chimera
+### Create synthetic map from PDB
+1. Open chimera and import that protein: File -> Fetch By ID… -> Select PDB and type the PDB ID of the protein -> Fetch. Now you will see the 3D structure of the protein.
+2. Create synthetic map from PDB model: Modify the density of the protein: Tools -> General Controls -> Command Line -> Type: molmap #0 5 (molmap = is command that generates a density map from the specified atom; # is atom specification, i.e. number assigned to the model by default; 5 = resolution).
+3. Store reference map as MRC: Save to a file: Tools -> Volume Data -> Volume Viewer -> File -> Save map as… -> Give it the protein_PDB_ID.mrc.
+
 ### [Dispaly local resolution](https://discuss.cryosparc.com/t/view-coloured-3d-map-in-chimera-using-output-from-local-resolution/1003)
 ### [Flip handedness of model and map](https://github.com/asarnow/pyem/wiki/Z-Flip-for-Models-and-Maps)
 ### Slice view
