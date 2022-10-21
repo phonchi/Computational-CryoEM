@@ -162,6 +162,9 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 1. [`Topaz`](https://github.com/tbepler/topaz) - [**Positive-unlabeled convolutional neural networks for particle picking in cryo-electron micrographs**](https://www.nature.com/articles/s41592-019-0575-8). [[Video]](https://www.youtube.com/watch?v=FnCnsT3GIC4&list=PLFEB3YHuxu11Jp_pOCIEtXxSqozFHve0O&index=10)
 2. [`Cryolo`](https://sphire.mpg.de/wiki/doku.php?id=pipeline:window:cryolo) - [**SPHIRE-crYOLO is a fast and accurate fully automated particle picker for cryo-EM**](https://www.nature.com/articles/s42003-019-0437-z). [[Video](https://www.youtube.com/watch?v=JTgldM4wAAk&list=UUbo1TnKiXGtkE_R5b526JmQ&index=6&t=1s&app=desktop)]
 4. `Xmipp` - [**A pattern matching approach to the automatic selection of particles from low-contrast electron micrographs**](https://academic.oup.com/bioinformatics/article/29/19/2460/189951)
+5. [`EPicker`](https://github.com/thuem/EPicker) - [**EPicker is an exemplar-based continual learning approach for knowledge accumulation in cryoEM particle picking**](https://www.nature.com/articles/s41467-022-29994-y)
+
+
 * ### Template-based picking
 1. [`Relion`](https://www.sciencedirect.com/science/article/pii/S1047847714002615), `CryoSparc` - Use 2D class averages or 3D projection for more accurate particle picking
 * ### Automatic picking
@@ -217,6 +220,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 1. [`Pose Estimation with VAE-GAN`](https://github.com/compSPI/article-CVPR-workshop-2020)-[**Estimation of Orientation and Camera Parameters from Cryo-Electron Microscopy Images with Variational Autoencoders and Generative Adversarial**](https://openaccess.thecvf.com/content_CVPRW_2020/html/w57/Miolane_Estimation_of_Orientation_and_Camera_Parameters_From_Cryo-Electron_Microscopy_Images_CVPRW_2020_paper.html). [[Related work]](https://arxiv.org/abs/2107.02958)
 2. [`CryoGAN`](https://github.com/harshit-gupta-cor/CryoGAN) - [**CryoGAN: A New Reconstruction Paradigm for Single-Particle Cryo-EM Via Deep Adversarial Learning**](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9483649)
 3. [`Orientation recovery with Siamese neural network`](https://github.com/JelenaBanjac/protein-reconstruction) - [**Learning to recover orientations from projections in single-particle cryo-EM**](https://arxiv.org/abs/2104.06237)
+4. [`CryoAI`](https://github.com/compSPI/cryoAI) - [**Amortized Inference of Poses for Ab Initio Reconstruction of 3D Molecular Volumes from Real Cryo-EM Images**](https://arxiv.org/abs/2203.08138)
 
 
 * ### 3D classification
@@ -238,7 +242,8 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 7. [`3DFlex`](https://cryosparc.com/3dflex) - [**3D Flexible Refinement: Structure and Motion of Flexible Proteins from Cryo-EM**](https://www.biorxiv.org/content/10.1101/2021.04.22.440893v1) ( Use in `CryoSparc`)
 8. [`e2gmm`](https://blake.bcm.edu/emanwiki/EMAN2/e2gmm) - [**Deep learning based mixed-dimensional GMM for characterizing variability in CryoEM**](https://arxiv.org/abs/2101.10356)  ( Use in `EMAN2`)
 9. `VAE` - [**Inferring a Continuous Distribution of Atom Coordinates from Cryo-EM Images using VAEs**](https://arxiv.org/abs/2106.14108)
-
+10. `cryoFIRE` - [**Amortized Inference for Heterogeneous Reconstruction in Cryo-EM**](https://arxiv.org/abs/2210.07387)
+11. `Atomic VAE` - [**Heterogeneous reconstruction of deformable atomic models in Cryo-EM**](https://arxiv.org/abs/2209.15121)
 
 * ### [Focus classifcation](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00033/full)
 1. [`localrec`](https://github.com/OPIC-Oxford/localrec) - [**Localized reconstruction of subunits from electron cryomicroscopy images of macromolecular complexes**](https://www.nature.com/articles/ncomms9843) (Use in `Scipion`)
@@ -248,7 +253,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 ## [Postprocessing](https://www.sciencedirect.com/science/article/pii/S0079610720300699)
 * ### Per-particle based motion and ctf refinement
 1. `CTF refinement` - [`Relion3`](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250425/)/[`CisTEM`](https://cistem.org/documentation#tab-1-12)/[`CryoSparc`](https://cryosparc.com/docs/tutorials/ctf-refinement), 3D Reference required
-2. `Ewald sphere correction` - [`Relion3`](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250425/) (Use ` relion_reconstruct --reverse_curvature`)
+2. `Ewald sphere correction` - [**New tools for automated high-resolution cryo-EM structure determination in RELION-3**](https://elifesciences.org/articles/42166#bib45) (Use ` relion_reconstruct --reverse_curvature`)
 3.  `High-order aberrations` - [**Estimation of high-order aberrations and anisotropic magnification from cryo-EM data sets in RELION-3.1**](https://journals.iucr.org/m/issues/2020/02/00/fq5009/index.html)
 4. `Bayesian Polishing` - [**A Bayesian approach to beam-induced motion correction in cryo-EM single-particle analysis**](https://journals.iucr.org/m/issues/2019/01/00/fq5003/)  (Use in Relion, 3D Reference required)
 5. [`M`](http://www.warpem.com/warp/?page_id=827) - [**Multi-particle cryo-EM refinement with M visualizes ribosome-antibiotic complex at 3.5 Å inside cells**](https://www.nature.com/articles/s41592-020-01054-7). [[Video]](https://www.youtube.com/watch?v=kiS-ELvQ1gc&list=PLFEB3YHuxu11Jp_pOCIEtXxSqozFHve0O&index=18)
@@ -272,8 +277,8 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 2. `Topaz` - Contains 3D denoise functionality
 3. [`Relion`](https://github.com/3dem/externprior) - [**Exploiting prior knowledge about biological macromolecules in cryo-EM structure determination**](https://journals.iucr.org/m/issues/2021/01/00/fq5015/)
 
-* ### Ewald Sphere Correction
-1. `Relion` - [**New tools for automated high-resolution cryo-EM structure determination in RELION-3**](https://elifesciences.org/articles/42166#bib45)
+* ### Map to model
+1. [`ModelAngelo`](https://github.com/3dem/model-angelo) - [**ModelAngelo: Automated Model Building in Cryo-EM Maps**](https://arxiv.org/abs/2210.00006)
 
 ## Visualization
 1. [`Chimera`](https://www.cgl.ucsf.edu/chimera/) - [**UCSF Chimera--a Visualization System for Exploratory Research and Analysis**](https://pubmed.ncbi.nlm.nih.gov/15264254/)
