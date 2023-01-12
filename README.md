@@ -354,12 +354,13 @@ Convert binary data
 Convert binary data
 
 ## Parse `Star file`
-1. Using [`StarTool`](https://github.com/cdienem/StarTool)
+1. Using [`StarTool`](https://github.com/cdienem/StarTool) or [`starparser`](https://github.com/sami-chaaban/starparser)
 2. Using Custom function like [here](Parse_Star.ipynb)
 
 ## Parse `CryoSparc file`
 1. Using [`PyEM`](https://github.com/asarnow/pyem)
 2. Using Custom function like [here](Parse_Cryosparc.ipynb). See full tutorial [here](https://guide.cryosparc.com/processing-data/manipulating-.cs-files-created-by-cryosparc) 
+3. [`cryosparc-tools`](https://github.com/cryoem-uoft/cryosparc-tools) 
 
 ## Performing Focus Classification
 ### With Chimera
