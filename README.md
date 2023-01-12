@@ -233,18 +233,20 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 
 ## [3D variability analysis](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
-1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S1047847721000071) ( Use in `CryoSparc`)
-2. [`CryoDRGN`](https://github.com/zhonge/cryodrgn) - [**CryoDRGN: Reconstruction of heterogeneous structures from cryo-electron micrographs using neural networks**](https://www.nature.com/articles/s41592-020-01049-4?utm_source=other&utm_medium=other&utm_content=null&utm_campaign=JRCN_1_DD01_CN_NatureRJ_article_paid_XMOL) (For processing with large dataset see [here](https://www.notion.so/cryodrgn-preprocess-d84a9d9df8634a6a8bfd32d6b5e737ef))
-3. [`ManifoldEM`](https://github.com/evanseitz/ManifoldEM_Python) - [**Retrieving functional pathways of biomolecules from single-particle snapshots**](https://www.nature.com/articles/s41467-020-18403-x)
-4. [`DMSA`](https://github.com/evanseitz/cryoEM_DMSA) - [**Recovery of conformational continuum from single-particle cryo-EM data: Optimization of ManifoldEM informed by ground-truth studies**](https://www.biorxiv.org/content/10.1101/2021.06.18.449029v1)
-5. [`AlphaCryo4D`](https://github.com/AlphaCryo4D/AlphaCryo4D) - [**Deep manifold learning reveals hidden dynamics of proteasome autoregulation**](https://arxiv.org/abs/2012.12854)
-6. [`BioEM`](https://github.com/bio-phys/BioEM) - [**A Bayesian approach for extracting free energy profiles from cryo-electron microscopy experiments using a path collective variable**](https://arxiv.org/abs/2102.02077)
-7. [`3DFlex`](https://cryosparc.com/3dflex) - [**3D Flexible Refinement: Structure and Motion of Flexible Proteins from Cryo-EM**](https://www.biorxiv.org/content/10.1101/2021.04.22.440893v1) ( Use in `CryoSparc`)
-8. [`e2gmm`](https://blake.bcm.edu/emanwiki/EMAN2/e2gmm) - [**Deep learning based mixed-dimensional GMM for characterizing variability in CryoEM**](https://arxiv.org/abs/2101.10356)  ( Use in `EMAN2`)
-9. `VAE` - [**Inferring a Continuous Distribution of Atom Coordinates from Cryo-EM Images using VAEs**](https://arxiv.org/abs/2106.14108)
-10. `cryoFIRE` - [**Amortized Inference for Heterogeneous Reconstruction in Cryo-EM**](https://arxiv.org/abs/2210.07387)
-11. `Atomic VAE` - [**Heterogeneous reconstruction of deformable atomic models in Cryo-EM**](https://arxiv.org/abs/2209.15121)
-12. `Diffusion Prior` - [**Latent Space Diffusion Models of Cryo-EM Structures**](https://arxiv.org/abs/2211.14169)
+1. [`Flexutils`](https://github.com/scipion-em/scipion-em-flexutils) - [**Estimating conformational landscapes from
+Cryo-EM particles by 3D Zernike polynomials**](https://www.nature.com/articles/s41467-023-35791-y) ( Use in `Xmipp`)
+2. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S1047847721000071) ( Use in `CryoSparc`)
+3. [`CryoDRGN`](https://github.com/zhonge/cryodrgn) - [**CryoDRGN: Reconstruction of heterogeneous structures from cryo-electron micrographs using neural networks**](https://www.nature.com/articles/s41592-020-01049-4?utm_source=other&utm_medium=other&utm_content=null&utm_campaign=JRCN_1_DD01_CN_NatureRJ_article_paid_XMOL) (For processing with large dataset see [here](https://zhonge.github.io/cryodrgn/index.html))
+4. [`ManifoldEM`](https://github.com/evanseitz/ManifoldEM_Python) - [**Retrieving functional pathways of biomolecules from single-particle snapshots**](https://www.nature.com/articles/s41467-020-18403-x)
+5. [`DMSA`](https://github.com/evanseitz/cryoEM_DMSA) - [**Recovery of conformational continuum from single-particle cryo-EM data: Optimization of ManifoldEM informed by ground-truth studies**](https://www.biorxiv.org/content/10.1101/2021.06.18.449029v1)
+6. [`AlphaCryo4D`](https://github.com/AlphaCryo4D/AlphaCryo4D) - [**Visualizing Conformational Space of Functional Biomolecular Complexes by Deep Manifold Learning**](https://www.mdpi.com/1422-0067/23/16/8872)
+7. [`BioEM`](https://github.com/bio-phys/BioEM) - [**A Bayesian approach to extracting free-energy profiles from cryo-electron microscopy experiments**](https://www.nature.com/articles/s41598-021-92621-1)
+8. [`3DFlex`](https://cryosparc.com/3dflex) - [**3D Flexible Refinement: Structure and Motion of Flexible Proteins from Cryo-EM**](https://www.biorxiv.org/content/10.1101/2021.04.22.440893v1) ( Use in `CryoSparc`)
+9. [`e2gmm`](https://blake.bcm.edu/emanwiki/EMAN2/e2gmm) - [**Deep learning-based mixed-dimensional Gaussian mixture model for characterizing variability in cryo-EM**](https://www.nature.com/articles/s41592-021-01220-5)  ( Use in `EMAN2`, more information see [here](https://arxiv.org/ftp/arxiv/papers/2211/2211.10518.pdf))
+10. `VAE` - [**Inferring a Continuous Distribution of Atom Coordinates from Cryo-EM Images using VAEs**](https://arxiv.org/abs/2106.14108)
+11. `cryoFIRE` - [**Amortized Inference for Heterogeneous Reconstruction in Cryo-EM**](https://arxiv.org/abs/2210.07387)
+12. `Atomic VAE` - [**Heterogeneous reconstruction of deformable atomic models in Cryo-EM**](https://arxiv.org/abs/2209.15121)
+13. `Diffusion Prior` - [**Latent Space Diffusion Models of Cryo-EM Structures**](https://arxiv.org/abs/2211.14169)
 
 * ### Latent space analysis
 1. [`Polaris`](https://github.com/evanseitz/POLARIS) - [**POLARIS: Path of Least Action Analysis on Energy Landscapes**](https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b01108)
@@ -270,11 +272,12 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 4. `MonoDir` - [**Measuring local-directional resolution and local anisotropy in cryo-EM maps**](https://www.nature.com/articles/s41467-019-13742-w) (Use in `Scipion`)
 
 * ### [Sharpening](https://www.sciencedirect.com/science/article/pii/S0022283603010222) and local filtering to enhance [interpretability](https://www.sciencedirect.com/science/article/pii/S0079610720300699)
-1. [`Confidence Maps`](https://git.embl.de/mbeckers/FDRthresholding/-/tree/master) - [**Thresholding of cryo-EM density maps by false discovery rate control**](https://journals.iucr.org/m/issues/2019/01/00/pw5002/index.html) (Use in [`ccpem`](https://www.ccpem.ac.uk/download.php))
-2. [`DeepEnhancer`](https://github.com/rsanchezgarc/deepEMhancer)-[**DeepEMhancer: a deep learning solution for cryo-EM volume post-processing**](https://www.biorxiv.org/content/10.1101/2020.06.12.148296v3)
-3. [`LocScale`](https://git.embl.de/jakobi/LocScale)[**Model-based local density sharpening of cryo-EM maps**](https://elifesciences.org/articles/27131) (Use in [`ccpem`](https://www.ccpem.ac.uk/download.php))
-4. [`LocalDeblur`](https://github.com/I2PC/scipion-em-xmipp/wiki/XmippProtLocSharp) - [**Automatic local resolution-based sharpening of cryo-EM maps**](https://academic.oup.com/bioinformatics/article/36/3/765/5554698)
-5. [`EM-GAN`](https://kiharalab.org/emsuites/emgan.php) - **Improved Protein Structure Modeling Using Enhanced Cryo-EM Maps With 3D Deep Generative Networks**
+1. [`EMReady`](http://huanglab.phys.hust.edu.cn/EMReady/)
+2. [`Confidence Maps`](https://git.embl.de/mbeckers/FDRthresholding/-/tree/master) - [**Thresholding of cryo-EM density maps by false discovery rate control**](https://journals.iucr.org/m/issues/2019/01/00/pw5002/index.html) (Use in [`ccpem`](https://www.ccpem.ac.uk/download.php))
+3. [`DeepEnhancer`](https://github.com/rsanchezgarc/deepEMhancer)-[**DeepEMhancer: a deep learning solution for cryo-EM volume post-processing**](https://www.biorxiv.org/content/10.1101/2020.06.12.148296v3)
+4. [`LocScale`](https://git.embl.de/jakobi/LocScale)[**Model-based local density sharpening of cryo-EM maps**](https://elifesciences.org/articles/27131) (Use in [`ccpem`](https://www.ccpem.ac.uk/download.php))
+5. [`LocalDeblur`](https://github.com/I2PC/scipion-em-xmipp/wiki/XmippProtLocSharp) - [**Automatic local resolution-based sharpening of cryo-EM maps**](https://academic.oup.com/bioinformatics/article/36/3/765/5554698)
+6. [`EM-GAN`](https://kiharalab.org/emsuites/emgan.php) - **Improved Protein Structure Modeling Using Enhanced Cryo-EM Maps With 3D Deep Generative Networks**
 
 * ### Denoising 3D volume
 1. [`Warp`](http://www.warpem.com/warp/?page_id=389) - Based on Noise2Noise
@@ -301,7 +304,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 ## Pixel size
 For the format defined in RELION, the actual pixel size is calculated as `rlnDetectorPixelSize * 10000 / rlnMagnification`.
-In Relion 3.1 it has been replaced with rlnImagePixelSize.
+In Relion 3.1 it has been replaced with `rlnImagePixelSize`.
 
 
 ## FSC calculation
@@ -356,7 +359,7 @@ Convert binary data
 
 ## Parse `CryoSparc file`
 1. Using [`PyEM`](https://github.com/asarnow/pyem)
-2. Using Custom function like [here](Parse_CryoSparc.ipynb). See full tutorial [here](https://guide.cryosparc.com/processing-data/manipulating-.cs-files-created-by-cryosparc) 
+2. Using Custom function like [here](Parse_Cryosparc.ipynb). See full tutorial [here](https://guide.cryosparc.com/processing-data/manipulating-.cs-files-created-by-cryosparc) 
 
 ## Performing Focus Classification
 ### With Chimera
