@@ -1,11 +1,11 @@
 # Computational CryoEM Methods 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-This repository is a curated list for computational cryo-EM methods mainly target for single particle analysis!
+This repository is a curated list of computational cryo-EM methods mainly targeted for single particle analysis!
 
 You will find the paper and associated software for the popular algorithms used in the cryo-EM field.
 
-The format for the item is [software link] - [Paper link] (Available in which package) and the headings may contain a ink to a review paper.
+The format for the item is [software link] - [Paper link] (Available in which package) and the headings may contain a link to a review paper.
 
 
 
@@ -33,8 +33,8 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 
 # Resources
 ## Preface
-* [Protein Folding Problem](https://www.youtube.com/watch?v=KpedmJdrTpY&t=2s&ab_channel=DeepMind) - Great video that describes the importance of understanding protein structure.
-* [What is cryoEM](https://www.youtube.com/watch?v=Qq8DO-4BnIY&ab_channel=UCSanFrancisco%28UCSF%29) - Great video that describes how cryoEM can help us understanding the protein structure.
+* [Protein Folding Problem](https://www.youtube.com/watch?v=KpedmJdrTpY&t=2s&ab_channel=DeepMind) - Great video describes the importance of understanding protein structure.
+* [What is cryoEM](https://www.youtube.com/watch?v=Qq8DO-4BnIY&ab_channel=UCSanFrancisco%28UCSF%29) - Great video that describes how cryoEM can help us understand the protein structure.
 
 ## Introduction
 * [A quick introduction video for cryo-EM](https://www.youtube.com/watch?v=Qq8DO-4BnIY)
@@ -43,7 +43,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * [Principles of cryo-EM single-particle image processing](https://pubmed.ncbi.nlm.nih.gov/26705325/) - Highlight the principles when dealing with a cryo-EM dataset.
 * [Single-particle cryo-electron microscopy: Mathematical theory, computational challenges, and opportunities](https://web.math.princeton.edu/~amits/publications/IEEE_Signal_Processing_Magazine.pdf) - Review that covers recent updates.
 * [Computational Methods for Single-Particle Electron Cryomicroscopy](https://www.annualreviews.org/doi/abs/10.1146/annurev-biodatasci-021020-093826) - A comprehensive review for the mathematical background behind single-particle cryo-EM methods.
-* [Cryo-EM: Breakthroughs in Chemistry, Structural Biology, and Statistical Underpinnings](https://statistics.stanford.edu/research/cryo-em-breakthroughs-chemistry-structural-biology-and-statistical-underpinnings) - Review that covers statsitical problems behind cryo-EM.
+* [Cryo-EM: Breakthroughs in Chemistry, Structural Biology, and Statistical Underpinnings](https://statistics.stanford.edu/research/cryo-em-breakthroughs-chemistry-structural-biology-and-statistical-underpinnings) - Review that covers statistical problems behind cryo-EM.
 
 ## Courses
 * [Cryo-EM Principles](https://cryoemprinciples.yale.edu/)
@@ -71,7 +71,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * [CisTEM](https://github.com/timothygrant80/cisTEM) - An easy-to-use framework that implements a complete pipeline for single-particle analysis.
 * [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2) - A comprehensive package that contains a python interface and handy scripts for common tasks.
 * [SPIDER](https://spider.wadsworth.org/spider_doc/spider/docs/spider.html) - A well-known package that implements image processing methods for electron microscopy.
-* [ASPIRE](http://spr.math.princeton.edu/) - A software that used algorithms based on rigorous mathematical theory. 
+* [ASPIRE](http://spr.math.princeton.edu/) - A software that uses algorithms based on rigorous mathematical theory. 
 
 
 
