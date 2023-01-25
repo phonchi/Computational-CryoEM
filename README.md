@@ -160,7 +160,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 ## Particle picking
 * ### Semi-supervised picking
 1. [`Topaz`](https://github.com/tbepler/topaz) - [**Positive-unlabeled convolutional neural networks for particle picking in cryo-electron micrographs**](https://www.nature.com/articles/s41592-019-0575-8). [[Video]](https://www.youtube.com/watch?v=FnCnsT3GIC4&list=PLFEB3YHuxu11Jp_pOCIEtXxSqozFHve0O&index=10)
-2. [`Cryolo`](https://sphire.mpg.de/wiki/doku.php?id=pipeline:window:cryolo) - [**SPHIRE-crYOLO is a fast and accurate fully automated particle picker for cryo-EM**](https://www.nature.com/articles/s42003-019-0437-z). [[Video](https://www.youtube.com/watch?v=JTgldM4wAAk&list=UUbo1TnKiXGtkE_R5b526JmQ&index=6&t=1s&app=desktop)]
+2. [`Cryolo`](https://cryolo.readthedocs.io/en/stable/) - [**SPHIRE-crYOLO is a fast and accurate fully automated particle picker for cryo-EM**](https://www.nature.com/articles/s42003-019-0437-z). [[Video](https://www.youtube.com/watch?v=JTgldM4wAAk&list=UUbo1TnKiXGtkE_R5b526JmQ&index=6&t=1s&app=desktop)]
 4. `Xmipp` - [**A pattern matching approach to the automatic selection of particles from low-contrast electron micrographs**](https://academic.oup.com/bioinformatics/article/29/19/2460/189951)
 5. [`EPicker`](https://github.com/thuem/EPicker) - [**EPicker is an exemplar-based continual learning approach for knowledge accumulation in cryoEM particle picking**](https://www.nature.com/articles/s41467-022-29994-y)
 
