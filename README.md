@@ -351,7 +351,7 @@ Operate Star files
 1. Using [PyEM](https://github.com/asarnow/pyem)
 Convert metadata
 
-1. Use [EMAN2](https://github.com/cryoem/eman2/blob/master/examples/e2convertrelion.py)
+1. Using [EMAN2](https://github.com/cryoem/eman2/blob/master/examples/e2convertrelion.py)
 Convert from relion to eman2
 
 1. Using [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2)
