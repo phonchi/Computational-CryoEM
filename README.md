@@ -240,6 +240,8 @@ Cryo-EM particles by 3D Zernike polynomials**](https://www.nature.com/articles/s
 1. [`3DFlex`](https://cryosparc.com/3dflex) - [**3D Flexible Refinement: Structure and Motion of Flexible Proteins from Cryo-EM**](https://www.biorxiv.org/content/10.1101/2021.04.22.440893v1) ( Use in `CryoSparc`)
 1. [`e2gmm`](https://blake.bcm.edu/emanwiki/EMAN2/e2gmm) - [**Deep learning-based mixed-dimensional Gaussian mixture model for characterizing variability in cryo-EM**](https://www.nature.com/articles/s41592-021-01220-5)  ( Use in `EMAN2`, more information see [here](https://arxiv.org/ftp/arxiv/papers/2211/2211.10518.pdf))
 1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S1047847721000071) ( Use in `CryoSparc`)
+1. [`CryoDRGN2`](https://github.com/zhonge/cryodrgn/tree/vb/v2_quickstart) - [**CryoDRGN2: Ab initio neural reconstruction of 3D protein structures
+from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/papers/Zhong_CryoDRGN2_Ab_Initio_Neural_Reconstruction_of_3D_Protein_Structures_From_ICCV_2021_paper.pdf)
 1. [`CryoDRGN`](https://github.com/zhonge/cryodrgn) - [**CryoDRGN: Reconstruction of heterogeneous structures from cryo-electron micrographs using neural networks**](https://www.nature.com/articles/s41592-020-01049-4?utm_source=other&utm_medium=other&utm_content=null&utm_campaign=JRCN_1_DD01_CN_NatureRJ_article_paid_XMOL) (For processing with large dataset see [here](https://zhonge.github.io/cryodrgn/index.html))
 1. [`ManifoldEM`](https://github.com/evanseitz/ManifoldEM_Python) - [**Retrieving functional pathways of biomolecules from single-particle snapshots**](https://www.nature.com/articles/s41467-020-18403-x)
 1. [`DMSA`](https://github.com/evanseitz/cryoEM_DMSA) - [**Recovery of conformational continuum from single-particle cryo-EM data: Optimization of ManifoldEM informed by ground-truth studies**](https://www.biorxiv.org/content/10.1101/2021.06.18.449029v1)
@@ -346,13 +348,13 @@ The `map_filtered` output in non-uniform refinement is generated as follows, aft
 1. Using [PyRelion](https://github.com/OPIC-Oxford/localrec/wiki/Tips-and-tricks)
 Operate Star files
 
-2. Using [PyEM](https://github.com/asarnow/pyem)
+1. Using [PyEM](https://github.com/asarnow/pyem)
 Convert metadata
 
-3. Using [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2)
-Convert binary data
+1. Use [EMAN2](https://github.com/cryoem/eman2/blob/master/examples/e2convertrelion.py)
+Convert from relion to eman2
 
-4. Using [SPHIRE](http://sphire.mpg.de/)
+1. Using [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2)
 Convert binary data
 
 ## Parse `Star file`
