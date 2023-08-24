@@ -181,7 +181,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 ## 2D classification
 
-* ### Multirefence alignment based classification
+* ### Multirefence alignment-based classification
 1. `ISAC` - [**Iterative Stable Alignment and Clustering of 2D Transmission Electron Microscope Images**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3426367/). [[GPU version]](https://sphire.mpg.de/wiki/doku.php?id=gpu_isac)
 2. `CL2D` - [**A clustering approach to multireference alignment of single-particle projections in electron microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2893300/)
 
@@ -204,15 +204,16 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 ## [3D Tomographic Reconstruction](https://www.sciencedirect.com/science/article/pii/S0076687910820014)
 1. [**A Survey of the Use of Iterative Reconstruction Algorithms in Electron Microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5623807/)
 2. [`ASTRA`](https://github.com/astra-toolbox/astra-toolbox)
+3. `ZART`- [**ZART: A Novel Multiresolution Reconstruction Algorithm with Motion-blur Correction for Single Particle Analysis**](https://www.sciencedirect.com/science/article/pii/S002228362300150X#s0070) ( Use in `XMIPP`)
 
 ## Ab-initial model 
-* ### Class-averages based method
+* ### Class-averages-based method
 1. [`Simple`](https://simplecryoem.com/)-[**Single-particle cryo-EM-Improved Ab Initio 3D Reconstruction With SIMPLE/PRIME**](https://pubmed.ncbi.nlm.nih.gov/28795512/)
 * ### Particles based method
 1. `CryoSparc` - [**cryoSPARC: algorithms for rapid unsupervised cryo-EM structure determination**](https://www.nature.com/articles/nmeth.4169). [[Slides]](https://nramm.nysbc.org/wp-content/seminars/2017/slides/nysbc-nov2017-Brubaker.pdf)
 
 ## 3D refinement
-* ### 3D Homogeneous Refinemnet
+* ### 3D Homogeneous Refinement
 1. `Relion` - [**RELION: Implementation of a Bayesian approach to cryo-EM structure determination**](https://www.sciencedirect.com/science/article/pii/S1047847712002481). [[Video]](https://www.youtube.com/watch?time_continue=2&v=TfLFCeehfjM&feature=emb_title)
 2. [`CryoSparc`](https://www.nature.com/articles/nmeth.4169) - Use Expectation-Maximization with branch and bound method for higher resolution
 3. [`OPUS-SSRI`](https://github.com/alncat/cryoem) - [**Sparseness and Smoothness Regularized Imaging for improving the resolution of Cryo-EM single-particle reconstruction**](https://www.pnas.org/content/118/2/e2013756118)
@@ -222,7 +223,6 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 2. [`CryoGAN`](https://github.com/harshit-gupta-cor/CryoGAN) - [**CryoGAN: A New Reconstruction Paradigm for Single-Particle Cryo-EM Via Deep Adversarial Learning**](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9483649)
 3. [`Orientation recovery with Siamese neural network`](https://github.com/JelenaBanjac/protein-reconstruction) - [**Learning to recover orientations from projections in single-particle cryo-EM**](https://arxiv.org/abs/2104.06237)
 4. [`CryoAI`](https://github.com/compSPI/cryoAI) - [**Amortized Inference of Poses for Ab Initio Reconstruction of 3D Molecular Volumes from Real Cryo-EM Images**](https://arxiv.org/abs/2203.08138)
-
 
 * ### 3D classification
 1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf), `CryoSparc`  - Perturb the initial model and use projection matching with weighted assignment
@@ -262,7 +262,7 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 
 
 ## [Postprocessing](https://www.sciencedirect.com/science/article/pii/S0079610720300699)
-* ### Per-particle based motion and ctf refinement
+* ### Per-particle-based motion and CTF refinement
 1. `CTF refinement` - [`Relion3`](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250425/)/[`CisTEM`](https://cistem.org/documentation#tab-1-12)/[`CryoSparc`](https://cryosparc.com/docs/tutorials/ctf-refinement), 3D Reference required
 2. `Ewald sphere correction` - [**New tools for automated high-resolution cryo-EM structure determination in RELION-3**](https://elifesciences.org/articles/42166#bib45) (Use ` relion_reconstruct --reverse_curvature`)
 3.  `High-order aberrations` - [**Estimation of high-order aberrations and anisotropic magnification from cryo-EM data sets in RELION-3.1**](https://journals.iucr.org/m/issues/2020/02/00/fq5009/index.html)
@@ -335,7 +335,7 @@ This is the FSC curve calculated using the tight mask with correction by noise s
 > Chen, S. et al. High-resolution noise substitution to measure overfitting and validate resolution in 3D structure determination by single particle electron cryomicroscopy. Ultramicroscopy 135, 24–35 (2013).
 
 ## Sharpen and filtering in [CryoSparc](https://discuss.cryosparc.com/t/how-is-the-non-uniform-refinement-map-filtered-map-created/4388)
-The `map_filtered` output in non-uniform refinement is generated as follows, after refinement has converged:
+The `map_filtered` output in non-uniform refinement is generated as follows after refinement has converged:
 
 1. both raw, unfiltered halfmaps are averaged together
 2. the raw map is filtered using the Gold-Standard FSC curve
@@ -375,10 +375,10 @@ A focus mask is defined as a sphere specified by radius and x,y,z coordinates of
 1. Display the command line by selecting Tools > General Controls > Command Line.
 1. Execute vop threshold #0 maximum -1000 setMaximum 1.0 (this assumes that the minimum voxel value in the 3D map is larger than 1000). This will create a new model #1.
 1. Execute shape sphere radius 30 color red mesh true on the Command Line. This will generate a sphere with a 30 Å radius, numbered model #2 (change the radius as needed).
-1. Open Tools > General Controls > Model Panel and deactivate models #0 and #1. Then move the sphere (model #2) into model #1 until it is fully contained in that volume.
+1. Open Tools > General Controls > Model Panel and deactivate models #0 and #1. Then, move the sphere (model #2) into model #1 until it is fully contained in that volume.
 1. Execute mask #1 #2 on the Command Line. This will generate a new model #3 of a solid sphere with a 30 Å radius.
-1. Close models #1 and #2 in Model Panel and make sure model #0 is visible but deactive.
-1. Select model #3 (the solid sphere) in Volume Viewer and change its color to red (or something easily distiguishable from the original 3D map) and make it transparent.
+1. Close models #1 and #2 in the Model Panel and make sure model #0 is visible but deactivated.
+1. Select model #3 (the solid sphere) in Volume Viewer and change its color to red (or something easily distinguishable from the original 3D map) and make it transparent.
 1. Move model #3 to the desired location of the focus mask in the 3D map.
 1. Execute vop resample #3 onGrid #0 on the Command Line. This will generate a copy of the solid sphere as a new model #1, now resampled in the same coordinate system as the original 3D map.
 1. Execute measure center #1 on the Command Line. This will display the x,y,z coordinates of the mask in pixel coordinates below the command line. These coordinates have to be converted to Å by multiplying them with the pixel size of the 3D map before they can be used in cisTEM's Manual Refine panel.
@@ -390,9 +390,9 @@ A focus mask is defined as a sphere specified by radius and x,y,z coordinates of
 In Matlab use `grayImage = uint8(255 * mat2gray(originalImage)); imshow(grayImage);`
 
 ## Using Chimera
-### Create synthetic map from PDB
-1. Open chimera and import that protein: File -> Fetch By ID… -> Select PDB and type the PDB ID of the protein -> Fetch. Now you will see the 3D structure of the protein.
-2. Create synthetic map from PDB model: Modify the density of the protein: Tools -> General Controls -> Command Line -> Type: molmap #0 5 (molmap = is command that generates a density map from the specified atom; # is atom specification, i.e. number assigned to the model by default; 5 = resolution).
+### Create a synthetic map from PDB
+1. Open chimera and import that protein: File -> Fetch By ID… -> Select PDB and type the PDB ID of the protein -> Fetch. Now, you will see the 3D structure of the protein.
+2. Create synthetic map from PDB model: Modify the density of the protein: Tools -> General Controls -> Command Line -> Type: molmap #0 5 (molmap = is a command that generates a density map from the specified atom; # is atom specification, i.e. number assigned to the model by default; 5 = resolution).
 3. Store reference map as MRC: Save to a file: Tools -> Volume Data -> Volume Viewer -> File -> Save map as… -> Give it the protein_PDB_ID.mrc.
 
 ### [Dispaly local resolution](https://discuss.cryosparc.com/t/view-coloured-3d-map-in-chimera-using-output-from-local-resolution/1003)
