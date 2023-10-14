@@ -176,14 +176,17 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 * ### Denoising particle and dimenison reduction
 1. [`2SDR`](http://sabid.stat.sinica.edu.tw/start) - [**Two-stage dimension reduction for noisy high-dimensional images and application to Cryogenic Electron Microscopy**](https://www.intlpress.com/site/pub/pages/journals/items/amsa/content/vols/0005/0002/a004/index.php)
-2. [`CWF`](https://github.com/PrincetonUniversity/cwf_denoise) - [**Denoising and covariance estimation of single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S104784771630082X) (Use in `ASPIRE`) 
-3. [`GAN`](https://github.com/cianfrocco-lab/GAN-for-Cryo-EM-image-denoising) - [**Generative adversarial networks as a tool to recover structural information from cryo-electron microscopy data**](https://www.biorxiv.org/content/10.1101/256792v1.article-info)
+2. PrePro - [**Pre-pro is a fast pre-processor for single-particle cryo-EM by enhancing 2D classification**](https://www.nature.com/articles/s42003-020-01229-0)
+3. [`CWF`](https://github.com/PrincetonUniversity/cwf_denoise) - [**Denoising and covariance estimation of single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S104784771630082X) (Use in `ASPIRE`) 
+4. [`GAN`](https://github.com/cianfrocco-lab/GAN-for-Cryo-EM-image-denoising) - [**Generative adversarial networks as a tool to recover structural information from cryo-electron microscopy data**](https://www.biorxiv.org/content/10.1101/256792v1.article-info)
+5. [`NoiseTransfer2clean`](https://github.com/Lihongjia-ict/NoiseTransfer2clean) - [**Noise-Transfer2Clean: denoising cryo-EM images based on noise modeling and transfer**](https://academic.oup.com/bioinformatics/article/38/7/2022/6522116)
 
 ## 2D classification
 
 * ### Multirefence alignment-based classification
 1. `ISAC` - [**Iterative Stable Alignment and Clustering of 2D Transmission Electron Microscope Images**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3426367/). [[GPU version]](https://sphire.mpg.de/wiki/doku.php?id=gpu_isac)
 2. `CL2D` - [**A clustering approach to multireference alignment of single-particle projections in electron microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2893300/)
+3. `RE2DC` - [**RE2DC: a robust and efficient 2D classifier with visualization for processing massive and heterogeneous cryo-EM data**](https://www.biorxiv.org/content/10.1101/2022.11.21.517443v2)
 
 * ### [Maximum-likelihood based classification](https://www.sciencedirect.com/science/article/pii/S0076687910820117?via%3Dihub)
 1. `Relion` - Bayesian (Empirical Bayes) approach
@@ -252,6 +255,7 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 1. `VAE` - [**Inferring a Continuous Distribution of Atom Coordinates from Cryo-EM Images using VAEs**](https://arxiv.org/abs/2106.14108)
 1. `cryoFIRE` - [**Amortized Inference for Heterogeneous Reconstruction in Cryo-EM**](https://arxiv.org/abs/2210.07387)
 1. `Atomic VAE` - [**Heterogeneous reconstruction of deformable atomic models in Cryo-EM**](https://arxiv.org/abs/2209.15121)
+1. [`SpecVols`](https://github.com/PrincetonUniversity/specvols) - [` Cryo-EM reconstruction of continuous heterogeneity by Laplacian spectral volumes`](https://iopscience.iop.org/article/10.1088/1361-6420/ab4f55) (Use in [`ASPIRE`](https://github.com/ComputationalCryoEM/ASPIRE-Python/blob/main/src/aspire/reconstruction/mean.py#L18))
 
 
 * ### Latent space analysis
