@@ -176,7 +176,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 * ### Denoising particle and dimenison reduction
 1. [`2SDR`](http://sabid.stat.sinica.edu.tw/start) - [**Two-stage dimension reduction for noisy high-dimensional images and application to Cryogenic Electron Microscopy**](https://www.intlpress.com/site/pub/pages/journals/items/amsa/content/vols/0005/0002/a004/index.php)
-2. PrePro - [**Pre-pro is a fast pre-processor for single-particle cryo-EM by enhancing 2D classification**](https://www.nature.com/articles/s42003-020-01229-0)
+2. `PrePro` - [**Pre-pro is a fast pre-processor for single-particle cryo-EM by enhancing 2D classification**](https://www.nature.com/articles/s42003-020-01229-0)
 3. [`CWF`](https://github.com/PrincetonUniversity/cwf_denoise) - [**Denoising and covariance estimation of single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S104784771630082X) (Use in `ASPIRE`) 
 4. [`GAN`](https://github.com/cianfrocco-lab/GAN-for-Cryo-EM-image-denoising) - [**Generative adversarial networks as a tool to recover structural information from cryo-electron microscopy data**](https://www.biorxiv.org/content/10.1101/256792v1.article-info)
 5. [`NoiseTransfer2clean`](https://github.com/Lihongjia-ict/NoiseTransfer2clean) - [**Noise-Transfer2Clean: denoising cryo-EM images based on noise modeling and transfer**](https://academic.oup.com/bioinformatics/article/38/7/2022/6522116)
@@ -260,7 +260,7 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 
 * ### Latent space analysis
 1. [`Polaris`](https://github.com/evanseitz/POLARIS) - [**POLARIS: Path of Least Action Analysis on Energy Landscapes**](https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b01108)
-2. [`CLEAPA`] (https://github.com/tengyulin/energy_aware_pathfinding)- [**Exploring the Conformational Landscape of Cryo-EM Using Energy-Aware Pathfinding Algorithm**](https://www.biorxiv.org/content/10.1101/2023.08.30.555633v1)
+2. [`CLEAPA`](https://github.com/tengyulin/energy_aware_pathfinding)- [**Exploring the Conformational Landscape of Cryo-EM Using Energy-Aware Pathfinding Algorithm**](https://www.biorxiv.org/content/10.1101/2023.08.30.555633v1)
 
 * ### [Focus classifcation](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00033/full)
 1. [`localrec`](https://github.com/OPIC-Oxford/localrec) - [**Localized reconstruction of subunits from electron cryomicroscopy images of macromolecular complexes**](https://www.nature.com/articles/ncomms9843) (Use in `Scipion`)
