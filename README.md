@@ -223,6 +223,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 2. [`CryoGAN`](https://github.com/harshit-gupta-cor/CryoGAN) - [**CryoGAN: A New Reconstruction Paradigm for Single-Particle Cryo-EM Via Deep Adversarial Learning**](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9483649)
 3. [`Orientation recovery with Siamese neural network`](https://github.com/JelenaBanjac/protein-reconstruction) - [**Learning to recover orientations from projections in single-particle cryo-EM**](https://arxiv.org/abs/2104.06237)
 4. [`CryoAI`](https://github.com/compSPI/cryoAI) - [**Amortized Inference of Poses for Ab Initio Reconstruction of 3D Molecular Volumes from Real Cryo-EM Images**](https://arxiv.org/abs/2203.08138)
+5. [`Cryo-Forum`](https://github.com/phonchi/cryo-forum) - [**Cryo-forum: A framework for orientation recovery with uncertainty measure with the application in cryo-EM image analysis**](https://www.biorxiv.org/content/10.1101/2023.08.30.555633v1)
 
 * ### 3D classification
 1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf), `CryoSparc`  - Perturb the initial model and use projection matching with weighted assignment
@@ -255,6 +256,7 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 
 * ### Latent space analysis
 1. [`Polaris`](https://github.com/evanseitz/POLARIS) - [**POLARIS: Path of Least Action Analysis on Energy Landscapes**](https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b01108)
+2. [`CLEAPA`] (https://github.com/tengyulin/energy_aware_pathfinding)- [**Exploring the Conformational Landscape of Cryo-EM Using Energy-Aware Pathfinding Algorithm**](https://www.biorxiv.org/content/10.1101/2023.08.30.555633v1)
 
 * ### [Focus classifcation](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00033/full)
 1. [`localrec`](https://github.com/OPIC-Oxford/localrec) - [**Localized reconstruction of subunits from electron cryomicroscopy images of macromolecular complexes**](https://www.nature.com/articles/ncomms9843) (Use in `Scipion`)
