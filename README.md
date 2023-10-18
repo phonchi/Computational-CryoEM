@@ -92,7 +92,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
  [Spliceosome](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10180/)   | 126.5GB     | N/A     |  N/A (1.699)    |  327,490 (320X320)    | N/A | Test set for continuous conformation
  
 
-3. From tutorial data set.
+2. From tutorial data set.
 
 
  DataSet (Molecule) | File Size | Movie (#frame) | Micrograph Size (Pixel Size) | Picked Particles (Size) | Final Resolution(A)(Symmetry)
@@ -115,6 +115,8 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
  [Cooperative](https://zenodo.org/record/4355284#.YHPD3a8zbmF)  | 3.0GB     | N/A (6)   | 50,000 (128x128)
  [Noncontiguous](https://zenodo.org/record/4355284#.YHPD3a8zbmF)   | 3.0GB     | N/A (6)   | 50,000 (128x128) 
 
+4. Public dataset
+   * [`CryoPPP`](https://github.com/BioinfoMachineLearning/cryoppp) - [**A large expert-curated cryo-EM image dataset for machine learning protein particle picking**](https://www.nature.com/articles/s41597-023-02280-2)
 
 ## Image Formation model
 1. [`TEM Simulator`](http://tem-simulator.sourceforge.net/) - [**Simulation of transmission electron microscope images of biological specimens**](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2818.2011.03497.x)
@@ -365,8 +367,10 @@ Convert from relion to eman2
 Convert binary data
 
 ## Parse `Star file`
-1. Using [`starfile`](https://github.com/teamtomo/starfile) or [`starparser`](https://github.com/sami-chaaban/starparser)
-2. Using Custom function like [here](Parse_Star.ipynb)
+1. [`starfile`](https://github.com/teamtomo/starfile) - Read star file as DataFrame
+2. [`starparser`](https://github.com/sami-chaaban/starparser) - Command line tool for star file
+3. Using Custom function like [here](Parse_Star.ipynb)
+4. [`starpy`](https://github.com/fuzikt/starpy) - Lots of useful script like [`rel31_to_rel30_star.py`](https://github.com/fuzikt/starpy/blob/master/rel31_to_rel30_star.py)
 
 ## Parse `CryoSparc file`
 1. Using [`PyEM`](https://github.com/asarnow/pyem)
