@@ -257,8 +257,8 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 1. `VAE` - [**Inferring a Continuous Distribution of Atom Coordinates from Cryo-EM Images using VAEs**](https://arxiv.org/abs/2106.14108)
 1. `cryoFIRE` - [**Amortized Inference for Heterogeneous Reconstruction in Cryo-EM**](https://arxiv.org/abs/2210.07387)
 1. `Atomic VAE` - [**Heterogeneous reconstruction of deformable atomic models in Cryo-EM**](https://arxiv.org/abs/2209.15121)
-1. [`SpecVols`](https://github.com/PrincetonUniversity/specvols) - [` Cryo-EM reconstruction of continuous heterogeneity by Laplacian spectral volumes`](https://iopscience.iop.org/article/10.1088/1361-6420/ab4f55) (Use in [`ASPIRE`](https://github.com/ComputationalCryoEM/ASPIRE-Python/blob/main/src/aspire/reconstruction/mean.py#L18))
-1. [`DynaMight`](https://github.com/3dem/DynaMight) - [`DynaMight: estimating molecular motions with improved reconstruction from cryo-EM images`](https://www.biorxiv.org/content/10.1101/2023.10.18.562877v1) (Use in `Relion`)
+1. [`SpecVols`](https://github.com/PrincetonUniversity/specvols) - [**Cryo-EM reconstruction of continuous heterogeneity by Laplacian spectral volumes**](https://iopscience.iop.org/article/10.1088/1361-6420/ab4f55) (Use in [`ASPIRE`](https://github.com/ComputationalCryoEM/ASPIRE-Python/blob/main/src/aspire/reconstruction/mean.py#L18))
+1. [`DynaMight`](https://github.com/3dem/DynaMight) - [**DynaMight: estimating molecular motions with improved reconstruction from cryo-EM images**](https://www.biorxiv.org/content/10.1101/2023.10.18.562877v1) (Use in `Relion`)
 
 
 * ### Latent space analysis
