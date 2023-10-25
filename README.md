@@ -308,9 +308,10 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 
 # Conventions
 ## 3DEM Convention
-* [3DEM Conventions](https://github.com/azazellochg/3DEM-conventions)
+* [3DEM Conventions](https://github.com/azazellochg/3DEM-conventions) - Contains most of the convention in pouplar software (Through the `rst` file)
+* [Relion](https://relion.readthedocs.io/en/release-5.0/Reference/Conventions.html#conventions)
+* [Symmetry](hhttps://scipion-em.github.io/docs/release-3.0.0/docs/developer/symmetries/symmetries.html)
 * [Resolution Measure](https://www.sciencedirect.com/science/article/pii/S0079610716300037)
-* [Symmetry](https://scipion-em.github.io/docs/docs/developer/symmetries)
 
 ## Image contrast
 `White on Black` - Relion, Xmipp, EMAN2, CryoSparc (Cryo-EM data is typically recorded as Black on White but will invert during processing)
