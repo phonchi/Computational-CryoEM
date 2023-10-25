@@ -297,6 +297,7 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 1. [`Warp`](http://www.warpem.com/warp/?page_id=389) - Based on Noise2Noise
 2. `Topaz` - Contains 3D denoise functionality
 3. [`Relion`](https://github.com/3dem/externprior) - [**Exploiting prior knowledge about biological macromolecules in cryo-EM structure determination**](https://journals.iucr.org/m/issues/2021/01/00/fq5015/)
+4. [`Relion 5`](https://github.com/3dem/relion/tree/ver5.0) - [**Data-driven regularisation lowers the size barrier of cryo-EM structure determination**](https://www.biorxiv.org/content/10.1101/2023.10.23.563586v1)
 
 * ### Map to model
 1. [`ModelAngelo`](https://github.com/3dem/model-angelo) - [**ModelAngelo: Automated Model Building in Cryo-EM Maps**](https://arxiv.org/abs/2210.00006)
