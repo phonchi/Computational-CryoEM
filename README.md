@@ -166,6 +166,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 2. [`Cryolo`](https://cryolo.readthedocs.io/en/stable/) - [**SPHIRE-crYOLO is a fast and accurate fully automated particle picker for cryo-EM**](https://www.nature.com/articles/s42003-019-0437-z). [[Video](https://www.youtube.com/watch?v=JTgldM4wAAk&list=UUbo1TnKiXGtkE_R5b526JmQ&index=6&t=1s&app=desktop)]
 4. `Xmipp` - [**A pattern matching approach to the automatic selection of particles from low-contrast electron micrographs**](https://academic.oup.com/bioinformatics/article/29/19/2460/189951)
 5. [`EPicker`](https://github.com/thuem/EPicker) - [**EPicker is an exemplar-based continual learning approach for knowledge accumulation in cryoEM particle picking**](https://www.nature.com/articles/s41467-022-29994-y)
+6. [`CryoTransformer`](https://github.com/jianlin-cheng/CryoTransformer) - [**CryoTransformer: A Transformer Model for Picking Protein Particles from Cryo-EM Micrographs**](https://www.biorxiv.org/content/10.1101/2023.10.19.563155v1)
 
 
 * ### Template-based picking
