@@ -1,6 +1,9 @@
 # Computational CryoEM Methods 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+<img src="https://github.com/phonchi/Computational-CryoEM/assets/11373055/e55eab92-2dfb-4c80-b49c-400951aa5124" width="300" height="300">
+
+
 This repository is a curated list of computational cryo-EM methods mainly targeted for single particle analysis! If you are looking for computational methods for cryo-ET, see [here](https://github.com/phonchi/Computational-CryoET).
 
 You will find the paper and associated software for the popular algorithms used in the cryo-EM field.
