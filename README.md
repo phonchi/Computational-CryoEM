@@ -118,6 +118,8 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 4. Public dataset
    * [`CryoPPP`](https://github.com/BioinfoMachineLearning/cryoppp) - [**A large expert-curated cryo-EM image dataset for machine learning protein particle picking**](https://www.nature.com/articles/s41597-023-02280-2)
+   * [`CryoVirusDB`](https://github.com/BioinfoMachineLearning/CryoVirusDB) - [**CryoVirusDB: A Labeled Cryo-EM Image Dataset for AI-Driven Virus Particle Picking**](https://www.biorxiv.org/content/10.1101/2023.12.25.573312v1)
+   * [`Cryo2Struct`](https://github.com/BioinfoMachineLearning/cryo2struct) - [**Cryo2Struct : A Large Labeled Cryo-EM Density Map Dataset for AI-based Reconstruction of Protein Structures**](https://www.biorxiv.org/content/10.1101/2023.06.14.545024v2)
 
 ## Image Formation model
 1. [`TEM Simulator`](http://tem-simulator.sourceforge.net/) - [**Simulation of transmission electron microscope images of biological specimens**](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2818.2011.03497.x)
@@ -155,10 +157,11 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 4. [`novaCTF`](https://github.com/turonova/novaCTF) - [**Efficient 3D-CTF correction for cryo-electron tomography using NovaCTF improves subtomogram averaging resolution to 3.4 Å**](https://www.sciencedirect.com/science/article/pii/S1047847717301272?via%3Dihub)
 
 * ### Denoising micrograph
-1. [`Restore`](https://github.com/eugenepalovcak/restore) - [**Enhancing SNR and generating contrast for cryo-EM images with convolutional neural networks**](https://journals.iucr.org/m/issues/2020/06/00/pw5015/)
-2. `Topaz` - [**Topaz-Denoise: general deep denoising models for cryoEM**](https://www.nature.com/articles/s41467-020-18952-1)
-3.  [`JANNI`](https://sphire.mpg.de/wiki/doku.php?id=janni) - Just Another Noise 2 Noise Implementation 
-4.  `Warp` - Contains methods base on noise2noise and deconvolution filter 
+1. [`NoiseTransfer2clean`](https://github.com/Lihongjia-ict/NoiseTransfer2clean) - [**Noise-Transfer2Clean: denoising cryo-EM images based on noise modeling and transfer**](https://academic.oup.com/bioinformatics/article/38/7/2022/6522116)
+2. [`Restore`](https://github.com/eugenepalovcak/restore) - [**Enhancing SNR and generating contrast for cryo-EM images with convolutional neural networks**](https://journals.iucr.org/m/issues/2020/06/00/pw5015/)
+3. `Topaz` - [**Topaz-Denoise: general deep denoising models for cryoEM**](https://www.nature.com/articles/s41467-020-18952-1)
+4.  [`JANNI`](https://sphire.mpg.de/wiki/doku.php?id=janni) - Just Another Noise 2 Noise Implementation 
+5.  `Warp` - Contains methods base on noise2noise and deconvolution filter 
 
 
 ## Particle picking
@@ -168,7 +171,8 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 4. `Xmipp` - [**A pattern matching approach to the automatic selection of particles from low-contrast electron micrographs**](https://academic.oup.com/bioinformatics/article/29/19/2460/189951)
 5. [`EPicker`](https://github.com/thuem/EPicker) - [**EPicker is an exemplar-based continual learning approach for knowledge accumulation in cryoEM particle picking**](https://www.nature.com/articles/s41467-022-29994-y)
 6. [`CryoTransformer`](https://github.com/jianlin-cheng/CryoTransformer) - [**CryoTransformer: A Transformer Model for Picking Protein Particles from Cryo-EM Micrographs**](https://www.biorxiv.org/content/10.1101/2023.10.19.563155v1)
-
+7. [`CryoSegNet`](https://github.com/jianlin-cheng/CryoSegNet) - [**Accurate cryo-EM protein particle picking by integrating the foundational AI image segmentation model and specialized U-Net**](https://www.biorxiv.org/content/10.1101/2023.10.02.560572v1)
+8. [`CASSPER`](https://github.com/airis4d/CASSPER/releases) - [**CASSPER is a semantic segmentation-based particle picking algorithm for single-particle cryo-electron microscopy**](https://www.nature.com/articles/s42003-021-01721-1)
 
 * ### Template-based picking
 1. [`Relion`](https://www.sciencedirect.com/science/article/pii/S1047847714002615), `CryoSparc` - Use 2D class averages or 3D projection for more accurate particle picking
@@ -178,12 +182,13 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 3. [`APPLE`](https://github.com/PrincetonUniversity/APPLEpicker) - [**APPLE picker: Automatic particle picking, a low-effort cryo-EM framework**](https://www.sciencedirect.com/science/article/pii/S1047847718302326) (Use in `ASPIRE` auto-picking) 
 4. [`KLT picker`](https://github.com/ShkolniskyLab/kltpicker) - [**KLT picker: Particle picking using data-driven optimal templates**](https://www.sciencedirect.com/science/article/pii/S1047847720300356)
 
-* ### Denoising particle and dimenison reduction
+* ### Denoising particle/dimenison reduction and its applications
 1. [`2SDR`](http://sabid.stat.sinica.edu.tw/start) - [**Two-stage dimension reduction for noisy high-dimensional images and application to Cryogenic Electron Microscopy**](https://www.intlpress.com/site/pub/pages/journals/items/amsa/content/vols/0005/0002/a004/index.php)
 2. `PrePro` - [**Pre-pro is a fast pre-processor for single-particle cryo-EM by enhancing 2D classification**](https://www.nature.com/articles/s42003-020-01229-0)
 3. [`CWF`](https://github.com/PrincetonUniversity/cwf_denoise) - [**Denoising and covariance estimation of single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S104784771630082X) (Use in `ASPIRE`) 
 4. [`GAN`](https://github.com/cianfrocco-lab/GAN-for-Cryo-EM-image-denoising) - [**Generative adversarial networks as a tool to recover structural information from cryo-electron microscopy data**](https://www.biorxiv.org/content/10.1101/256792v1.article-info)
-5. [`NoiseTransfer2clean`](https://github.com/Lihongjia-ict/NoiseTransfer2clean) - [**Noise-Transfer2Clean: denoising cryo-EM images based on noise modeling and transfer**](https://academic.oup.com/bioinformatics/article/38/7/2022/6522116)
+5. [`MScale`](https://github.com/zhanghui186/Mscale) - [**A strategy combining denoising and cryo-EM single particle analysis**](https://academic.oup.com/bib/article/24/3/bbad148/7140293)
+6. [`CryoEM Signal Enhancement`](https://github.com/TamirBendory/CryoEMSignalEnhancement) - [**Signal enhancement for two-dimensional cryo-EM data processing**](https://www.cambridge.org/core/journals/biological-imaging/article/signal-enhancement-for-twodimensional-cryoem-data-processing/7FA5DE71969B1BF15FC615DC05C9226C)
 
 ## 2D classification
 
