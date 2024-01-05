@@ -247,7 +247,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 
 ## [3D variability analysis](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
-1. [`CryoSTAR`](https://github.com/bytedance/cryostar) - [**CryoSTAR: Leveraging Structural Prior and Constraints for Cryo-EM Heterogeneous Reconstruction **](https://www.biorxiv.org/content/10.1101/2023.10.31.564872v2)
+1. [`CryoSTAR`](https://github.com/bytedance/cryostar) - [**CryoSTAR: Leveraging Structural Prior and Constraints for Cryo-EM Heterogeneous Reconstruction**](https://www.biorxiv.org/content/10.1101/2023.10.31.564872v2)
 1. [`OPUS-DSD`](https://github.com/alncat/opusDSD) - [**OPUS-DSD: deep structural disentanglement for cryo-EM single-particle analysis**](https://www.nature.com/articles/s41592-023-02031-6)
 1. [`RECOVAR`](https://github.com/ma-gilles/recovar) - [**A Bayesian Framework for Cryo-EM Heterogeneity Analysis using Regularized Covariance Estimation**](https://www.biorxiv.org/content/10.1101/2023.10.28.564422v1)
 1. [`sbackprop`](https://github.com/dkimanius/sbackprop) - [**Sparse Fourier Backpropagation in Cryo-EM Reconstruction**](https://openreview.net/pdf?id=51f5sPXJD_E)
