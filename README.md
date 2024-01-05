@@ -311,9 +311,11 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 ## Model Building
 * ### Map to model
 1. [`EMBuild`](http://huanglab.phys.hust.edu.cn/EMBuild/) - [**Model building of protein complexes from intermediate-resolution cryo-EM maps with deep learning-guided automatic assembly**](https://www.nature.com/articles/s41467-022-31748-9)
-2. [`CryoREAD`](https://github.com/kiharalab/CryoREAD) - [**CryoREAD: de novo structure modeling for nucleic acids in cryo-EM maps using deep learning**](https://www.nature.com/articles/s41592-023-02032-5)
-3. [`ModelAngelo`](https://github.com/3dem/model-angelo) - [**ModelAngelo: Automated Model Building in Cryo-EM Maps**](https://arxiv.org/abs/2210.00006)
-4. [`CSA`](https://github.com/nimijkrap/CSA_for_cryo-EM_results) - [**Application of conformational space annealing to the protein structure modeling using cryo-EM maps**](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.27200)
+1. [`CryoREAD`](https://github.com/kiharalab/CryoREAD) - [**CryoREAD: de novo structure modeling for nucleic acids in cryo-EM maps using deep learning**](https://www.nature.com/articles/s41592-023-02032-5)
+1. [`DiffModeler`](https://github.com/kiharalab/DiffModeler)
+1. [`ModelAngelo`](https://github.com/3dem/model-angelo) - [**ModelAngelo: Automated Model Building in Cryo-EM Maps**](https://arxiv.org/abs/2210.00006)
+1. [`CSA`](https://github.com/nimijkrap/CSA_for_cryo-EM_results) - [**Application of conformational space annealing to the protein structure modeling using cryo-EM maps**](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.27200)
+
 
 ### [Metrics](https://www.nature.com/articles/s41592-020-01051-w)
 1. [**DeepQs: Local quality assessment of cryo-EM density map by deep learning map-model fit score**](https://www.sciencedirect.com/science/article/pii/S1047847723001223)
