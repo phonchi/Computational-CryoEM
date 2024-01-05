@@ -50,13 +50,13 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * [Principles of cryo-EM single-particle image processing](https://pubmed.ncbi.nlm.nih.gov/26705325/) - Highlight the principles when dealing with a cryo-EM dataset.
 * [Single-particle cryo-electron microscopy: Mathematical theory, computational challenges, and opportunities](https://web.math.princeton.edu/~amits/publications/IEEE_Signal_Processing_Magazine.pdf) - Review that covers recent updates.
 * [Computational Methods for Single-Particle Electron Cryomicroscopy](https://www.annualreviews.org/doi/abs/10.1146/annurev-biodatasci-021020-093826) - A comprehensive review for the mathematical background behind single-particle cryo-EM methods.
-* [Cryo-EM: Breakthroughs in Chemistry, Structural Biology, and Statistical Underpinnings](https://statistics.stanford.edu/research/cryo-em-breakthroughs-chemistry-structural-biology-and-statistical-underpinnings) - Review that covers statistical problems behind cryo-EM.
+* [Cryo-EM: Breakthroughs in Chemistry, Structural Biology, and Statistical Underpinnings](https://statistics.stanford.edu/technical-reports/cryo-em-breakthroughs-chemistry-structural-biology-and-statistical-underpinnings) - Review that covers statistical problems behind cryo-EM.
 
 ## Courses
 * [Cryo-EM Principles](https://cryoemprinciples.yale.edu/)
 * [Getting Started in Cryo-EM](http://cryo-em-course.caltech.edu/overview)
 * [Electron Microscopy Training by MRC LAB](https://www2.mrc-lmb.cam.ac.uk/research/scientific-training/electron-microscopy/)
-* [nysbc training course](http://semc.nysbc.org/the-winter-spring-2018-em-course/)
+* [nysbc training course](https://semc.nysbc.org/workshops/past-courses/2023-em-course/)
 
 
 ## Resources
@@ -105,7 +105,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
  :--------: | :--------: | :--------: | :--------: | :--------: | :--------: 
  [Scipion](https://github.com/I2PC/scipion/wiki/tutorials/scipion_tutorial_betagal.pdf) <br>  ([Beta-gal](https://scipion.cnb.csic.es/downloads/scipion/data/tests/relion13_tutorial/))    | 4.0GB     | 15(16)     |  1950x1950 (3.54)    |  (100x100)    | 7.3 (D2) 
  [Relion 3](https://relion.readthedocs.io/en/latest/SPA_tutorial/Introduction.html) <br>  ([Beta-gal](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10204/))    | 3.1GB     | 24(24)     |  3710x3838 (0.885)    | (256x256)     |2.9 (D2) 
- [CryoSparc 2](https://cryosparc.com/docs/tutorials/t20s) ([T20S](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10025/))    | 8.1GB     | 20(38)     |  7420x7676 (0.6575)    | (440x440)     | 2.93 (D7)
+ [CryoSparc 2](https://guide.cryosparc.com/processing-data/get-started-with-cryosparc-introductory-tutorial) ([T20S](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10025/))    | 8.1GB     | 20(38)     |  7420x7676 (0.6575)    | (440x440)     | 2.93 (D7)
  [CisTEM](https://cistem.org/documentation#tab-1-1) ([ApoFerritin](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10146/))    | 5.6GB     | 20(50)     |  1240x1200 (1.5)    |      | 3.0 (O)
 
 3. Generate simulation data
