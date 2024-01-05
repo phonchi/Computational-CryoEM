@@ -20,6 +20,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
     - [3D refinement](#3d-refinement)
     - [3D variability analysis](#3D-variability-analysis)
     - [Postprocessing](#postprocessing)
+    - [Model Building](#model-building)
 - [**Conventions**](#conventions)
 - [**Tips**](#tips)
     - [Format Conversion](#format-conversion)
@@ -241,12 +242,15 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 
 ## [3D variability analysis](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
+1. [`CryoSTAR`](https://github.com/bytedance/cryostar) - [**CryoSTAR: Leveraging Structural Prior and Constraints for Cryo-EM Heterogeneous Reconstruction **](https://www.biorxiv.org/content/10.1101/2023.10.31.564872v2)
+1. [`OPUS-DSD`](https://github.com/alncat/opusDSD) - [**OPUS-DSD: deep structural disentanglement for cryo-EM single-particle analysis**](https://www.nature.com/articles/s41592-023-02031-6)
+1. [`RECOVAR`](https://github.com/ma-gilles/recovar) - [**A Bayesian Framework for Cryo-EM Heterogeneity Analysis using Regularized Covariance Estimation**](https://www.biorxiv.org/content/10.1101/2023.10.28.564422v1)
 1. [`sbackprop`](https://github.com/dkimanius/sbackprop) - [**Sparse Fourier Backpropagation in Cryo-EM Reconstruction**](https://openreview.net/pdf?id=51f5sPXJD_E)
-1. [`Flexutils`](https://github.com/scipion-em/scipion-em-flexutils) - [**Estimating conformational landscapes from
-Cryo-EM particles by 3D Zernike polynomials**](https://www.nature.com/articles/s41467-023-35791-y) ( Use in `Xmipp`)
+1. [`Flexutils`](https://github.com/scipion-em/scipion-em-flexutils) - [**Estimating conformational landscapes from Cryo-EM particles by 3D Zernike polynomials**](https://www.nature.com/articles/s41467-023-35791-y) ( Use in `Xmipp`)
+1. [`DynaMight`](https://github.com/3dem/DynaMight) - [**DynaMight: estimating molecular motions with improved reconstruction from cryo-EM images**](https://www.biorxiv.org/content/10.1101/2023.10.18.562877v1) (Use in `Relion5`)]
 1. `Diffusion Prior` - [**Latent Space Diffusion Models of Cryo-EM Structures**](https://arxiv.org/abs/2211.14169)
 1. [`3DFlex`](https://cryosparc.com/3dflex) - [**3D Flexible Refinement: Structure and Motion of Flexible Proteins from Cryo-EM**](https://www.biorxiv.org/content/10.1101/2021.04.22.440893v1) ( Use in `CryoSparc`)
-1. [`e2gmm`](https://blake.bcm.edu/emanwiki/EMAN2/e2gmm) - [**Deep learning-based mixed-dimensional Gaussian mixture model for characterizing variability in cryo-EM**](https://www.nature.com/articles/s41592-021-01220-5)  ( Use in `EMAN2`, more information see [here](https://arxiv.org/ftp/arxiv/papers/2211/2211.10518.pdf))
+1. [`e2gmm`](https://blake.bcm.edu/emanwiki/EMAN2/e2gmm) - [**Deep learning-based mixed-dimensional Gaussian mixture model for characterizing variability in cryo-EM**](https://www.nature.com/articles/s41592-021-01220-5)  ( Use in `EMAN2`, more information see [here](https://www.sciencedirect.com/science/article/pii/S0022283623000700))
 1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S1047847721000071) ( Use in `CryoSparc`)
 1. [`CryoDRGN2`](https://github.com/zhonge/cryodrgn/tree/vb/v2_quickstart) - [**CryoDRGN2: Ab initio neural reconstruction of 3D protein structures
 from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/papers/Zhong_CryoDRGN2_Ab_Initio_Neural_Reconstruction_of_3D_Protein_Structures_From_ICCV_2021_paper.pdf)
@@ -259,17 +263,16 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 1. `cryoFIRE` - [**Amortized Inference for Heterogeneous Reconstruction in Cryo-EM**](https://arxiv.org/abs/2210.07387)
 1. `Atomic VAE` - [**Heterogeneous reconstruction of deformable atomic models in Cryo-EM**](https://arxiv.org/abs/2209.15121)
 1. [`SpecVols`](https://github.com/PrincetonUniversity/specvols) - [**Cryo-EM reconstruction of continuous heterogeneity by Laplacian spectral volumes**](https://iopscience.iop.org/article/10.1088/1361-6420/ab4f55) (Use in [`ASPIRE`](https://github.com/ComputationalCryoEM/ASPIRE-Python/blob/main/src/aspire/reconstruction/mean.py#L18))
-1. [`DynaMight`](https://github.com/3dem/DynaMight) - [**DynaMight: estimating molecular motions with improved reconstruction from cryo-EM images**](https://www.biorxiv.org/content/10.1101/2023.10.18.562877v1) (Use in `Relion5`)
-
 
 * ### Latent space analysis
-1. [`Polaris`](https://github.com/evanseitz/POLARIS) - [**POLARIS: Path of Least Action Analysis on Energy Landscapes**](https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b01108)
-2. [`CLEAPA`](https://github.com/tengyulin/energy_aware_pathfinding)- [**Exploring the Conformational Landscape of Cryo-EM Using Energy-Aware Pathfinding Algorithm**](https://www.biorxiv.org/content/10.1101/2023.08.30.555633v1)
+1. [`CLEAPA`](https://github.com/tengyulin/energy_aware_pathfinding)- [**Exploring the Conformational Landscape of Cryo-EM Using Energy-Aware Pathfinding Algorithm**](https://www.biorxiv.org/content/10.1101/2023.08.30.555633v1)
+2. [`Polaris`](https://github.com/evanseitz/POLARIS) - [**POLARIS: Path of Least Action Analysis on Energy Landscapes**](https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b01108)
+3. [`MAVEn`](https://github.com/lkinman/MAVEn) - [**Uncovering structural ensembles from single-particle cryo-EM data using cryoDRGN**](https://www.nature.com/articles/s41596-022-00763-x)
 
 * ### [Focus classifcation](https://www.frontiersin.org/articles/10.3389/fmolb.2019.00033/full)
+1. [**Focused classifications and refinements in high-resolution single particle cryo-EM analysis**](https://www.sciencedirect.com/science/article/pii/S1047847723000783)
 1. [`localrec`](https://github.com/OPIC-Oxford/localrec) - [**Localized reconstruction of subunits from electron cryomicroscopy images of macromolecular complexes**](https://www.nature.com/articles/ncomms9843) (Use in `Scipion`)
 2. `Multi-body refinement` - [**Characterisation of molecular motions in cryo-EM single-particle data by multi-body refinement in RELION**](https://elifesciences.org/articles/36861) (Use in `Relion`)
-
 
 ## [Postprocessing](https://www.sciencedirect.com/science/article/pii/S0079610720300699)
 * ### Per-particle-based motion and CTF refinement
@@ -300,8 +303,18 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 3. [`Relion`](https://github.com/3dem/externprior) - [**Exploiting prior knowledge about biological macromolecules in cryo-EM structure determination**](https://journals.iucr.org/m/issues/2021/01/00/fq5015/)
 4. [`Blush regularisation`](https://relion.readthedocs.io/en/release-5.0/Whats-new.html) - [**Data-driven regularisation lowers the size barrier of cryo-EM structure determination**](https://www.biorxiv.org/content/10.1101/2023.10.23.563586v1)
 
+## Model Building
 * ### Map to model
-1. [`ModelAngelo`](https://github.com/3dem/model-angelo) - [**ModelAngelo: Automated Model Building in Cryo-EM Maps**](https://arxiv.org/abs/2210.00006)
+1. [`EMBuild`](http://huanglab.phys.hust.edu.cn/EMBuild/) - [**Model building of protein complexes from intermediate-resolution cryo-EM maps with deep learning-guided automatic assembly**](https://www.nature.com/articles/s41467-022-31748-9)
+2. [`CryoREAD`](https://github.com/kiharalab/CryoREAD) - [**CryoREAD: de novo structure modeling for nucleic acids in cryo-EM maps using deep learning**](https://www.nature.com/articles/s41592-023-02032-5)
+3. [`ModelAngelo`](https://github.com/3dem/model-angelo) - [**ModelAngelo: Automated Model Building in Cryo-EM Maps**](https://arxiv.org/abs/2210.00006)
+4. [`CSA`](https://github.com/nimijkrap/CSA_for_cryo-EM_results) - [**Application of conformational space annealing to the protein structure modeling using cryo-EM maps**](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.27200)
+
+### [Metrics](https://www.nature.com/articles/s41592-020-01051-w)
+1. [**DeepQs: Local quality assessment of cryo-EM density map by deep learning map-model fit score**](https://www.sciencedirect.com/science/article/pii/S1047847723001223)
+1. [`MapQ`](https://github.com/gregdp/mapq) - [**Measurement of atom resolvability in cryo-EM maps with Q-scores**](https://www.nature.com/articles/s41592-020-0731-1)
+1. [`FSC-Q`](https://github.com/I2PC/scipion-em-xmipp) - [**FSC-Q: a CryoEM map-to-atomic model quality validation based on the local Fourier shell correlation**](https://www.nature.com/articles/s41467-020-20295-w) (Use in `Scipion`)
+1. [`MEDIC`](https://github.com/gabriellareggiano/MEDIC) - [**Residue-level error detection in cryoelectron microscopy models**](https://www.sciencedirect.com/science/article/pii/S0969212623001582)
 
 ## Visualization
 1. [`Chimera`](https://www.cgl.ucsf.edu/chimera/) - [**UCSF Chimera--a Visualization System for Exploratory Research and Analysis**](https://pubmed.ncbi.nlm.nih.gov/15264254/)
