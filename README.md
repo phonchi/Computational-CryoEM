@@ -322,7 +322,7 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 1. [`CSA`](https://github.com/nimijkrap/CSA_for_cryo-EM_results) - [**Application of conformational space annealing to the protein structure modeling using cryo-EM maps**](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.27200)
 
 
-### [Metrics](https://www.nature.com/articles/s41592-020-01051-w)
+* ### [Metrics](https://www.nature.com/articles/s41592-020-01051-w)
 1. [**DeepQs: Local quality assessment of cryo-EM density map by deep learning map-model fit score**](https://www.sciencedirect.com/science/article/pii/S1047847723001223)
 1. [`MapQ`](https://github.com/gregdp/mapq) - [**Measurement of atom resolvability in cryo-EM maps with Q-scores**](https://www.nature.com/articles/s41592-020-0731-1)
 1. [`FSC-Q`](https://github.com/I2PC/scipion-em-xmipp) - [**FSC-Q: a CryoEM map-to-atomic model quality validation based on the local Fourier shell correlation**](https://www.nature.com/articles/s41467-020-20295-w) (Use in `Scipion`)
