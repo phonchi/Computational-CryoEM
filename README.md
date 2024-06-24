@@ -128,9 +128,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 ## Image Formation model
 1. [`TEM Simulator`](http://tem-simulator.sourceforge.net/) - [**Simulation of transmission electron microscope images of biological specimens**](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2818.2011.03497.x)
-
 2. [`InSilicoTEM`](https://github.com/M4I-nanoscopy/InSilicoTEM/tree/v2.0.0) - [**Image formation modeling in cryo-electron microscopy**](https://www.sciencedirect.com/science/article/abs/pii/S1047847713001226)
-
 3. [`CisTEM_Simulate`](https://github.com/timothygrant80/cisTEM/blob/master/src/programs/simulate/simulate.cpp) - [**Cryo-TEM simulations of amorphous radiation-sensitive samples using multislice wave propagation**](https://www.biorxiv.org/content/10.1101/2021.02.19.431636v2) ([Tutorial](https://cistem-org.github.io/developmental-docs/docs/sim/intro.html))
 
 ## [Motion correction](https://www.sciencedirect.com/science/article/pii/S0076687916300271?via%3Dihub) 
@@ -139,7 +137,6 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 1. [`Unblur`](https://grigoriefflab.umassmed.edu/unblur_summovie) - [**Measuring the optimal exposure for single particle cryo-EM using a 2.6 Å reconstruction of rotavirus VP6**](https://elifesciences.org/articles/06980) ( Use in [`CisTEM`](https://cistem.org/documentation#tab-1-6))
 2. `Full-frame motion correction` - (Use in `CryoSparc`)
 3. `Optical Flow` - [**Alignment of direct detection device micrographs using a robust Optical Flow approach**](https://www.sciencedirect.com/science/article/pii/S1047847715000313) (Use in [`Xmipp`](http://xmipp.i2pc.es/))
-
 
 * ### Patch-based/Per-particle based alignment
 1. [`MotionCorr2`](https://emcore.ucsf.edu/ucsf-motioncor2) - [**MotionCor2: anisotropic correction of beam-induced motion for improved cryo-electron microscopy**](https://www.nature.com/articles/nmeth.4193?proof=t) (Use in `Relion` and `CryoSparc`)
@@ -168,7 +165,6 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 4.  [`JANNI`](https://sphire.mpg.de/wiki/doku.php?id=janni) - Just Another Noise 2 Noise Implementation 
 5.  `Warp` - Contains methods base on noise2noise and deconvolution filter 
 
-
 ## Particle picking
 * ### Semi-supervised picking
 1. [`Topaz`](https://github.com/tbepler/topaz) - [**Positive-unlabeled convolutional neural networks for particle picking in cryo-electron micrographs**](https://www.nature.com/articles/s41592-019-0575-8). [[Video]](https://www.youtube.com/watch?v=FnCnsT3GIC4&list=PLFEB3YHuxu11Jp_pOCIEtXxSqozFHve0O&index=10)
@@ -178,6 +174,8 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 6. [`CryoTransformer`](https://github.com/jianlin-cheng/CryoTransformer) - [**CryoTransformer: A Transformer Model for Picking Protein Particles from Cryo-EM Micrographs**](https://www.biorxiv.org/content/10.1101/2023.10.19.563155v1)
 7. [`CryoSegNet`](https://github.com/jianlin-cheng/CryoSegNet) - [**Accurate cryo-EM protein particle picking by integrating the foundational AI image segmentation model and specialized U-Net**](https://www.biorxiv.org/content/10.1101/2023.10.02.560572v1)
 8. [`CASSPER`](https://github.com/airis4d/CASSPER/releases) - [**CASSPER is a semantic segmentation-based particle picking algorithm for single-particle cryo-electron microscopy**](https://www.nature.com/articles/s42003-021-01721-1)
+9. [`TARDIS`](https://github.com/SMLC-NYSBC/TARDIS) - [**Automated Segmentation of 3D Cytoskeletal Filaments from Electron Micrographs with TARDIS**](https://academic.oup.com/mam/article/29/Supplement_1/970/7228849?login=true)
+10. [`REPIC`](https://github.com/ccameron/REPIC) - [**REPIC — an ensemble learning methodology for cryo-EM particle picking**](https://www.biorxiv.org/content/10.1101/2023.05.13.540636v1.abstract)
 
 * ### Template-based picking
 1. [`Relion`](https://www.sciencedirect.com/science/article/pii/S1047847714002615), `CryoSparc` - Use 2D class averages or 3D projection for more accurate particle picking
@@ -190,10 +188,11 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 * ### Denoising particle/dimenison reduction and its applications
 1. [`2SDR`](http://sabid.stat.sinica.edu.tw/start) - [**Two-stage dimension reduction for noisy high-dimensional images and application to Cryogenic Electron Microscopy**](https://www.intlpress.com/site/pub/pages/journals/items/amsa/content/vols/0005/0002/a004/index.php)
 2. `PrePro` - [**Pre-pro is a fast pre-processor for single-particle cryo-EM by enhancing 2D classification**](https://www.nature.com/articles/s42003-020-01229-0)
-3. [`CWF`](https://github.com/PrincetonUniversity/cwf_denoise) - [**Denoising and covariance estimation of single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S104784771630082X) (Use in `ASPIRE`) 
-4. [`GAN`](https://github.com/cianfrocco-lab/GAN-for-Cryo-EM-image-denoising) - [**Generative adversarial networks as a tool to recover structural information from cryo-electron microscopy data**](https://www.biorxiv.org/content/10.1101/256792v1.article-info)
-5. [`MScale`](https://github.com/zhanghui186/Mscale) - [**A strategy combining denoising and cryo-EM single particle analysis**](https://academic.oup.com/bib/article/24/3/bbad148/7140293)
-6. [`CryoEM Signal Enhancement`](https://github.com/TamirBendory/CryoEMSignalEnhancement) - [**Signal enhancement for two-dimensional cryo-EM data processing**](https://www.cambridge.org/core/journals/biological-imaging/article/signal-enhancement-for-twodimensional-cryoem-data-processing/7FA5DE71969B1BF15FC615DC05C9226C)
+3. [`MScale`](https://github.com/zhanghui186/Mscale) - [**A strategy combining denoising and cryo-EM single particle analysis**](https://academic.oup.com/bib/article/24/3/bbad148/7140293)
+4. [`CryoEM Signal Enhancement`](https://github.com/TamirBendory/CryoEMSignalEnhancement) - [**Signal enhancement for two-dimensional cryo-EM data processing**](https://www.cambridge.org/core/journals/biological-imaging/article/signal-enhancement-for-twodimensional-cryoem-data-processing/7FA5DE71969B1BF15FC615DC05C9226C)
+5. [`CWF`](https://github.com/PrincetonUniversity/cwf_denoise) - [**Denoising and covariance estimation of single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S104784771630082X) (Use in `ASPIRE`) 
+6. [`GAN`](https://github.com/cianfrocco-lab/GAN-for-Cryo-EM-image-denoising) - [**Generative adversarial networks as a tool to recover structural information from cryo-electron microscopy data**](https://www.biorxiv.org/content/10.1101/256792v1.article-info)
+
 
 ## 2D classification
 
@@ -236,11 +235,13 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 3. [`OPUS-SSRI`](https://github.com/alncat/cryoem) - [**Sparseness and Smoothness Regularized Imaging for improving the resolution of Cryo-EM single-particle reconstruction**](https://www.pnas.org/content/118/2/e2013756118)
 
 * ### [New 3D reconstruction paradigm](https://www.sciencedirect.com/science/article/pii/S1047847722000909)
-1. [`Pose Estimation with VAE-GAN`](https://github.com/compSPI/article-CVPR-workshop-2020)-[**Estimation of Orientation and Camera Parameters from Cryo-Electron Microscopy Images with Variational Autoencoders and Generative Adversarial**](https://openaccess.thecvf.com/content_CVPRW_2020/html/w57/Miolane_Estimation_of_Orientation_and_Camera_Parameters_From_Cryo-Electron_Microscopy_Images_CVPRW_2020_paper.html). [[Related work]](https://arxiv.org/abs/2107.02958)
-2. [`CryoGAN`](https://github.com/harshit-gupta-cor/CryoGAN) - [**CryoGAN: A New Reconstruction Paradigm for Single-Particle Cryo-EM Via Deep Adversarial Learning**](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9483649)
-3. [`Orientation recovery with Siamese neural network`](https://github.com/JelenaBanjac/protein-reconstruction) - [**Learning to recover orientations from projections in single-particle cryo-EM**](https://arxiv.org/abs/2104.06237)
-4. [`CryoAI`](https://github.com/compSPI/cryoAI) - [**Amortized Inference of Poses for Ab Initio Reconstruction of 3D Molecular Volumes from Real Cryo-EM Images**](https://arxiv.org/abs/2203.08138)
-5. [`Cryo-Forum`](https://github.com/phonchi/cryo-forum) - [**Cryo-forum: A framework for orientation recovery with uncertainty measure with the application in cryo-EM image analysis**](https://www.sciencedirect.com/science/article/abs/pii/S1047847723001211)
+1. [`Cryo-Forum`](https://github.com/phonchi/cryo-forum) - [**Cryo-forum: A framework for orientation recovery with uncertainty measure with the application in cryo-EM image analysis**](https://www.sciencedirect.com/science/article/abs/pii/S1047847723001211)
+2. [`Pose Estimation with VAE-GAN`](https://github.com/compSPI/article-CVPR-workshop-2020)-[**Estimation of Orientation and Camera Parameters from Cryo-Electron Microscopy Images with Variational Autoencoders and Generative Adversarial**](https://openaccess.thecvf.com/content_CVPRW_2020/html/w57/Miolane_Estimation_of_Orientation_and_Camera_Parameters_From_Cryo-Electron_Microscopy_Images_CVPRW_2020_paper.html). [[Related work]](https://arxiv.org/abs/2107.02958)
+3. [`CryoGAN`](https://github.com/harshit-gupta-cor/CryoGAN) - [**CryoGAN: A New Reconstruction Paradigm for Single-Particle Cryo-EM Via Deep Adversarial Learning**](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9483649)
+4. [`Orientation recovery with Siamese neural network`](https://github.com/JelenaBanjac/protein-reconstruction) - [**Learning to recover orientations from projections in single-particle cryo-EM**](https://arxiv.org/abs/2104.06237)
+5. [`CryoAI`](https://github.com/compSPI/cryoAI) - [**Amortized Inference of Poses for Ab Initio Reconstruction of 3D Molecular Volumes from Real Cryo-EM Images**](https://arxiv.org/abs/2203.08138)
+6. [`DRGN-AI`](https://github.com/ml-struct-bio/drgnai) - [**Revealing biomolecular structure and motion with neural ab initio cryo-EM reconstruction**](https://www.biorxiv.org/content/10.1101/2024.05.30.596729v1)
+
 
 * ### 3D classification
 1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf), `CryoSparc`  - Perturb the initial model and use projection matching with weighted assignment
@@ -259,6 +260,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 1. [`Flexutils`](https://github.com/scipion-em/scipion-em-flexutils) - [**Estimating conformational landscapes from Cryo-EM particles by 3D Zernike polynomials**](https://www.nature.com/articles/s41467-023-35791-y) ( Use in `Xmipp`)
 1. [`DynaMight`](https://github.com/3dem/DynaMight) - [**DynaMight: estimating molecular motions with improved reconstruction from cryo-EM images**](https://www.biorxiv.org/content/10.1101/2023.10.18.562877v1) (Use in `Relion5`)
 1. `Diffusion Prior` - [**Latent Space Diffusion Models of Cryo-EM Structures**](https://arxiv.org/abs/2211.14169)
+1. [`DGP-SPR`](https://github.com/benjamin3344/DGP-SPR) - [**Deep Generative Priors for Biomolecular 3D Heterogeneous Reconstruction from Cryo-EM Projections**](https://www.sciencedirect.com/science/article/pii/S1047847724000133)
 1. [`3DFlex`](https://cryosparc.com/3dflex) - [**3D Flexible Refinement: Structure and Motion of Flexible Proteins from Cryo-EM**](https://www.biorxiv.org/content/10.1101/2021.04.22.440893v1) ( Use in `CryoSparc`)
 1. [`e2gmm`](https://blake.bcm.edu/emanwiki/EMAN2/e2gmm) - [**Deep learning-based mixed-dimensional Gaussian mixture model for characterizing variability in cryo-EM**](https://www.nature.com/articles/s41592-021-01220-5)  ( Use in `EMAN2`, more information see [here](https://www.sciencedirect.com/science/article/pii/S0022283623000700))
 1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S1047847721000071) ( Use in `CryoSparc`)
@@ -301,28 +303,31 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 
 * ### [Sharpening](https://www.sciencedirect.com/science/article/pii/S0022283603010222) and local filtering to enhance [interpretability](https://www.sciencedirect.com/science/article/pii/S0079610720300699)
 1. [`EMReady`](http://huanglab.phys.hust.edu.cn/EMReady/)
-2. [`Confidence Maps`](https://git.embl.de/mbeckers/FDRthresholding/-/tree/master) - [**Thresholding of cryo-EM density maps by false discovery rate control**](https://journals.iucr.org/m/issues/2019/01/00/pw5002/index.html) (Use in [`ccpem`](https://www.ccpem.ac.uk/download.php))
+2. [`EM-GAN`](https://kiharalab.org/emsuites/emgan.php) - **Improved Protein Structure Modeling Using Enhanced Cryo-EM Maps With 3D Deep Generative Networks**
 3. [`DeepEnhancer`](https://github.com/rsanchezgarc/deepEMhancer)-[**DeepEMhancer: a deep learning solution for cryo-EM volume post-processing**](https://www.biorxiv.org/content/10.1101/2020.06.12.148296v3)
-4. [`LocScale`](https://git.embl.de/jakobi/LocScale)[**Model-based local density sharpening of cryo-EM maps**](https://elifesciences.org/articles/27131) (Use in [`ccpem`](https://www.ccpem.ac.uk/download.php))
-5. [`LocalDeblur`](https://github.com/I2PC/scipion-em-xmipp/wiki/XmippProtLocSharp) - [**Automatic local resolution-based sharpening of cryo-EM maps**](https://academic.oup.com/bioinformatics/article/36/3/765/5554698)
-6. [`EM-GAN`](https://kiharalab.org/emsuites/emgan.php) - **Improved Protein Structure Modeling Using Enhanced Cryo-EM Maps With 3D Deep Generative Networks**
+4. [`Confidence Maps`](https://git.embl.de/mbeckers/FDRthresholding/-/tree/master) - [**Thresholding of cryo-EM density maps by false discovery rate control**](https://journals.iucr.org/m/issues/2019/01/00/pw5002/index.html) (Use in [`ccpem`](https://www.ccpem.ac.uk/download.php))
+5. [`LocScale`](https://git.embl.de/jakobi/LocScale)[**Model-based local density sharpening of cryo-EM maps**](https://elifesciences.org/articles/27131) (Use in [`ccpem`](https://www.ccpem.ac.uk/download.php))
+6. [`LocalDeblur`](https://github.com/I2PC/scipion-em-xmipp/wiki/XmippProtLocSharp) - [**Automatic local resolution-based sharpening of cryo-EM maps**](https://academic.oup.com/bioinformatics/article/36/3/765/5554698)
 
 * ### Denoising 3D volume
 1. [`Warp`](http://www.warpem.com/warp/?page_id=389) - Based on Noise2Noise
 2. `Topaz` - Contains 3D denoise functionality
 3. [`Relion`](https://github.com/3dem/externprior) - [**Exploiting prior knowledge about biological macromolecules in cryo-EM structure determination**](https://journals.iucr.org/m/issues/2021/01/00/fq5015/)
-4. [`Blush regularisation`](https://relion.readthedocs.io/en/release-5.0/Whats-new.html) - [**Data-driven regularisation lowers the size barrier of cryo-EM structure determination**](https://www.biorxiv.org/content/10.1101/2023.10.23.563586v1)
+4. [`Blush regularisation`](https://relion.readthedocs.io/en/release-5.0/Whats-new.html) - [**Data-driven regularisation lowers the size barrier of cryo-EM structure determination**](https://www.nature.com/articles/s41592-024-02304-8)
 
 ## Model Building
 * ### Map to model
-1. [`EMBuild`](http://huanglab.phys.hust.edu.cn/EMBuild/) - [**Model building of protein complexes from intermediate-resolution cryo-EM maps with deep learning-guided automatic assembly**](https://www.nature.com/articles/s41467-022-31748-9)
-1. [`CryoREAD`](https://github.com/kiharalab/CryoREAD) - [**CryoREAD: de novo structure modeling for nucleic acids in cryo-EM maps using deep learning**](https://www.nature.com/articles/s41592-023-02032-5)
-1. [`DiffModeler`](https://github.com/kiharalab/DiffModeler)
-1. [`ModelAngelo`](https://github.com/3dem/model-angelo) - [**ModelAngelo: Automated Model Building in Cryo-EM Maps**](https://arxiv.org/abs/2210.00006)
-1. [`CSA`](https://github.com/nimijkrap/CSA_for_cryo-EM_results) - [**Application of conformational space annealing to the protein structure modeling using cryo-EM maps**](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.27200)
-
+1. [`DeepMainMast`](https://github.com/kiharalab/DeepMainMast) - [**DeepMainmast: integrated protocol of protein structure modeling for cryo-EM with deep learning and structure prediction**](https://www.nature.com/articles/s41592-023-02099-0)
+2. [`ModelAngelo`](https://github.com/3dem/model-angelo) - [**ModelAngelo: Automated Model Building in Cryo-EM Maps**](https://arxiv.org/abs/2210.00006)
+3. [`DiffModeler`](https://github.com/kiharalab/DiffModeler) - [**DiffModeler: Large Macromolecular Structure Modeling in Low-Resolution Cryo-EM Maps Using Diffusion Model**](https://www.biorxiv.org/content/10.1101/2024.01.20.576370v2)
+4. [`adp-3d`](https://axel-levy.github.io/adp-3d/) - [**Solving Inverse Problems in Protein Space Using Diffusion-Based Priors**](https://arxiv.org/abs/2406.04239) (Based on [`chroma`](https://github.com/generatebio/chroma))
+5. [`EMBuild`](http://huanglab.phys.hust.edu.cn/EMBuild/) - [**Model building of protein complexes from intermediate-resolution cryo-EM maps with deep learning-guided automatic assembly**](https://www.nature.com/articles/s41467-022-31748-9)
+6. [`CryoREAD`](https://github.com/kiharalab/CryoREAD) - [**CryoREAD: de novo structure modeling for nucleic acids in cryo-EM maps using deep learning**](https://www.nature.com/articles/s41592-023-02032-5)
+7. [`CSA`](https://github.com/nimijkrap/CSA_for_cryo-EM_results) - [**Application of conformational space annealing to the protein structure modeling using cryo-EM maps**](https://onlinelibrary.wiley.com/doi/full/10.1002/jcc.27200)
 
 * ### [Metrics](https://www.nature.com/articles/s41592-020-01051-w)
+1. [`TEMPy`](https://tempy.topf-group.com/) - [**TEMPy2: A Python library with improved 3D electron microscopy density-fitting and validation workflows**](https://journals.iucr.org/d/issues/2021/01/00/qr5003/index.html)
+1. [`Phenix`](https://phenix-online.org/documentation/reference/validation_cryo_em.html) - [**New tools for the analysis and validation of cryo-EM maps and atomic models.**](https://doi.org/10.1107/S2059798318009324)
 1. [**DeepQs: Local quality assessment of cryo-EM density map by deep learning map-model fit score**](https://www.sciencedirect.com/science/article/pii/S1047847723001223)
 1. [`MapQ`](https://github.com/gregdp/mapq) - [**Measurement of atom resolvability in cryo-EM maps with Q-scores**](https://www.nature.com/articles/s41592-020-0731-1)
 1. [`FSC-Q`](https://github.com/I2PC/scipion-em-xmipp) - [**FSC-Q: a CryoEM map-to-atomic model quality validation based on the local Fourier shell correlation**](https://www.nature.com/articles/s41467-020-20295-w) (Use in `Scipion`)
