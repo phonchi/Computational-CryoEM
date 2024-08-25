@@ -125,11 +125,13 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
    * [`CryoPPP`](https://github.com/BioinfoMachineLearning/cryoppp) - [**A large expert-curated cryo-EM image dataset for machine learning protein particle picking**](https://www.nature.com/articles/s41597-023-02280-2)
    * [`CryoVirusDB`](https://github.com/BioinfoMachineLearning/CryoVirusDB) - [**CryoVirusDB: A Labeled Cryo-EM Image Dataset for AI-Driven Virus Particle Picking**](https://www.biorxiv.org/content/10.1101/2023.12.25.573312v1)
    * [`Cryo2Struct`](https://github.com/BioinfoMachineLearning/cryo2struct) - [**Cryo2Struct : A Large Labeled Cryo-EM Density Map Dataset for AI-based Reconstruction of Protein Structures**](https://www.biorxiv.org/content/10.1101/2023.06.14.545024v2)
+   * [`CryoBench`](https://cryobench.cs.princeton.edu/) - [**CryoBench: Diverse and challenging datasets for the heterogeneity problem in cryo-EM**](https://www.arxiv.org/abs/2408.05526)
 
 ## Image Formation model
 1. [`TEM Simulator`](http://tem-simulator.sourceforge.net/) - [**Simulation of transmission electron microscope images of biological specimens**](https://onlinelibrary.wiley.com/doi/10.1111/j.1365-2818.2011.03497.x)
 2. [`InSilicoTEM`](https://github.com/M4I-nanoscopy/InSilicoTEM/tree/v2.0.0) - [**Image formation modeling in cryo-electron microscopy**](https://www.sciencedirect.com/science/article/abs/pii/S1047847713001226)
 3. [`CisTEM_Simulate`](https://github.com/timothygrant80/cisTEM/blob/master/src/programs/simulate/simulate.cpp) - [**Cryo-TEM simulations of amorphous radiation-sensitive samples using multislice wave propagation**](https://www.biorxiv.org/content/10.1101/2021.02.19.431636v2) ([Tutorial](https://cistem-org.github.io/developmental-docs/docs/sim/intro.html))
+4. [`icemodeling`](https://github.com/ac8g19/icemodelling) - [**Computational models of amorphous ice for accurate simulation of cryo-EM images of biological samples**](https://www.sciencedirect.com/science/article/pii/S0304399123001997)
 
 ## [Motion correction](https://www.sciencedirect.com/science/article/pii/S0076687916300271?via%3Dihub) 
 
@@ -164,6 +166,9 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 3. `Topaz` - [**Topaz-Denoise: general deep denoising models for cryoEM**](https://www.nature.com/articles/s41467-020-18952-1)
 4.  [`JANNI`](https://sphire.mpg.de/wiki/doku.php?id=janni) - Just Another Noise 2 Noise Implementation 
 5.  `Warp` - Contains methods base on noise2noise and deconvolution filter 
+
+* ### Filtering micrograph
+1. [`Miffi`](https://github.com/ando-lab/miffi) - [**Miffi: Improving the accuracy of CNN-based cryo-EM micrograph filtering with fine-tuning and Fourier space information**](https://www.sciencedirect.com/science/article/pii/S1047847724000121)
 
 ## Particle picking
 * ### Semi-supervised picking
@@ -233,6 +238,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 1. `Relion` - [**RELION: Implementation of a Bayesian approach to cryo-EM structure determination**](https://www.sciencedirect.com/science/article/pii/S1047847712002481). [[Video]](https://www.youtube.com/watch?time_continue=2&v=TfLFCeehfjM&feature=emb_title)
 2. [`CryoSparc`](https://www.nature.com/articles/nmeth.4169) - Use Expectation-Maximization with branch and bound method for higher resolution
 3. [`OPUS-SSRI`](https://github.com/alncat/cryoem) - [**Sparseness and Smoothness Regularized Imaging for improving the resolution of Cryo-EM single-particle reconstruction**](https://www.pnas.org/content/118/2/e2013756118)
+4. [`CryoNeFEN`](https://github.com/yuehuang2023/cryoNeFEN) - [**High-resolution real-space reconstruction of cryo-EM structures using a neural field network**](https://www.nature.com/articles/s42256-024-00870-2)
 
 * ### [New 3D reconstruction paradigm](https://www.sciencedirect.com/science/article/pii/S1047847722000909)
 1. [`Cryo-Forum`](https://github.com/phonchi/cryo-forum) - [**Cryo-forum: A framework for orientation recovery with uncertainty measure with the application in cryo-EM image analysis**](https://www.sciencedirect.com/science/article/abs/pii/S1047847723001211)
@@ -241,7 +247,6 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 4. [`Orientation recovery with Siamese neural network`](https://github.com/JelenaBanjac/protein-reconstruction) - [**Learning to recover orientations from projections in single-particle cryo-EM**](https://arxiv.org/abs/2104.06237)
 5. [`CryoAI`](https://github.com/compSPI/cryoAI) - [**Amortized Inference of Poses for Ab Initio Reconstruction of 3D Molecular Volumes from Real Cryo-EM Images**](https://arxiv.org/abs/2203.08138)
 6. [`DRGN-AI`](https://github.com/ml-struct-bio/drgnai) - [**Revealing biomolecular structure and motion with neural ab initio cryo-EM reconstruction**](https://www.biorxiv.org/content/10.1101/2024.05.30.596729v1)
-
 
 * ### 3D classification
 1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf), `CryoSparc`  - Perturb the initial model and use projection matching with weighted assignment
@@ -277,7 +282,7 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 1. [`SpecVols`](https://github.com/PrincetonUniversity/specvols) - [**Cryo-EM reconstruction of continuous heterogeneity by Laplacian spectral volumes**](https://iopscience.iop.org/article/10.1088/1361-6420/ab4f55) (Use in [`ASPIRE`](https://github.com/ComputationalCryoEM/ASPIRE-Python/blob/main/src/aspire/reconstruction/mean.py#L18))
 
 * ### Latent space analysis
-1. [`CLEAPA`](https://github.com/tengyulin/energy_aware_pathfinding)- [**Exploring the Conformational Landscape of Cryo-EM Using Energy-Aware Pathfinding Algorithm**](https://www.biorxiv.org/content/10.1101/2023.08.30.555633v1)
+1. [`CLEAPA`](https://github.com/tengyulin/energy_aware_pathfinding)- [**CLEAPA: a framework for exploring the conformational landscape of cryo-EM using energy-aware pathfinding algorithm**](https://academic.oup.com/bioinformatics/article/40/6/btae345/7688336)
 2. [`Polaris`](https://github.com/evanseitz/POLARIS) - [**POLARIS: Path of Least Action Analysis on Energy Landscapes**](https://pubs.acs.org/doi/full/10.1021/acs.jcim.9b01108)
 3. [`MAVEn`](https://github.com/lkinman/MAVEn) - [**Uncovering structural ensembles from single-particle cryo-EM data using cryoDRGN**](https://www.nature.com/articles/s41596-022-00763-x)
 
@@ -314,6 +319,9 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 2. `Topaz` - Contains 3D denoise functionality
 3. [`Relion`](https://github.com/3dem/externprior) - [**Exploiting prior knowledge about biological macromolecules in cryo-EM structure determination**](https://journals.iucr.org/m/issues/2021/01/00/fq5015/)
 4. [`Blush regularisation`](https://relion.readthedocs.io/en/release-5.0/Whats-new.html) - [**Data-driven regularisation lowers the size barrier of cryo-EM structure determination**](https://www.nature.com/articles/s41592-024-02304-8)
+
+### Particle sorting
+1. [`CryoSieve`](https://github.com/mxhulab/cryosieve) - [**A minority of final stacks yields superior amplitude in single-particle cryo-EM**](https://www.nature.com/articles/s41467-023-43555-x)
 
 ## Model Building
 * ### Map to model
