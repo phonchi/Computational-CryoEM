@@ -45,6 +45,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 ## Introduction
 * [A quick introduction video for cryo-EM](https://www.youtube.com/watch?v=Qq8DO-4BnIY)
 * [Cryo-EM 101](https://cryoem101.org/) - Deomnstrate the principles of cryo-EM using a media-rich approach with videos, animations, interactive simulation.
+* [cryoEDU](https://cryoedu.org/) - A hands-on cryo-EM education tool
 * [Cryo-EM workflow by Nvidia](https://resources.nvidia.com/en-us-drug-discovery/) - Describe the blueprint of cryo-EM using GPU processing.
 * [A Primer to Single-Particle Cryo-Electron Microscopy](https://www.sciencedirect.com/science/article/pii/S0092867415003700?via%3Dihub) - A great review to start with.
 * [Principles of cryo-EM single-particle image processing](https://pubmed.ncbi.nlm.nih.gov/26705325/) - Highlight the principles when dealing with a cryo-EM dataset.
