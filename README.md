@@ -257,7 +257,6 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 1. `CryoSparc` - [**Non-uniform refinement: Adaptive regularization improves single particle cryo-EM reconstruction**](https://www.nature.com/articles/s41592-020-00990-8)
 2. [`SideSplitter`](https://github.com/StructuralBiology-ICLMedicine/SIDESPLITTER) - [**Mitigating Local Over-fitting During Single Particle Reconstruction with SIDESPLITTER**](https://www.sciencedirect.com/science/article/pii/S1047847720301180). [[Video]](https://www.youtube.com/watch?v=jTNH6Z0n254&list=PLFEB3YHuxu11Jp_pOCIEtXxSqozFHve0O&index=12)
 
-
 ## [3D variability analysis](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
 1. [`CryoSTAR`](https://github.com/bytedance/cryostar) - [**CryoSTAR: Leveraging Structural Prior and Constraints for Cryo-EM Heterogeneous Reconstruction**](https://www.biorxiv.org/content/10.1101/2023.10.31.564872v2)
 1. [`OPUS-DSD`](https://github.com/alncat/opusDSD) - [**OPUS-DSD: deep structural disentanglement for cryo-EM single-particle analysis**](https://www.nature.com/articles/s41592-023-02031-6)
@@ -292,6 +291,7 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 1. [`localrec`](https://github.com/OPIC-Oxford/localrec) - [**Localized reconstruction of subunits from electron cryomicroscopy images of macromolecular complexes**](https://www.nature.com/articles/ncomms9843) (Use in `Scipion`)
 2. `Multi-body refinement` - [**Characterisation of molecular motions in cryo-EM single-particle data by multi-body refinement in RELION**](https://elifesciences.org/articles/36861) (Use in `Relion`)
 
+
 ## [Postprocessing](https://www.sciencedirect.com/science/article/pii/S0079610720300699)
 * ### Per-particle-based motion and CTF refinement
 1. `CTF refinement` - [`Relion3`](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250425/)/[`CisTEM`](https://cistem.org/documentation#tab-1-12)/[`CryoSparc`](https://cryosparc.com/docs/tutorials/ctf-refinement), 3D Reference required
@@ -299,6 +299,10 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 3.  `High-order aberrations` - [**Estimation of high-order aberrations and anisotropic magnification from cryo-EM data sets in RELION-3.1**](https://journals.iucr.org/m/issues/2020/02/00/fq5009/index.html)
 4. `Bayesian Polishing` - [**A Bayesian approach to beam-induced motion correction in cryo-EM single-particle analysis**](https://journals.iucr.org/m/issues/2019/01/00/fq5003/)  (Use in Relion, 3D Reference required)
 5. [`M`](http://www.warpem.com/warp/?page_id=827) - [**Multi-particle cryo-EM refinement with M visualizes ribosome-antibiotic complex at 3.5 Å inside cells**](https://www.nature.com/articles/s41592-020-01054-7). [[Video]](https://www.youtube.com/watch?v=kiS-ELvQ1gc&list=PLFEB3YHuxu11Jp_pOCIEtXxSqozFHve0O&index=18)
+
+* ### 3D Refinemnet with anisotropy correction
+1. [`spIsoNet`](https://github.com/IsoNet-cryoET/spIsoNet) - [**Overcoming the preferred orientation problem in cryoEM with self-supervised deep-learning**](https://www.biorxiv.org/content/10.1101/2024.04.11.588921v1)
+2. [`CryoPROS`](https://github.com/mxhulab/cryopros) - [**Addressing preferred orientation in single-particle cryo-EM through AI-generated auxiliary particles**](https://www.biorxiv.org/content/10.1101/2023.09.26.559492v1)
 
 * ### [Local resolution](https://www.sciencedirect.com/science/article/pii/S0959440X20301044) and directional resolution
 1. [`Blocres`](https://lsbr.niams.nih.gov/bsoft/programs/blocres.html) - [**One number does not fit all: Mapping local variations in resolution in cryo-EM reconstructions**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3837392/)
@@ -321,7 +325,7 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 3. [`Relion`](https://github.com/3dem/externprior) - [**Exploiting prior knowledge about biological macromolecules in cryo-EM structure determination**](https://journals.iucr.org/m/issues/2021/01/00/fq5015/)
 4. [`Blush regularisation`](https://relion.readthedocs.io/en/release-5.0/Whats-new.html) - [**Data-driven regularisation lowers the size barrier of cryo-EM structure determination**](https://www.nature.com/articles/s41592-024-02304-8)
 
-### Particle sorting
+* ### Particle sorting
 1. [`CryoSieve`](https://github.com/mxhulab/cryosieve) - [**A minority of final stacks yields superior amplitude in single-particle cryo-EM**](https://www.nature.com/articles/s41467-023-43555-x)
 
 ## Model Building
