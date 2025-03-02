@@ -74,11 +74,11 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 ## [Software](http://3dem.ucsd.edu/software.shtm)
 * [Scipion](http://scipion.i2pc.es/) - An integrated platform that allows users to use a variety of methods in the same framework. [[Documentation](https://scipion-em.github.io/docs/)]
 * [Relion](https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page) - A comprehensive package that utilizes Bayesian approach for 2D classification and 3D refinement. [[Documentation](https://relion.readthedocs.io/en/latest/)]
-* [CryoSparc 2](https://cryosparc.com/) - A general package that employs stochastic gradient descent, branch and bound as well as GPU acceleration for rapid reconstructions.
+* [CryoSPARC 2](https://cryosparc.com/) - A general package that employs stochastic gradient descent, branch and bound as well as GPU acceleration for rapid reconstructions. [[CryoSPARC Tools](https://tools.cryosparc.com/intro.html)]
 * [Sphire](http://sphire.mpg.de/) - A general package that contains neural network methods for particle picking, denoising and classification.
 * [CisTEM](https://github.com/timothygrant80/cisTEM) - An easy-to-use framework that implements a complete pipeline for single-particle analysis.
 * [EMAN2](https://blake.bcm.edu/emanwiki/EMAN2) - A comprehensive package that contains a python interface and handy scripts for common tasks.
-* [SPIDER](https://spider.wadsworth.org/spider_doc/spider/docs/spider.html) - A well-known package that implements image processing methods for electron microscopy.
+* [SPIDER](https://github.com/spider-em/SPIDER) - A well-known package that implements image processing methods for electron microscopy.
 * [ASPIRE](http://spr.math.princeton.edu/) - A software that uses algorithms based on rigorous mathematical theory. 
 
 
@@ -106,7 +106,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
  :--------: | :--------: | :--------: | :--------: | :--------: | :--------: 
  [Scipion](https://github.com/I2PC/scipion/wiki/tutorials/scipion_tutorial_betagal.pdf) <br>  ([Beta-gal](https://scipion.cnb.csic.es/downloads/scipion/data/tests/relion13_tutorial/))    | 4.0GB     | 15(16)     |  1950x1950 (3.54)    |  (100x100)    | 7.3 (D2) 
  [Relion 3](https://relion.readthedocs.io/en/latest/SPA_tutorial/Introduction.html) <br>  ([Beta-gal](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10204/))    | 3.1GB     | 24(24)     |  3710x3838 (0.885)    | (256x256)     |2.9 (D2) 
- [CryoSparc 2](https://guide.cryosparc.com/processing-data/get-started-with-cryosparc-introductory-tutorial) ([T20S](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10025/))    | 8.1GB     | 20(38)     |  7420x7676 (0.6575)    | (440x440)     | 2.93 (D7)
+ [CryoSPARC 2](https://guide.cryosparc.com/processing-data/get-started-with-cryosparc-introductory-tutorial) ([T20S](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10025/))    | 8.1GB     | 20(38)     |  7420x7676 (0.6575)    | (440x440)     | 2.93 (D7)
  [CisTEM](https://cistem.org/documentation#tab-1-1) ([ApoFerritin](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10146/))    | 5.6GB     | 20(50)     |  1240x1200 (1.5)    |      | 3.0 (O)
 
 3. Generate simulation data
@@ -139,12 +139,12 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 * ### Whole frame alignment
 1. [`Unblur`](https://grigoriefflab.umassmed.edu/unblur_summovie) - [**Measuring the optimal exposure for single particle cryo-EM using a 2.6 Å reconstruction of rotavirus VP6**](https://elifesciences.org/articles/06980) ( Use in [`CisTEM`](https://cistem.org/documentation#tab-1-6))
-2. `Full-frame motion correction` - (Use in `CryoSparc`)
+2. `Full-frame motion correction` - (Use in `CryoSPARC`)
 3. `Optical Flow` - [**Alignment of direct detection device micrographs using a robust Optical Flow approach**](https://www.sciencedirect.com/science/article/pii/S1047847715000313) (Use in [`Xmipp`](http://xmipp.i2pc.es/))
 
 * ### Patch-based/Per-particle based alignment
-1. [`MotionCorr2`](https://emcore.ucsf.edu/ucsf-motioncor2) - [**MotionCor2: anisotropic correction of beam-induced motion for improved cryo-electron microscopy**](https://www.nature.com/articles/nmeth.4193?proof=t) (Use in `Relion` and `CryoSparc`)
-2. [`Alignparts`](https://sites.google.com/site/rubinsteingroup/direct-detector-align_lmbfgs) - [**Alignment of cryo-EM Movies of Individual Particles by Optimization of Image Translations**](https://pubmed.ncbi.nlm.nih.gov/26296328/) (Use in [`CryoSparc`(local, patch)](https://cryosparc.com/docs/tutorials/patch-motion-ctf))
+1. [`MotionCorr2`](https://emcore.ucsf.edu/ucsf-motioncor2) - [**MotionCor2: anisotropic correction of beam-induced motion for improved cryo-electron microscopy**](https://www.nature.com/articles/nmeth.4193?proof=t) (Use in `Relion` and `CryoSPARC`)
+2. [`Alignparts`](https://sites.google.com/site/rubinsteingroup/direct-detector-align_lmbfgs) - [**Alignment of cryo-EM Movies of Individual Particles by Optimization of Image Translations**](https://pubmed.ncbi.nlm.nih.gov/26296328/) (Use in [`CryoSPARC`(local, patch)](https://cryosparc.com/docs/tutorials/patch-motion-ctf))
 3. [`Warp`](http://www.warpem.com/warp/?page_id=185) - Contains [Patch-based motion correction](http://www.warpem.com/warp/).
 4. `FlexAlign` - [**FlexAlign: An Accurate and Fast Algorithm for Movie Alignment in Cryo-Electron Microscopy**](https://www.mdpi.com/2079-9292/9/6/1040/htm) - (Use in `Scipion`)
 
@@ -157,7 +157,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 1. [`CTFFIND5`](https://github.com/GrigorieffLab/cisTEM/tree/ctffind5) - [**CTFFIND5 provides improved insight into quality, tilt and thickness of TEM samples**](https://elifesciences.org/articles/97227) ( Use in [`CisTEM`](https://cistem.org/development))
 2. [`gCTF`](https://www2.mrc-lmb.cam.ac.uk/research/locally-developed-software/zhang-software/#gctf) - [**Gctf: Real-time CTF determination and correction**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4711343/)
 * ### Patch-based/tilt data
-1. `Patch-Based CTF Estimation` - [**Real-time cryo-electron microscopy data preprocessing with Warp**](https://www.nature.com/articles/s41592-019-0580-y) ( Use in [`CryoSparc`](https://cryosparc.com/docs/tutorials/patch-motion-ctf), `Warp`)
+1. `Patch-Based CTF Estimation` - [**Real-time cryo-electron microscopy data preprocessing with Warp**](https://www.nature.com/articles/s41592-019-0580-y) ( Use in [`CryoSPARC`](https://cryosparc.com/docs/tutorials/patch-motion-ctf), `Warp`)
 2. [`goCTF`](https://www.lsi.umich.edu/science/centers-technologies/cryo-electron-microscopy/research/goctf) - [**goCTF: Geometrically optimized CTF determination for single-particle cryo-EM**](https://www.lsi.umich.edu/science/centers-technologies/cryo-electron-microscopy/research/goctf)
 3. [`Warp`](http://www.warpem.com/warp/?page_id=185) - Contains Patch-based CTF estimation.
 4. [`novaCTF`](https://github.com/turonova/novaCTF) - [**Efficient 3D-CTF correction for cryo-electron tomography using NovaCTF improves subtomogram averaging resolution to 3.4 Å**](https://www.sciencedirect.com/science/article/pii/S1047847717301272?via%3Dihub)
@@ -188,7 +188,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 12. [`Vesicle Picker`](https://github.com/r-karimi/vesicle-picker) - [**Vesicle Picker: A tool for efficient identification of membrane protein complexes in vesicles**](https://www.sciencedirect.com/science/article/pii/S1047847724000881)
 
 * ### Template-based picking
-1. [`Relion`](https://www.sciencedirect.com/science/article/pii/S1047847714002615), `CryoSparc` - Use 2D class averages or 3D projection for more accurate particle picking
+1. [`Relion`](https://www.sciencedirect.com/science/article/pii/S1047847714002615), `CryoSPARC` - Use 2D class averages or 3D projection for more accurate particle picking
 * ### Automatic picking
 1. [`DoG`](https://emg.nysbc.org/redmine/projects/software/wiki/DoGpicker) - [**DoG Picker and TiltPicker: software tools to facilitate particle selection in single particle electron microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2768396/)
 2. `LoG` - [**The Laplacian of Gaussian and Arbitrary Z-Crossings Approach Applied to Automated Single Particle Reconstruction**](https://pubmed.ncbi.nlm.nih.gov/17490891/) (Use in `Relion` auto-picking) 
@@ -213,7 +213,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 * ### [Maximum-likelihood based classification](https://www.sciencedirect.com/science/article/pii/S0076687910820117?via%3Dihub)
 1. `Relion` - Bayesian (Empirical Bayes) approach
-2. `CryoSparc` - Bayesian with Branch and bound method
+2. `CryoSPARC` - Bayesian with Branch and bound method
 3. `CisTEM` - Maximum likelihood method
 4. [`SubspaceEM`](https://www.mathworks.com/matlabcentral/fileexchange/50091-subspaceem-a-fast-maximum-a-posteriori-algorithm-for-cryo-em-single-particle-reconstruction) - [**SubspaceEM: A fast maximum-a-posteriori algorithm for cryo-EM single particle reconstruction**](https://www.sciencedirect.com/science/article/pii/S1047847715000714)
 
@@ -236,12 +236,12 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 * ### Class-averages-based method
 1. [`Simple`](https://simplecryoem.com/)-[**Single-particle cryo-EM-Improved Ab Initio 3D Reconstruction With SIMPLE/PRIME**](https://pubmed.ncbi.nlm.nih.gov/28795512/)
 * ### Particles based method
-1. `CryoSparc` - [**cryoSPARC: algorithms for rapid unsupervised cryo-EM structure determination**](https://www.nature.com/articles/nmeth.4169). [[Slides]](https://nramm.nysbc.org/wp-content/seminars/2017/slides/nysbc-nov2017-Brubaker.pdf)
+1. `CryoSPARC` - [**cryoSPARC: algorithms for rapid unsupervised cryo-EM structure determination**](https://www.nature.com/articles/nmeth.4169). [[Slides]](https://nramm.nysbc.org/wp-content/seminars/2017/slides/nysbc-nov2017-Brubaker.pdf)
 
 ## 3D refinement
 * ### 3D Homogeneous Refinement
 1. `Relion` - [**RELION: Implementation of a Bayesian approach to cryo-EM structure determination**](https://www.sciencedirect.com/science/article/pii/S1047847712002481). [[Video]](https://www.youtube.com/watch?time_continue=2&v=TfLFCeehfjM&feature=emb_title)
-2. [`CryoSparc`](https://www.nature.com/articles/nmeth.4169) - Use Expectation-Maximization with branch and bound method for higher resolution
+2. [`CryoSPARC`](https://www.nature.com/articles/nmeth.4169) - Use Expectation-Maximization with branch and bound method for higher resolution
 3. [`OPUS-SSRI`](https://github.com/alncat/cryoem) - [**Sparseness and Smoothness Regularized Imaging for improving the resolution of Cryo-EM single-particle reconstruction**](https://www.pnas.org/content/118/2/e2013756118)
 4. [`CryoNeFEN`](https://github.com/yuehuang2023/cryoNeFEN) - [**High-resolution real-space reconstruction of cryo-EM structures using a neural field network**](https://www.nature.com/articles/s42256-024-00870-2)
 
@@ -254,11 +254,11 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 6. [`DRGN-AI`](https://github.com/ml-struct-bio/drgnai) - [**Revealing biomolecular structure and motion with neural ab initio cryo-EM reconstruction**](https://www.biorxiv.org/content/10.1101/2024.05.30.596729v1)
 
 * ### 3D classification
-1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf), `CryoSparc`  - Perturb the initial model and use projection matching with weighted assignment
+1. [`Relion`](http://franklab.cpmc.columbia.edu/franklab/Learning_Materials/Meeting_7_Maximum_Likelihood/Papers/Scheres_2016_MIE_v579.pdf), `CryoSPARC`  - Perturb the initial model and use projection matching with weighted assignment
 2. [`LCTC`](https://github.com/ghl1995/LCTC) - [**An Efficient Method to Quantify Structural Distributions in Heterogeneous cryo-EM Datasets**](https://www.biorxiv.org/content/10.1101/2021.05.27.446075v1)
 
 * ### 3D non-uniform Refinemnet
-1. `CryoSparc` - [**Non-uniform refinement: Adaptive regularization improves single particle cryo-EM reconstruction**](https://www.nature.com/articles/s41592-020-00990-8)
+1. `CryoSPARC` - [**Non-uniform refinement: Adaptive regularization improves single particle cryo-EM reconstruction**](https://www.nature.com/articles/s41592-020-00990-8)
 2. [`SideSplitter`](https://github.com/StructuralBiology-ICLMedicine/SIDESPLITTER) - [**Mitigating Local Over-fitting During Single Particle Reconstruction with SIDESPLITTER**](https://www.sciencedirect.com/science/article/pii/S1047847720301180). [[Video]](https://www.youtube.com/watch?v=jTNH6Z0n254&list=PLFEB3YHuxu11Jp_pOCIEtXxSqozFHve0O&index=12)
 
 ## [3D variability analysis](http://scripts.iucr.org/cgi-bin/paper?S2053230X18015108)
@@ -270,9 +270,9 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 1. [`DynaMight`](https://github.com/3dem/DynaMight) - [**DynaMight: estimating molecular motions with improved reconstruction from cryo-EM images**](https://www.nature.com/articles/s41592-024-02377-5) (Use in `Relion5`)
 1. `Diffusion Prior` - [**Latent Space Diffusion Models of Cryo-EM Structures**](https://arxiv.org/abs/2211.14169)
 1. [`DGP-SPR`](https://github.com/benjamin3344/DGP-SPR) - [**Deep Generative Priors for Biomolecular 3D Heterogeneous Reconstruction from Cryo-EM Projections**](https://www.sciencedirect.com/science/article/pii/S1047847724000133)
-1. [`3DFlex`](https://cryosparc.com/3dflex) - [**3D Flexible Refinement: Structure and Motion of Flexible Proteins from Cryo-EM**](https://www.biorxiv.org/content/10.1101/2021.04.22.440893v1) ( Use in `CryoSparc`)
+1. [`3DFlex`](https://cryosparc.com/3dflex) - [**3D Flexible Refinement: Structure and Motion of Flexible Proteins from Cryo-EM**](https://www.biorxiv.org/content/10.1101/2021.04.22.440893v1) ( Use in `CryoSPARC`)
 1. [`e2gmm`](https://blake.bcm.edu/emanwiki/EMAN2/e2gmm) - [**Deep learning-based mixed-dimensional Gaussian mixture model for characterizing variability in cryo-EM**](https://www.nature.com/articles/s41592-021-01220-5)  ( Use in `EMAN2`, more information see [here](https://www.sciencedirect.com/science/article/pii/S0022283623000700))
-1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S1047847721000071) ( Use in `CryoSparc`)
+1. `3DVA` - [**3D Variability Analysis: Directly resolving continuous flexibility and discrete heterogeneity from single particle cryo-EM images**](https://www.sciencedirect.com/science/article/pii/S1047847721000071) ( Use in `CryoSPARC`)
 1. [`CryoDRGN2`](https://github.com/zhonge/cryodrgn/tree/vb/v2_quickstart) - [**CryoDRGN2: Ab initio neural reconstruction of 3D protein structures
 from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/papers/Zhong_CryoDRGN2_Ab_Initio_Neural_Reconstruction_of_3D_Protein_Structures_From_ICCV_2021_paper.pdf)
 1. [`CryoDRGN`](https://github.com/zhonge/cryodrgn) - [**CryoDRGN: Reconstruction of heterogeneous structures from cryo-electron micrographs using neural networks**](https://www.nature.com/articles/s41592-020-01049-4?utm_source=other&utm_medium=other&utm_content=null&utm_campaign=JRCN_1_DD01_CN_NatureRJ_article_paid_XMOL) (For processing with large dataset see [here](https://zhonge.github.io/cryodrgn/index.html))
@@ -300,7 +300,7 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 
 ## [Postprocessing](https://www.sciencedirect.com/science/article/pii/S0079610720300699)
 * ### Per-particle-based motion and CTF refinement
-1. `CTF refinement` - [`Relion3`](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250425/)/[`CisTEM`](https://cistem.org/documentation#tab-1-12)/[`CryoSparc`](https://cryosparc.com/docs/tutorials/ctf-refinement), 3D Reference required
+1. `CTF refinement` - [`Relion3`](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6250425/)/[`CisTEM`](https://cistem.org/documentation#tab-1-12)/[`CryoSPARC`](https://cryosparc.com/docs/tutorials/ctf-refinement), 3D Reference required
 2. `Ewald sphere correction` - [**New tools for automated high-resolution cryo-EM structure determination in RELION-3**](https://elifesciences.org/articles/42166#bib45) (Use ` relion_reconstruct --reverse_curvature`)
 3.  `High-order aberrations` - [**Estimation of high-order aberrations and anisotropic magnification from cryo-EM data sets in RELION-3.1**](https://journals.iucr.org/m/issues/2020/02/00/fq5009/index.html)
 4. `Bayesian Polishing` - [**A Bayesian approach to beam-induced motion correction in cryo-EM single-particle analysis**](https://journals.iucr.org/m/issues/2019/01/00/fq5003/)  (Use in Relion, 3D Reference required)
@@ -374,7 +374,7 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 * [Resolution Measure](https://www.sciencedirect.com/science/article/pii/S0079610716300037)
 
 ## Image contrast
-`White on Black` - Relion, Xmipp, EMAN2, CryoSparc (Cryo-EM data is typically recorded as Black on White but will invert during processing)
+`White on Black` - Relion, Xmipp, EMAN2, CryoSPARC (Cryo-EM data is typically recorded as Black on White but will invert during processing)
 
 `Black on White` - Frealign (CisTEM)
 
@@ -386,7 +386,7 @@ In Relion 3.1 it has been replaced with `rlnImagePixelSize`.
 ## FSC calculation
 Using [e2proc3d](http://sphire.mpg.de/wiki/doku.php?id=pipeline:utilities:e2proc3d)
 
-## Mask generation in [CryoSparc](https://discuss.cryosparc.com/t/tight-corrected-and-loose-gsfsc-curves/201/5)
+## Mask generation in [CryoSPARC](https://discuss.cryosparc.com/t/tight-corrected-and-loose-gsfsc-curves/201/5)
 
 ### No Mask:
 This is the raw FSC calculated between two independent half-maps reconstructed from the data. There is no masking applied, so both the structure and solvent are included in this FSC.
@@ -405,7 +405,7 @@ This is the FSC curve calculated using the tight mask with correction by noise s
 
 > Chen, S. et al. High-resolution noise substitution to measure overfitting and validate resolution in 3D structure determination by single particle electron cryomicroscopy. Ultramicroscopy 135, 24–35 (2013).
 
-## Sharpen and filtering in [CryoSparc](https://discuss.cryosparc.com/t/how-is-the-non-uniform-refinement-map-filtered-map-created/4388)
+## Sharpen and filtering in [CryoSPARC](https://discuss.cryosparc.com/t/how-is-the-non-uniform-refinement-map-filtered-map-created/4388)
 The `map_filtered` output in non-uniform refinement is generated as follows after refinement has converged:
 
 1. both raw, unfiltered halfmaps are averaged together
@@ -435,7 +435,7 @@ Convert binary data
 3. Using Custom function like [here](Parse_Star.ipynb)
 4. [`starpy`](https://github.com/fuzikt/starpy) - Lots of useful script like [`rel31_to_rel30_star.py`](https://github.com/fuzikt/starpy/blob/master/rel31_to_rel30_star.py)
 
-## Parse `CryoSparc file`
+## Parse `CryoSPARC file`
 1. Using [`PyEM`](https://github.com/asarnow/pyem)
 2. Using Custom function like [here](Parse_Cryosparc.ipynb). See full tutorial [here](https://guide.cryosparc.com/processing-data/manipulating-.cs-files-created-by-cryosparc) 
 3. [`cryosparc-tools`](https://github.com/cryoem-uoft/cryosparc-tools) 
@@ -456,7 +456,7 @@ A focus mask is defined as a sphere specified by radius and x,y,z coordinates of
 1. Execute vop resample #3 onGrid #0 on the Command Line. This will generate a copy of the solid sphere as a new model #1, now resampled in the same coordinate system as the original 3D map.
 1. Execute measure center #1 on the Command Line. This will display the x,y,z coordinates of the mask in pixel coordinates below the command line. These coordinates have to be converted to Å by multiplying them with the pixel size of the 3D map before they can be used in cisTEM's Manual Refine panel.
 
-### [Local classification in CryoSparc](https://cryosparc.com/blog/local-refinement-snRNP-case-study/)
+### [Local classification in CryoSPARC](https://cryosparc.com/blog/local-refinement-snRNP-case-study/)
 
 ## Display images
 ### Micrographs
