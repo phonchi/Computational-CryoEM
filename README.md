@@ -185,7 +185,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 9. [`CASSPER`](https://github.com/airis4d/CASSPER/releases) - [**CASSPER is a semantic segmentation-based particle picking algorithm for single-particle cryo-electron microscopy**](https://www.nature.com/articles/s42003-021-01721-1)
 10. [`TARDIS`](https://github.com/SMLC-NYSBC/TARDIS) - [**Automated Segmentation of 3D Cytoskeletal Filaments from Electron Micrographs with TARDIS**](https://academic.oup.com/mam/article/29/Supplement_1/970/7228849?login=true)
 11. [`REPIC`](https://github.com/ccameron/REPIC) - [**REPIC — an ensemble learning methodology for cryo-EM particle picking**](https://www.nature.com/articles/s42003-024-07045-0)
-12. [`Vesicle Picker`](https://github.com/r-karimi/vesicle-picker) - [**Vesicle Picker: A tool for efficient identification of membrane protein complexes in vesicles**](https://www.sciencedirect.com/science/article/pii/S1047847724000881#s0045)
+12. [`Vesicle Picker`](https://github.com/r-karimi/vesicle-picker) - [**Vesicle Picker: A tool for efficient identification of membrane protein complexes in vesicles**](https://www.sciencedirect.com/science/article/pii/S1047847724000881)
 
 * ### Template-based picking
 1. [`Relion`](https://www.sciencedirect.com/science/article/pii/S1047847714002615), `CryoSparc` - Use 2D class averages or 3D projection for more accurate particle picking
