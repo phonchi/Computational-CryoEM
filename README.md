@@ -149,7 +149,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 4. `FlexAlign` - [**FlexAlign: An Accurate and Fast Algorithm for Movie Alignment in Cryo-Electron Microscopy**](https://www.mdpi.com/2079-9292/9/6/1040/htm) - (Use in `Scipion`)
 
 * ### [Damage compensation](https://www.sciencedirect.com/science/article/pii/S0076687910810158?via%3Dihub)
-    * This functionality is available in most of the motion correction tool
+    * This functionality is le in most of the motion correction tool
     * The [**dark/gain corrected**](https://pubmed.ncbi.nlm.nih.gov/27572724/) is also conducted in this stage
 
 ## [CTF estimation](https://www.sciencedirect.com/science/article/pii/S0076687910820026?via%3Dihub)
@@ -284,8 +284,8 @@ from real cryo-EM images**](https://openaccess.thecvf.com/content/ICCV2021/paper
 1. `cryoFIRE` - [**Amortized Inference for Heterogeneous Reconstruction in Cryo-EM**](https://arxiv.org/abs/2210.07387)
 1. `Atomic VAE` - [**Heterogeneous reconstruction of deformable atomic models in Cryo-EM**](https://arxiv.org/abs/2209.15121)
 1. [`SpecVols`](https://github.com/PrincetonUniversity/specvols) - [**Cryo-EM reconstruction of continuous heterogeneity by Laplacian spectral volumes**](https://iopscience.iop.org/article/10.1088/1361-6420/ab4f55) (Use in [`ASPIRE`](https://github.com/ComputationalCryoEM/ASPIRE-Python/blob/main/src/aspire/reconstruction/mean.py#L18))
-2. [`CryoTRANS`](https://github.com/mxhulab/cryotrans) - [**CryoTRANS: predicting high-resolution maps of rare conformations from self-supervised trajectories in cryo-EM**](https://www.nature.com/articles/s42003-024-06739-9#code-availability)
-3. [`cryoENsemble`](https://github.com/dydymos/cryoENsemble) - [**Bayesian reweighting of biomolecular structural ensembles using heterogeneous cryo-EM maps with the cryoENsemble method**](https://www.nature.com/articles/s41598-024-68468-7#code-availability)
+2. [`CryoTRANS`](https://github.com/mxhulab/cryotrans) - [**CryoTRANS: predicting high-resolution maps of rare conformations from self-supervised trajectories in cryo-EM**](https://www.nature.com/articles/s42003-024-06739-9)
+3. [`cryoENsemble`](https://github.com/dydymos/cryoENsemble) - [**Bayesian reweighting of biomolecular structural ensembles using heterogeneous cryo-EM maps with the cryoENsemble method**](https://www.nature.com/articles/s41598-024-68468-7)
 
 * ### Latent space analysis
 1. [`CLEAPA`](https://github.com/tengyulin/energy_aware_pathfinding)- [**CLEAPA: a framework for exploring the conformational landscape of cryo-EM using energy-aware pathfinding algorithm**](https://academic.oup.com/bioinformatics/article/40/6/btae345/7688336)
