@@ -14,16 +14,16 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 
 
 
-- [**Computational CryoEM Methods**](#computational-cryoEM-methods)
+- [**Computational Cryo-EM Methods**](#computational-cryo-em-methods)
 - [**Resources**](#resources)
 - [**Workflow**](#workflow)
     - [Motion correction](#motion-correction)
     - [CTF estimation](#ctf-estimation)
     - [Particle picking](#particle-picking)
-    - [2D classification](#2D-classification)
-    - [Ab-initial Model](#ab-initial-model)
+    - [2D classification](#2d-classification)
+    - [Ab-initio Model](#ab-initio-model)
     - [3D refinement](#3d-refinement)
-    - [3D variability analysis](#3D-variability-analysis)
+    - [3D variability analysis](#3d-variability-analysis)
     - [Postprocessing](#postprocessing)
     - [Model Building](#model-building)
 - [**Conventions**](#conventions)
@@ -44,7 +44,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 
 ## Introduction
 * [A quick introduction video for cryo-EM](https://www.youtube.com/watch?v=Qq8DO-4BnIY)
-* [Cryo-EM 101](https://cryoem101.org/) - Deomnstrate the principles of cryo-EM using a media-rich approach with videos, animations, interactive simulation.
+* [Cryo-EM 101](https://cryoem101.org/) - Demonstrate the principles of cryo-EM using a media-rich approach with videos, animations, interactive simulation.
 * [cryoEDU](https://cryoedu.org/) - A hands-on cryo-EM education tool
 * [Cryo-EM workflow by Nvidia](https://resources.nvidia.com/en-us-drug-discovery/) - Describe the blueprint of cryo-EM using GPU processing.
 * [A Primer to Single-Particle Cryo-Electron Microscopy](https://www.sciencedirect.com/science/article/pii/S0092867415003700?via%3Dihub) - A great review to start with.
@@ -60,7 +60,7 @@ The format for the item is [software link] - [Paper link] (Available in which pa
 * [nysbc training course](https://semc.nysbc.org/workshops/past-courses/2023-em-course/)
 
 
-## Resources
+## Additional Resources
 * [3DEM Methods](http://3demmethods.i2pc.es/index.php/Main_Page) - A great wiki that collects papers or books for computational methods.
 * [A collective resource](https://github.com/barrykui/awesome-cryoem) - A great repository that covers single particle analysis, model building and tomography.
 * [Math behind CryoEM](https://github.com/geoffwoollard/learn_cryoem_math) - A great repository that collects the materials which elaborate the math behind single-particle analysis.
@@ -149,8 +149,8 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 4. `FlexAlign` - [**FlexAlign: An Accurate and Fast Algorithm for Movie Alignment in Cryo-Electron Microscopy**](https://www.mdpi.com/2079-9292/9/6/1040/htm) - (Use in `Scipion`)
 
 * ### [Damage compensation](https://www.sciencedirect.com/science/article/pii/S0076687910810158?via%3Dihub)
-    * This functionality is le in most of the motion correction tool
-    * The [**dark/gain corrected**](https://pubmed.ncbi.nlm.nih.gov/27572724/) is also conducted in this stage
+    * This functionality is available in most of the motion correction tools
+    * The [**dark/gain correction**](https://pubmed.ncbi.nlm.nih.gov/27572724/) is also conducted in this stage
 
 ## [CTF estimation](https://www.sciencedirect.com/science/article/pii/S0076687910820026?via%3Dihub)
 * ### Whole frame
@@ -206,7 +206,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 
 ## 2D classification
 
-* ### Multirefence alignment-based classification
+* ### Multireference alignment-based classification
 1. `ISAC` - [**Iterative Stable Alignment and Clustering of 2D Transmission Electron Microscope Images**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3426367/). [[GPU version]](https://sphire.mpg.de/wiki/doku.php?id=gpu_isac)
 2. `CL2D` - [**A clustering approach to multireference alignment of single-particle projections in electron microscopy**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2893300/)
 3. `RE2DC` - [**RE2DC: a robust and efficient 2D classifier with visualization for processing massive and heterogeneous cryo-EM data**](https://www.biorxiv.org/content/10.1101/2022.11.21.517443v2)
@@ -232,7 +232,7 @@ DataSet (Molecule) | File Size | Micrograph Size (Pixel Size) | Picked Particles
 2. [`ASTRA`](https://github.com/astra-toolbox/astra-toolbox)
 3. `ZART`- [**ZART: A Novel Multiresolution Reconstruction Algorithm with Motion-blur Correction for Single Particle Analysis**](https://www.sciencedirect.com/science/article/pii/S002228362300150X#s0070) ( Use in `XMIPP`)
 
-## Ab-initial model 
+## Ab-initio model 
 * ### Class-averages-based method
 1. [`Simple`](https://simplecryoem.com/)-[**Single-particle cryo-EM-Improved Ab Initio 3D Reconstruction With SIMPLE/PRIME**](https://pubmed.ncbi.nlm.nih.gov/28795512/)
 * ### Particles based method
